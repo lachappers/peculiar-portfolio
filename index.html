@@ -1,30 +1,91 @@
 <!DOCTYPE html>
+<!-- lang idenfities primary language for browser, translation and screenreaders-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--Viewport Meta tag - sets initial page width to the size of screen it's viewed on, without any zoom (common in older browsers) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Services</title>
   </head>
   <body>
     <!--Semantic tags describe their purpose and type of content -->
+    <!-- <header> defines the header of a document or section of a document -->
+    <!-- <div> tags can be used to group content for styling -->
     <header>
-      <img src="" alt="peculiar dynamics logo" />
+      <a class="logo" href="/" title="Go to home page">
+        <img src="" alt="peculiar dynamics logo" />
+      </a>
       <nav>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Solutions</li>
-        <li>Contact</li>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
+      <!-- <section> divides doc into groups of related content and should always have a heading-->
       <section>
         <h1>Lucy Chaplin</h1>
+        <p>
+          I improve businesses using technology and data to solve problems,
+          explore opportunities and make teams happier and more effective.
+        </p>
+        <button class="">Contact Me</button>
+        <img src="" alt="Lucy's headshot" />
+      </section>
+      <section>
+        <h2 class="visually-hidden">Notable Employers</h2>
+      </section>
+      <section>
+        <h2>My Experience</h2>
+        <!-- <aside> should be used to represent content that is indirectly related to the container content, or as a sidebar-->
+        <aside>
+          <p>
+            12+ years of using Data, Techonology and Organisational Psychology
+            to transform businesses and solve complex problems.
+          </p>
+        </aside>
+        <section>
+          <div class="projects">
+            <h3>Projects</h3>
+            <!-- <article> is a container for self-contained content that can be moved -->
+            <div class="wrapper">
+              <article>
+                <h4>Title</h4>
+                <p>Short Description</p>
+              </article>
+            </div>
+            <div class="wrapper">
+              <article>
+                <h4>Title</h4>
+                <p>Short Description</p>
+              </article>
+            </div>
+            <div class="wrapper">
+              <article>
+                <h4>Title</h4>
+                <p>Short Description</p>
+              </article>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+    <!-- <footer> can be in elements including sections or articles; containing a contentinfo landmark if footer of body-->
     <footer>
-      <nav></nav>
+      <ul>
+        <li><a href="">Terms and Conditions</a></li>
+        <li><a href="">Sitemap</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Accessibility</a></li>
+        <li><a href="">Supplier Code of Conduct</a></li>
+        <li><a href="">Cookie Notice</a></li>
+      </ul>
     </footer>
   </body>
 </html>

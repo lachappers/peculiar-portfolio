@@ -1,0 +1,14 @@
+aside {
+  background-color: aquamarine;
+}
+
+.projects {
+  display: grid;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 2px salmon;
+}
