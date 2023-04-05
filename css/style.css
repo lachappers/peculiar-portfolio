@@ -1,9 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* started with CSS reset to ensure consistency accross browsers */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* Line height to match WCAG guidelines */
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*  */
+/*  */
+/* GLOBAL STYLES */
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 1em "Roboto", sans-serif;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+header,
+footer {
+  flex-grow: 0;
+  padding: 1rem;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header {
+  background-color: rgb(254, 230, 134);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation li {
+  font-size: large;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* 
+header > nav {
+  flex-grow: 0;
+} */
+/* 
+header > nav li {
+  font-size: large;
+  display: inline-block;
+  margin-left: 1rem;
+} */
+
+main {
+  max-width: 40rem;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  border: solid 2px salmon;
+}
+
+footer {
+  flex-grow: 0;
+  background-color: green;
+  padding: 1.5rem;
+  /* width: 100vw; */
+}
+footer li {
+  display: inline-block;
+}
+
+/* a {
+  color: #ff0000;
+} */
+
+a:hover,
+a:visited,
+a:focus {
+  color: #a60000;
+  transform: scale(1.2);
+  box-shadow: 0 0 0 0.0625rem #000;
+}
+
+a:active {
+  /* color: #000000;
+  background-color: #a60000; */
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0 0.0625rem #048;
+}
 aside {
   background-color: aquamarine;
 }
 
+/* SERVICES */
+
+.introduction {
+  border: solid 1px aqua;
+}
+
 .projects {
   display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .wrapper {
@@ -11,4 +252,56 @@ aside {
   flex-direction: column;
 
   border: solid 2px salmon;
+}
+/* 
+@media screen and (max-width: 786px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .navigation li {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation li {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navigation li:hover > ul {
+    display: none;
+  }
+
+  .navigation li {
+    position: relative;
+  }
+
+  .navigation li:hover > ul {
+    display: block;
+  }
+
+  .navigation ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    display: none;
+  }
+
+  .navigation ul ul li {
+    margin-top: 0;
+  }
 }

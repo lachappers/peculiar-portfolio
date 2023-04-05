@@ -8,39 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Services</title>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <!--Semantic tags describe their purpose and type of content -->
     <!-- <header> defines the header of a document or section of a document -->
     <!-- <div> tags can be used to group content for styling -->
     <header>
-      <a class="logo" href="/" title="Go to home page">
-        <img src="" alt="peculiar dynamics logo" />
+      <a class="logo-full" href="/" title="Go to home page">
+        <img
+          src="./images/logo-full.svg"
+          alt="peculiar dynamics logo"
+          height="46px"
+        />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+
+      <button
+        class="hamburger"
+        aria-label="Show Navigation Menu"
+        aria-expanded="false"
+        tabindex="0"
+        hidden
+      >
+        ☰
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </button>
     </header>
 
     <main>
-      <!-- <section> divides doc into groups of related content and should always have a heading-->
-      <section>
-        <h1>Lucy Chaplin</h1>
-        <p>
-          I improve businesses using technology and data to solve problems,
-          explore opportunities and make teams happier and more effective.
-        </p>
-        <button class="">Contact Me</button>
-        <img src="" alt="Lucy's headshot" />
-      </section>
-      <section>
-        <h2 class="visually-hidden">Notable Employers</h2>
-      </section>
+      <div class="introduction">
+        <!-- <section> divides doc into groups of related content and should always have a heading-->
+        <section>
+          <h1>Lucy Chaplin</h1>
+          <p>
+            I improve businesses using technology and data to solve problems,
+            explore opportunities and make teams happier and more effective.
+          </p>
+          <button class="">Contact Me</button>
+          <img src="" alt="Lucy's headshot" />
+        </section>
+      </div>
+      <section class="" aria-label="Notable Employers"></section>
       <section>
         <h2>My Experience</h2>
         <!-- <aside> should be used to represent content that is indirectly related to the container content, or as a sidebar-->
@@ -51,8 +67,8 @@
           </p>
         </aside>
         <section>
+          <h3>Projects</h3>
           <div class="projects">
-            <h3>Projects</h3>
             <!-- <article> is a container for self-contained content that can be moved -->
             <div class="wrapper">
               <article>
@@ -79,11 +95,11 @@
     <!-- <footer> can be in elements including sections or articles; containing a contentinfo landmark if footer of body-->
     <footer>
       <ul>
-        <li><a href="">Terms and Conditions</a></li>
-        <li><a href="">Sitemap</a></li>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Accessibility</a></li>
-        <li><a href="">Supplier Code of Conduct</a></li>
+        <li><a href="">Terms and Conditions</a> |</li>
+        <li><a href="">Sitemap</a> |</li>
+        <li><a href="">Privacy Policy</a> |</li>
+        <li><a href="">Accessibility</a> |</li>
+        <li><a href="">Supplier Code of Conduct</a> |</li>
         <li><a href="">Cookie Notice</a></li>
       </ul>
     </footer>
