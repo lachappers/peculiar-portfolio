@@ -1,137 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* started with CSS reset to ensure consistency accross browsers */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* @import "./reboot.css"; */
+@import "./normalize.css";
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-/* Line height to match WCAG guidelines */
-body {
-  line-height: 1.5;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*  */
 /*  */
 /* GLOBAL STYLES */
 html,
@@ -140,6 +12,8 @@ body {
 }
 body {
   font: 1em "Roboto", sans-serif;
+  /* Line height to match WCAG guidelines */
+  line-height: 1.5;
   overflow: auto;
 
   display: flex;
@@ -235,24 +109,30 @@ aside {
   background-color: aquamarine;
 }
 
+h1 {
+}
+
 /* INTRO */
 .introduction {
   border: solid 1px aqua;
-  padding: 1rem;
   gap: 1rem;
+  /* padding: 1rem; */
+  padding: 1em;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "col-1 col-2";
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
   background-color: bisque;
   border-radius: 15px;
 }
 
 .intro-text {
-  grid-area: col-1;
-
+  /* grid-area: col-1; */
+  width: 2fr;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
   gap: 1em;
 }
 .intro-text button {
@@ -261,7 +141,7 @@ aside {
 
 .headshot {
   aspect-ratio: 1/1;
-  grid-area: col-2;
+  /* height: auto; */
 }
 .headshot img {
   width: 100%;
