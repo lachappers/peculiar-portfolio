@@ -45,45 +45,52 @@
 
     <main>
       <!-- <section> divides doc into groups of related content and should always have a heading-->
-      <section>
-        <div class="introduction">
-          <div class="headshot">
-            <img src="./images/headshot-300w.jpeg" alt="Lucy's headshot" />
-          </div>
-          <div class="intro-text">
-            <h1>Lucy Chaplin</h1>
-            <p>
-              I improve businesses using technology and data to solve problems,
-              explore opportunities and make teams happier and more effective.
-            </p>
-            <button class="">Contact Me</button>
-          </div>
+      <section class="introduction" aria-label="About me introduction">
+        <div class="headshot">
+          <img src="./images/headshot-300w.jpeg" alt="" />
+        </div>
+        <div class="intro-text">
+          <h1>Lucy Chaplin</h1>
+          <p>
+            I improve businesses using technology and data to solve problems,
+            explore opportunities and make teams happier and more effective.
+          </p>
+          <button class="">Contact Me</button>
         </div>
       </section>
 
-      <section class="" aria-label="Brands I've worked with">
-        <div class="brands-banner">
-          <img src="./images/Amazon_logo.svg" alt="Amazon" height="25em" />
-          <img src="./images/Google_2015_logo.svg" alt="Google" height="25em" />
-          <img src="./images/KPMG-logo.svg" alt="KPMG" height="25em" />
-          <img
-            src="./images/London_Business_School_logo.svg"
-            alt="London Business School"
-            height="25em"
-          />
-          <img
-            src="./images/McLaren-AT-Logo.svg"
-            alt="McLaren Applied Technologies"
-            height="25em"
-          />
-          <img
-            src="./images/university-of-bristol-logo-svg-vector.svg"
-            alt="University of Bristol"
-            height="25em"
-          />
-        </div>
+      <section class="brands-banner" aria-label="Brands I've worked with">
+        <img
+          src="./images/Amazon_logo.svg"
+          alt="Amazon"
+          height="25em"
+          style="fill: red; stroke: red"
+        />
+        <img
+          src="./images/Google_2015_logo.svg"
+          alt="Google"
+          height="25em"
+          style="fill: red; stroke: red"
+        />
+        <img src="./images/KPMG-logo.svg" alt="KPMG" height="25em" />
+        <img
+          src="./images/London_Business_School_logo.svg"
+          alt="London Business School"
+          height="25em"
+        />
+        <img
+          src="./images/McLaren-AT-Logo.svg"
+          alt="McLaren Applied Technologies"
+          height="25em"
+        />
+        <img
+          src="./images/university-of-bristol-logo-svg-vector.svg"
+          alt="University of Bristol"
+          height="25em"
+        />
       </section>
-      <section>
+
+      <section class="experience">
         <h2>My Experience</h2>
         <!-- <aside> should be used to represent content that is indirectly related to the container content, or as a sidebar-->
         <aside>
@@ -92,28 +99,110 @@
             transform businesses and solve complex problems.
           </p>
         </aside>
-        <section>
-          <h3>Projects</h3>
-          <div class="projects">
+
+        <section class="projects" aria-label="sample projects">
+          <div class="feed" role="feed">
             <!-- <article> is a container for self-contained content that can be moved -->
-            <div class="wrapper">
-              <article>
-                <h4>Title</h4>
-                <p>Short Description</p>
-              </article>
-            </div>
-            <div class="wrapper">
-              <article>
-                <h4>Title</h4>
-                <p>Short Description</p>
-              </article>
-            </div>
-            <div class="wrapper">
-              <article>
-                <h4>Title</h4>
-                <p>Short Description</p>
-              </article>
-            </div>
+            <article
+              class="project card"
+              aria-labelledby="project-title-1"
+              aria-describedby="project-summary-1"
+              tabindex="0"
+              aria-posinset="1"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="./images/entia-logo.png" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-1">Head of People</h4>
+                <p id="project-summary-1">
+                  Designing and developing organisational strategy, internal
+                  technology infrastructure and physical and virtual
+                  environments that enable high-performance and high engagement.
+                </p>
+              </div>
+            </article>
+            <article
+              class="project card"
+              aria-labelledby="project-title-2"
+              aria-describedby="project-summary-2"
+              tabindex="0"
+              aria-posinset="2"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-2">Title</h4>
+                <p id="project-summary-2">Summary</p>
+              </div>
+            </article>
+            <article
+              class="project card"
+              aria-labelledby="project-title-3"
+              aria-describedby="project-summary-3"
+              tabindex="0"
+              aria-posinset="3"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-3">Title</h4>
+                <p id="project-summary-3">Summary</p>
+              </div>
+            </article>
+            <article
+              class="project card"
+              aria-labelledby="project-title-4"
+              aria-describedby="project-summary-4"
+              tabindex="0"
+              aria-posinset="4"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-4">Title</h4>
+                <p id="project-summary-4">Summary</p>
+              </div>
+            </article>
+            <article
+              class="project card"
+              aria-labelledby="project-title-5"
+              aria-describedby="project-summary-5"
+              tabindex="0"
+              aria-posinset="5"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-5">Title</h4>
+                <p id="project-summary-5">Summary</p>
+              </div>
+            </article>
+            <article
+              class="project card"
+              aria-labelledby="project-title-6"
+              aria-describedby="project-summary-6"
+              tabindex="0"
+              aria-posinset="6"
+              aria-setsize="6"
+            >
+              <figure>
+                <img src="" alt="" />
+              </figure>
+              <div class="container">
+                <h4 id="project-title-6">Title</h4>
+                <p id="project-summary-6">Summary</p>
+              </div>
+            </article>
           </div>
         </section>
       </section>
