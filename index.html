@@ -47,10 +47,20 @@
       <!-- <section> divides doc into groups of related content and should always have a heading-->
       <section class="introduction" aria-label="About me introduction">
         <div class="headshot">
-          <img src="./images/headshot-300w.jpeg" alt="" />
+          <img
+            srcset="
+              ./images/headshot-300w.jpg 300w,
+              ./images/headshot-600w.jpg 600w
+            "
+            src="./images/headshot-600w.jpg"
+            alt=""
+            sizes="(max-width 600px) 50vw, 300x"
+          />
         </div>
         <div class="intro-text">
-          <h1>Lucy Chaplin</h1>
+          <h1>Hello there!</h1>
+          <p>I'm Lucy</p>
+          <p>Enterprise Architect</p>
           <p>
             I improve businesses using technology and data to solve problems,
             explore opportunities and make teams happier and more effective.
