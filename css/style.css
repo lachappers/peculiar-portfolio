@@ -193,6 +193,7 @@ header > nav li {
 main {
   max-width: 40rem;
   margin: auto;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -234,11 +235,53 @@ aside {
   background-color: aquamarine;
 }
 
-/* SERVICES */
-
+/* INTRO */
 .introduction {
   border: solid 1px aqua;
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "col-1 col-2";
+  background-color: bisque;
+  border-radius: 15px;
 }
+
+.intro-text {
+  grid-area: col-1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.intro-text button {
+  width: 50%;
+}
+
+.headshot {
+  aspect-ratio: 1/1;
+  grid-area: col-2;
+}
+.headshot img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid green;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* BANNER */
+
+.brands-banner {
+  background-color: rgb(231, 229, 229);
+  display: flex;
+  justify-content: space-between;
+  /* width: 100vw; */
+  padding: 1em;
+}
+
+/* SERVICES */
 
 .projects {
   display: grid;
@@ -253,6 +296,7 @@ aside {
 
   border: solid 2px salmon;
 }
+
 /* 
 @media screen and (max-width: 786px) {
   .hamburger {
