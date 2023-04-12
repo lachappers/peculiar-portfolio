@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 /* started with CSS reset to ensure consistency accross browsers */
 /* @import "./reboot.css"; */
 @import "./normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap");
 
 /*  */
 /* GLOBAL STYLES */
@@ -11,7 +11,8 @@ body {
   height: 100%;
 }
 body {
-  font: 1em "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
   /* Line height to match WCAG guidelines */
   line-height: 1.5;
 
@@ -71,11 +72,13 @@ main {
   background-position: center;
 
   padding: 2rem 0;
-  gap: 2rem;
+  /* gap: 2rem; */
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
   border: solid 2px salmon;
 }
@@ -109,13 +112,18 @@ a:active {
   border-radius: 0.25em;
   box-shadow: 0 0 0 0.0625rem #048;
 }
-aside {
-  background-color: aquamarine;
-}
 
 p {
   display: block;
   margin: 0;
+}
+button {
+  width: 15rem;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: #f67e25;
+  color: white;
+  /* font-weight: bold; */
 }
 
 .card {
@@ -127,14 +135,15 @@ p {
 
 /* INTRO */
 .introduction {
-  border: solid 1px aqua;
-  /* background-color: bisque; */
+  /* border: solid 1px aqua; */
+  background-color: rgb(255, 228, 196, 0.5);
   border-radius: 15px;
   max-width: 1000px;
+  grid-column: 1/-1;
 
   margin: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
+  grid-template-columns: repeat(2, minmax(234px, 1fr));
   justify-items: center;
   align-items: center;
   gap: 1rem;
@@ -142,7 +151,8 @@ p {
 }
 
 .intro-text {
-  background-color: hsla(51, 99%, 53%, 0.3);
+  /* background-color: hsla(51, 99%, 53%, 0.3); */
+  font-size: 1.25rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -153,6 +163,7 @@ p {
   gap: 1rem;
   padding: 2rem;
 }
+
 .intro-text button {
   max-width: 15rem;
   align-self: center;
@@ -180,16 +191,47 @@ p {
 
 /* EXPERIENCE */
 .experience {
-  /* display: grid;
-    grid-template-columns: ; */
+  background-color: rgb(255, 228, 196, 0.5);
+  border-radius: 15px;
+  max-width: 1000px;
+  grid-column: 1/-1;
+
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  /* grid-template-areas: ; */
+}
+.experience aside {
+  border-radius: 15px;
+  /* max-width: 1000px; */
+  /* display: block; */
+  align-self: center;
+  /* width: 150px; */
+  padding: 1rem;
+  background-color: #93b7cd;
+  color: white;
+
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+.experience aside span {
+  font-size: xx-large;
+}
+
+.experience .about-me {
+  grid-column: 2/-1;
+  padding: 1rem;
 }
 
 /* BANNER */
 
 .brands-banner {
+  grid-column: 1/-1;
   padding: 1.5rem 4rem;
 
-  background-color: rgb(231, 229, 229);
+  background-color: rgb(231, 229, 229, 0.5);
   display: flex;
   justify-content: space-around;
   gap: 2em;
@@ -198,15 +240,26 @@ p {
   /* width: 100vw; */
   /* padding: 1em; */
 }
-.brands-banner * {
-  /* background-color: #a60000; */
-  fill: aqua;
+.brands-banner img {
+  /* max-height: 4rem;
+  height: 1rem; */
+
+  width: 150px;
+  height: 150px;
+  border: 3px solid;
+
+  max-height: 300px;
+  object-fit: scale-down;
 }
 
 /* SERVICES */
 
 .projects {
   border: solid 2px brown;
+  background-color: rgb(255, 228, 196, 0.5);
+  border-radius: 15px;
+  max-width: 1000px;
+  grid-column: 1/-1;
 
   /* display: flex;
   justify-content: center;
