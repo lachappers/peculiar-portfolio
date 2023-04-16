@@ -4,8 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap");
 
-/*  */
+/* COLOR PALETTE  */
+
 /* GLOBAL STYLES */
+
 html,
 body {
   height: 100%;
@@ -13,8 +15,10 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  color: #1a1a1a;
   /* Line height to match WCAG guidelines */
   line-height: 1.5;
+  background-color: #faf7f3;
 
   /* margin: auto; */
   display: flex;
@@ -34,7 +38,9 @@ footer a {
 }
 
 header {
-  background-color: rgb(254, 230, 134);
+  background-color: #ffeac4;
+  /* position: sticky;
+  top: 0; */
 
   display: flex;
   justify-content: space-between;
@@ -67,25 +73,26 @@ header > nav li {
 } */
 
 main {
-  background-image: url("/images/background.svg");
+  /* background-image: url("/images/background.svg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 
   padding: 2rem 0;
   /* gap: 2rem; */
 
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* align-items: center;
+  justify-content: space-around; */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 
   border: solid 2px salmon;
 }
 
 footer {
   flex-grow: 0;
-  background-color: #114f66;
+  background-color: #eaddcd;
   padding: 1.5rem;
   /* width: 100vw; */
 }
@@ -120,9 +127,9 @@ p {
 button {
   width: 15rem;
   border-radius: 15px;
-  border: 1px solid white;
-  background-color: #f67e25;
-  color: white;
+  border: 1px solid transparent;
+  background-color: #ffc867;
+  color: #1a1a1a;
   /* font-weight: bold; */
 }
 
@@ -136,10 +143,10 @@ button {
 /* INTRO */
 .introduction {
   /* border: solid 1px aqua; */
-  background-color: rgb(255, 228, 196, 0.5);
-  border-radius: 15px;
+  /* background-color: rgb(255, 228, 196, 0.5);
+  border-radius: 15px; */
   max-width: 1000px;
-  grid-column: 1/-1;
+  /* grid-column: 1/-1; */
 
   margin: 2rem;
   display: grid;
@@ -153,7 +160,6 @@ button {
 .intro-text {
   /* background-color: hsla(51, 99%, 53%, 0.3); */
   font-size: 1.25rem;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,6 +171,9 @@ button {
 }
 
 .intro-text button {
+  /* position: sticky;
+  top: -1rem; */
+
   max-width: 15rem;
   align-self: center;
   text-align: center;
@@ -184,14 +193,14 @@ button {
   height: 100%;
   width: 100%;
 
-  border: 2px solid white;
+  border: 2px solid #807667;
   border-radius: 50%;
   object-fit: cover;
 }
 
 /* EXPERIENCE */
 .experience {
-  background-color: rgb(255, 228, 196, 0.5);
+  background-color: #f5eee6;
   border-radius: 15px;
   max-width: 1000px;
   grid-column: 1/-1;
@@ -229,34 +238,31 @@ button {
 
 .brands-banner {
   grid-column: 1/-1;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 1rem;
+  gap: 1rem;
 
-  background-color: rgb(231, 229, 229, 0.5);
+  background-color: #eaddcd;
   display: flex;
   justify-content: space-around;
-  gap: 2em;
+
   flex-wrap: wrap;
 
   /* width: 100vw; */
   /* padding: 1em; */
 }
 .brands-banner img {
-  /* max-height: 4rem;
-  height: 1rem; */
-
-  width: 150px;
-  height: 150px;
-  border: 3px solid;
-
-  max-height: 300px;
+  width: 5rem;
+  height: 5rem;
+  max-height: 20rem;
   object-fit: scale-down;
+  opacity: 0.6;
 }
 
 /* SERVICES */
 
 .projects {
   border: solid 2px brown;
-  background-color: rgb(255, 228, 196, 0.5);
+  background-color: #efe5d7;
   border-radius: 15px;
   max-width: 1000px;
   grid-column: 1/-1;
@@ -271,7 +277,6 @@ button {
 }
 .feed {
   border: solid 2px yellow;
-  background-color: antiquewhite;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -281,8 +286,9 @@ button {
 }
 
 .project {
-  width: 350px;
-  /* height: 100%; */
+  width: 25rem;
+  background-color: #f7f3ed;
+
   padding: 1em;
 }
 
