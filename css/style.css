@@ -3,7 +3,7 @@
 @import "./normalize.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap");
-
+@import url("./colors.css");
 /* COLOR PALETTE  */
 
 /* GLOBAL STYLES */
@@ -15,10 +15,12 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  color: #1a1a1a;
+
   /* Line height to match WCAG guidelines */
   line-height: 1.5;
-  background-color: #faf7f3;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  outline-color: var(--md-sys-color-outline);
 
   /* margin: auto; */
   display: flex;
@@ -128,7 +130,7 @@ button {
   width: 15rem;
   border-radius: 15px;
   border: 1px solid transparent;
-  background-color: #ffc867;
+  background-color: var(--md-sys-color-primary);
   color: #1a1a1a;
   /* font-weight: bold; */
 }
@@ -198,9 +200,33 @@ button {
   object-fit: cover;
 }
 
+/* BANNER */
+
+.brands-banner {
+  grid-column: 1/-1;
+  padding: 1.5rem 1rem;
+  gap: 1rem;
+
+  background-color: var(--md-sys-color-surface-variant);
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  /* width: 100vw; */
+  /* padding: 1em; */
+}
+.brands-banner img {
+  width: 5rem;
+  height: 5rem;
+  max-height: 20rem;
+  object-fit: scale-down;
+  opacity: 0.6;
+}
+
 /* EXPERIENCE */
 .experience {
-  background-color: #f5eee6;
+  background-color: var(--md-sys-color-primary-container);
   border-radius: 15px;
   max-width: 1000px;
   grid-column: 1/-1;
@@ -219,8 +245,8 @@ button {
   align-self: center;
   /* width: 150px; */
   padding: 1rem;
-  background-color: #93b7cd;
-  color: white;
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-secondary-on-container);
 
   grid-column: 1/2;
   grid-row: span 2;
@@ -232,30 +258,6 @@ button {
 .experience .about-me {
   grid-column: 2/-1;
   padding: 1rem;
-}
-
-/* BANNER */
-
-.brands-banner {
-  grid-column: 1/-1;
-  padding: 1.5rem 1rem;
-  gap: 1rem;
-
-  background-color: #eaddcd;
-  display: flex;
-  justify-content: space-around;
-
-  flex-wrap: wrap;
-
-  /* width: 100vw; */
-  /* padding: 1em; */
-}
-.brands-banner img {
-  width: 5rem;
-  height: 5rem;
-  max-height: 20rem;
-  object-fit: scale-down;
-  opacity: 0.6;
 }
 
 /* SERVICES */
