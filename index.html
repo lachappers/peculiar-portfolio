@@ -46,17 +46,6 @@
     <main>
       <!-- <section> divides doc into groups of related content and should always have a heading-->
       <section class="introduction" aria-label="About me introduction">
-        <div class="headshot">
-          <img
-            srcset="
-              ./images/headshot-300w.jpg 300w,
-              ./images/headshot-600w.jpg 600w
-            "
-            src="./images/headshot-600w.jpg"
-            alt=""
-            sizes="(max-width 600px) 50vw, 300x"
-          />
-        </div>
         <div class="intro-text">
           <h1>Hi! I'm Lucy</h1>
           <p><b>Enterprise Architect</b></p>
@@ -66,165 +55,202 @@
           </p>
           <button class="">Contact Me</button>
         </div>
-
+        <div class="headshot">
+          <img
+            srcset="./images/headshot-highres-forground.jpg 2x"
+            src="./images/headshot-highres-forground.png"
+            alt=""
+            sizes="(max-width 600px) 50vw, 300x"
+          />
+        </div>
       </section>
       <section class="brands-banner" aria-label="Brands I've worked with">
-        <img
-          src="./images/Amazon_logo.svg"
-          alt="Amazon"
-        />
-        <img
-          src="./images/Google_2015_logo.svg"
-          alt="Google"
-        />
+        <img src="./images/Amazon_logo.svg" alt="Amazon" />
+        <img src="./images/Google_2015_logo.svg" alt="Google" />
         <img src="./images/KPMG-logo.svg" alt="KPMG" height="25em" />
         <img
           src="./images/London_Business_School_logo.svg"
           alt="London Business School"
-
         />
         <img
           src="./images/McLaren-AT-Logo.svg"
           alt="McLaren Applied Technologies"
-
         />
         <img
           src="./images/university-of-bristol-logo-svg-vector.svg"
           alt="University of Bristol"
-
         />
       </section>
 
-      <section class="experience">
-        <h2>My Experience</h2>
-        <!-- <aside> should be used to represent content that is indirectly related to the container content, or as a sidebar-->
-        <aside>
-          
-          <p><span>12+ years</span></p>  
-          <p>
-             helping businesses to use technology and data
-            to solve problems, explore opportunities and make teams happier and
-            more effective.
-          </p>
-        </aside>
-        <section class="about-me">
-            <p>I've spent the last decade interpreting the peculiar dynamics between business needs, technical capability and human-to-human communication; helping businesses define and build the right strategies, with the right tech.</p>
-            <p>I believe that an understanding of technology and data is essential for any business to survive into our future. That's a whole bunch of skills, and a whole way of thinking that many of us weren't lucky enough to pick up in our school days!</p>
-            <p>I started my career in consulting with KPMG in 2012, working with global banks on Cyber Security and Data Analysis projects, branching out into technical business strategy and operations.</p>
-            <p>I saw how often technology is overlooked or misunderstood by "business people", and how often the needs of business are overlooked by or inaccessible to "techies".</p>
-            <p> Curious about how to bridge this gap, in 2018 I attended one of the best MBA programmes in the world. This launched me into the world of big tech and senior leadership, where I've been building businesses, products and teams over a time of unprecidented change.</p>
-
-
-        </section>
-
-    </section>
-
-        <section class="projects" aria-label="sample projects">
-          <div class="feed" role="feed">
-            <!-- <article> is a container for self-contained content that can be moved -->
-            <article
-              class="project card"
-              aria-labelledby="project-title-1"
-              aria-describedby="project-summary-1"
-              tabindex="0"
-              aria-posinset="1"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="./images/entia-logo.png" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-1">Head of People</h4>
-                <p id="project-summary-1">
-                  Designing and developing organisational strategy, internal
-                  technology infrastructure and physical and virtual
-                  environments that enable high-performance and high engagement.
-                </p>
-              </div>
-            </article>
-            <article
-              class="project card"
-              aria-labelledby="project-title-2"
-              aria-describedby="project-summary-2"
-              tabindex="0"
-              aria-posinset="2"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-2">Title</h4>
-                <p id="project-summary-2">Summary</p>
-              </div>
-            </article>
-            <article
-              class="project card"
-              aria-labelledby="project-title-3"
-              aria-describedby="project-summary-3"
-              tabindex="0"
-              aria-posinset="3"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-3">Title</h4>
-                <p id="project-summary-3">Summary</p>
-              </div>
-            </article>
-            <article
-              class="project card"
-              aria-labelledby="project-title-4"
-              aria-describedby="project-summary-4"
-              tabindex="0"
-              aria-posinset="4"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-4">Title</h4>
-                <p id="project-summary-4">Summary</p>
-              </div>
-            </article>
-            <article
-              class="project card"
-              aria-labelledby="project-title-5"
-              aria-describedby="project-summary-5"
-              tabindex="0"
-              aria-posinset="5"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-5">Title</h4>
-                <p id="project-summary-5">Summary</p>
-              </div>
-            </article>
-            <article
-              class="project card"
-              aria-labelledby="project-title-6"
-              aria-describedby="project-summary-6"
-              tabindex="0"
-              aria-posinset="6"
-              aria-setsize="6"
-            >
-              <figure>
-                <img src="" alt="" />
-              </figure>
-              <div class="container">
-                <h4 id="project-title-6">Title</h4>
-                <p id="project-summary-6">Summary</p>
-              </div>
-            </article>
+      <div class="main-wrapper">
+        <section class="experience">
+          <h2>My Experience</h2>
+          <!-- <aside> should be used to represent content that is indirectly related to the container content, or as a sidebar-->
+          <section class="about-me">
+            <h3>
+              I believe that everyone should have the technology, information
+              and support they need to make a difference in the world.
+            </h3>
+            <p>
+              Understanding technology and data is essential for our future, and
+              requires a whole bunch of skills that many of us never learnt at
+              school.
+            </p>
+            <p>
+              I began my career in consulting, working in cybersecurity, data
+              analysis and technology implementation with global banking
+              clients.
+            </p>
+            <p>
+              Curious about the gaps between technology and business, I
+              diversified my work into technical business strategy and
+              operations, then attended a top MBA program in 2018.
+            </p>
+            <p>
+              Since then, I've been working in big tech and senior leadership,
+              building businesses, products, and teams during a time of
+              unprecedented change.
+            </p>
+          </section>
+          <div class="headshot">
+            <img src="./images/full highres foreground.png" alt="" />
           </div>
+          <aside>
+            <p><span>12+ years</span></p>
+            <p>
+              using technology and data to solve problems, explore opportunities
+              and make teams happier and more effective.
+            </p>
+          </aside>
+          <section class="services">
+            <div class="service">
+              <h3>Advice</h3>
+              <p>
+                I help companies find the right strategy, technology, processes
+                and people they need to be effective, and build a plan to get
+                there.
+              </p>
+            </div>
+            <div class="service">
+              <h3>Support</h3>
+              <p>
+                I help to deliver the work required to set-up or change
+                processes, technology and teams.
+              </p>
+            </div>
+            <div class="service">
+              <h3>Tools</h3>
+              <p>
+                I build bespoke and standardised technology and processes for
+                businesses and individuals.
+              </p>
+            </div>
+          </section>
         </section>
-      </section>
+        <section class="projects" aria-label="sample projects" role="feed">
+          <!-- <article> is a container for self-contained content that can be moved -->
+          <article
+            class="project card"
+            aria-labelledby="project-title-1"
+            aria-describedby="project-summary-1"
+            tabindex="0"
+            aria-posinset="1"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="./images/entia-logo.png" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-1">Head of People</h4>
+              <p id="project-summary-1">
+                Designing and developing organisational strategy, internal
+                technology infrastructure and physical and virtual environments
+                that enable high-performance and high engagement.
+              </p>
+            </div>
+          </article>
+          <article
+            class="project card"
+            aria-labelledby="project-title-2"
+            aria-describedby="project-summary-2"
+            tabindex="0"
+            aria-posinset="2"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-2">Title</h4>
+              <p id="project-summary-2">Summary</p>
+            </div>
+          </article>
+          <article
+            class="project card"
+            aria-labelledby="project-title-3"
+            aria-describedby="project-summary-3"
+            tabindex="0"
+            aria-posinset="3"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-3">Title</h4>
+              <p id="project-summary-3">Summary</p>
+            </div>
+          </article>
+          <article
+            class="project card"
+            aria-labelledby="project-title-4"
+            aria-describedby="project-summary-4"
+            tabindex="0"
+            aria-posinset="4"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-4">Title</h4>
+              <p id="project-summary-4">Summary</p>
+            </div>
+          </article>
+          <article
+            class="project card"
+            aria-labelledby="project-title-5"
+            aria-describedby="project-summary-5"
+            tabindex="0"
+            aria-posinset="5"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-5">Title</h4>
+              <p id="project-summary-5">Summary</p>
+            </div>
+          </article>
+          <article
+            class="project card"
+            aria-labelledby="project-title-6"
+            aria-describedby="project-summary-6"
+            tabindex="0"
+            aria-posinset="6"
+            aria-setsize="6"
+          >
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="container">
+              <h4 id="project-title-6">Title</h4>
+              <p id="project-summary-6">Summary</p>
+            </div>
+          </article>
+        </section>
+      </div>
     </main>
     <!-- <footer> can be in elements including sections or articles; containing a contentinfo landmark if footer of body-->
     <footer>
