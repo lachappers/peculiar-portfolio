@@ -126,6 +126,27 @@ img {
   object-fit: scale-down;
 }
 
+dt {
+  font-size: 1rem;
+  color: #4b5563;
+}
+dd {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  order: -9999;
+  color: #18181b;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  color: #111827;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
 .card {
   box-shadow: 0px 6px 3px 3px rgba(0, 0, 0, 0.1);
   display: inline-block;
@@ -150,6 +171,11 @@ img {
 }
 
 /* INTRO */
+
+.int-text > p {
+  color: #6b7280;
+  font-weight: 300;
+}
 
 .introduction {
   background-color: var(--md-sys-color-surface-container-high-light);
@@ -184,6 +210,16 @@ img {
 
   gap: 0.5rem;
   z-index: 1;
+}
+.intro-text > h1 {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.intro-text > div {
+  color: #4338ca;
+  /* font-weight: 300; */
 }
 
 .action-buttons {
@@ -244,6 +280,40 @@ img {
   font-size: 4cqmax;
 }
 
+.stat {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr; */
+  margin: auto;
+  max-width: 80rem;
+  padding: 1.5rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  text-align: center;
+}
+.stat1 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  row-gap: 0.25rem;
+}
+
+.stat-brands {
+  display: flex;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.stat-brands > img {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+
+  /* border-radius: 9999px; */
+  /* border-radius: ; */
+}
+
 /* BANNER */
 
 .brands-banner {
@@ -264,26 +334,70 @@ img {
   opacity: 0.6;
 }
 
+/* ABOUT */
+.about {
+  background-color: #f7f3ed;
+  max-width: min(90%, 120rem);
+  display: flex;
+  gap: 4rem;
+}
+.about > .headshot {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+.about-text {
+  font-weight: 300;
+  color: #6b7280;
+
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-text > h1 {
+  color: #111827;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
 /* EXPERTISE */
 
 .expertise {
   margin: auto;
   max-width: min(90%, 120rem);
-  background-color: #048;
+  background-color: white;
 
+  padding: 4rem 8rem;
+}
+.expertise-header {
+  margin: auto;
+  text-align: center;
+  color: #6b7280;
+}
+.expertise-header > h1 {
+  color: #111827;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+.expertise-container {
+  padding: 4rem 0;
   display: flex;
   flex-wrap: wrap;
 
   justify-content: center;
   gap: 1rem;
 }
-
 .expertise-card {
   width: 20rem;
-  border: 1px solid black;
-  background-color: #eaddcd;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  background-color: white;
   border-radius: 15px;
-  padding: 2rem 0.5rem;
+  padding: 1rem 0.5rem;
 
   display: flex;
   flex-direction: column;
