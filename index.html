@@ -14,7 +14,7 @@
     <!--Semantic tags describe their purpose and type of content -->
     <!-- <header> defines the header of a document or section of a document -->
     <!-- <div> tags can be used to group content for styling -->
-    <header>
+    <!-- <header>
       <a class="nav-logo" href="/" title="Go to home page">
         <img
           src="./images/logo-full.svg"
@@ -22,7 +22,6 @@
           height="46px"
         />
       </a>
-
       <button
         class="hamburger"
         aria-label="Show Navigation Menu"
@@ -41,65 +40,115 @@
           </ul>
         </nav>
       </button>
+
+      <nav class="side-nav">
+        <a class="nav-icon" href="/" title="Return to top">
+          <img
+            src="./images/logo-icon.svg"
+            alt="peculiar dynamics logo"
+            height="46px"
+          />
+        </a>
+        <ol class="nav-content">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#resume" class="nav-item">Resume</a></li>
+          <li><a href="#expertise" class="nav-item">Expertise</a></li>
+          <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+          <li><a href="" class="nav-item"></a></li>
+        </ol>
+      </nav>
+    </header> -->
+
+
+    <header>
+      <nav class="side-nav">
+        <aside class="nav-about">
+          <a class="nav-icon" href="/" title="Return to top">Lucy<br>Chaplin
+          </a>
+          <p>Nerd for psychology, technology and the business of business.</p>
+          <div class="icon-group">
+            <a href="" class="social-link" role="link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>github</title><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/lucychaplin/" class="social-link" role="link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>linkedin</title><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>
+            </a>
+          </div>
+        </aside>
+        <ol class="nav-content">
+          <li><a href="#home" class="nav-item">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#resume" class="nav-item">Resume</a></li>
+          <li><a href="#expertise" class="nav-item">Expertise</a></li>
+          <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+          <li><a href="" class="nav-item">Contact</a></li>
+        </ol>
+
+        <img src="./images/full highres foreground.png" alt="">
+      </nav>
     </header>
 
     <main>
+
       <!-- <section> divides doc into groups of related content and should always have a heading-->
-      <section class="introduction " aria-label="About me introduction">
-        <div class="intro-text">
-          <h1>I'm Lucy</h1>
-          <div>
-            <p><b>DEVELOPER</b></p>
-            <p><b>ADVISOR</b></p>
-            <p><b>ENTREPRENEUR</b></p>
+      <section class="page" id="home" aria-label="About me introduction">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>I'm Lucy</h1>
+            <div>
+              <p><b>DEVELOPER</b></p>
+              <p><b>ADVISOR</b></p>
+              <p><b>ENTREPRENEUR</b></p>
+            </div>
+            <p>
+              I combine Data and Technology with People Skills to transform
+              businesses and solve complex problems.
+            </p>
           </div>
-          <p>
-            I combine Data and Technology with People Skills to transform
-            businesses and solve complex problems.
-          </p>
+          <div class="headshot">
+            <img
+              srcset="./images/headshot-highres-foreground.png"
+              src="./images/headshot-highres-foreground.png"
+              alt=""
+              sizes="(max-width 600px) 50vw, 300x"
+            />
+          </div>
+          <div class="action-buttons">
+            <button class="">Contact Me</button>
+            <a href="#" class="learn-more">
+              Learn More <svg style="margin-left: 0.5rem; margin-right:-0.25rem; width: 1.25rem; height: 1.25rem " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>
         </div>
-        <div class="headshot">
-          <img
-            srcset="./images/headshot-highres-forground.jpg 2x"
-            src="./images/headshot-highres-forground.png"
-            alt=""
-            sizes="(max-width 600px) 50vw, 300x"
-          />
-        </div>
-        <div class="action-buttons">
-          <button class="">Contact Me</button>
-          <a href="#" class="learn-more">
-            Learn More <svg style="margin-left: 0.5rem; margin-right:-0.25rem; width: 1.25rem; height: 1.25rem " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-        </div>
+        <aside class="">
+          <dl class="stats">
+            <div class="stat">
+              <dt>years experience</dt>
+              <dd>12+</dd>
+            </div>
+            <div class="stat">
+              <dt>endorsed by global brands</dt>
+              <dd>
+                <div class="stat-brands" aria-label="Brands I've worked with">
+                  <img src="./images/Amazon_logo.svg" alt="Amazon" />
+                  <img src="./images/Google_2015_logo.svg" alt="Google" />
+                  <img src="./images/KPMG-logo.svg" alt="KPMG" height="25em" />
+                  <img
+                    src="./images/London_Business_School_logo.svg"
+                    alt="London Business School"
+                  />
+                  <img
+                    src="./images/university-of-bristol-logo-svg-vector.svg"
+                    alt="University of Bristol"
+                  />
+                </div>
+              </dd>
+            </div>
+          </dl>
+        </aside>
       </section>
 
-      <aside class="">
-        <dl class="stats">
-          <div class="stat">
-            <dt>years experience</dt>
-            <dd>12+</dd>
-          </div>
-          <div class="stat">
-            <dt>endorsed by global brands</dt>
-            <dd>
-              <div class="stat-brands" aria-label="Brands I've worked with">
-                <img src="./images/Amazon_logo.svg" alt="Amazon" />
-                <img src="./images/Google_2015_logo.svg" alt="Google" />
-                <img src="./images/KPMG-logo.svg" alt="KPMG" height="25em" />
-                <img
-                  src="./images/London_Business_School_logo.svg"
-                  alt="London Business School"
-                />
-                <img
-                  src="./images/university-of-bristol-logo-svg-vector.svg"
-                  alt="University of Bristol"
-                />
-              </div>
-            </dd>
-          </div>
-        </dl>
-      </aside>
+
 
       <!-- <section class="brands-banner" aria-label="Brands I've worked with">
         <img src="./images/Amazon_logo.svg" alt="Amazon" />
@@ -119,7 +168,7 @@
         />
       </section> -->
 
-      <section class="about">
+      <section class="about page" id="about" data-section="about">
         <div class="about-image">
           <img src="./images/full highres foreground.png" alt="" />
         </div>
@@ -144,7 +193,7 @@
             <a href="" class="social-link" role="link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>github</title><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
             </a>
-            <a href="" class="social-link" role="link">
+            <a href="https://www.linkedin.com/in/lucychaplin/" class="social-link" role="link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>linkedin</title><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>
             </a>
             <!-- <a href="" class="social-link"  role="link"><img src="/images/GitHub-Logo.png" alt=""></a> -->
@@ -153,8 +202,8 @@
 
       </section>
 
-      <section class="my-cv">
-        <h2>CV</h2>
+      <section class="resume page" id="resume">
+        <h2>My Resume</h2>
         <aside class="employment">
           <div class="employment-title">
             <h3 class="">Employers</h3>
@@ -170,14 +219,37 @@
                   <h4>Head of People</h4>
                   <div role="doc-subtitle">Remote patient monitoring medical device development in oncology</div>
                   <p class="more">Responsible for developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.</p>
-                  <a href="#" class="read-more">Read more</a>
+                  <button class="read-more">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                   <!-- <a href="#" class="learn-more">Learn More <svg style="margin-left: 0.5rem; margin-right:-0.25rem; width: 1.25rem; height: 1.25rem " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a> -->
                 </div>
                 <div class="card-img">
                   <a href="#"><img src="./images/entia-logo-condensed.png" alt="Entia Home"></a>
                 </div>
+                
               </div>
             </li>
+            <div class="modal">
+              <!-- Modal header -->
+              <div class="modal-header">
+
+                  <img src="./images/entia-logo-condensed.png" alt="Entia Home">
+
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="readProductModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <dl>                  
+                  <time class="">2021 - 2023</time>
+                  <h4>Head of People</h4>
+                  <div role="doc-subtitle">Remote patient monitoring medical device development in oncology</div>
+
+                  <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Responsible for:</dt>
+                    <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">Developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.</dd>
+                  <!-- <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Category</dt>
+                    <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">Electronics/PC</dd> -->
+              </dl>
+           </div>
             <li class="">
               <div class="timeline-style"></div>
               <div class="timeline-card card">
@@ -383,7 +455,7 @@
 
       </section>
 
-      <section class="expertise">
+      <section class="expertise page" id="expertise">
         <div class="expertise-header">
           <h2>My Expertise</h2>
           <p>
@@ -487,7 +559,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio page" id="portfolio">
         <div class="portfolio-header">
           <h2>Portfolio</h2>
           <p>Notable projects I've delivered, roles that I've held and work I've produced.</p>
@@ -684,7 +756,7 @@
         <li><a href="">Cookie Notice</a></li>
       </ul>
     </footer>
-    
+    <script src="./js/nav-animation.js"></script>
   </body>
 
 </html>
