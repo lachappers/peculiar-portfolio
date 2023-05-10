@@ -4,3 +4,7 @@
 // hamburger.addEventListener("click", function () {
 //   navigation.classList.toggle("open");
 // });
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  document.getElementById("readMoreButton").click();
+});
