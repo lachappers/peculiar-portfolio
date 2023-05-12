@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll(".nav-item");
+const tabs = document.querySelectorAll(".nav-text");
 const pages = document.querySelectorAll(".page");
 const scrollToTop = document.querySelector(".scrollToTop");
 
@@ -10,8 +10,10 @@ const observer = new IntersectionObserver(
         const index = Array.from(pages).indexOf(entry.target);
         tabs.forEach((tab) => {
           tab.classList.remove("rotate");
+          tab.ariaCurrent = "false";
         });
         tabs[index].classList.add("rotate");
+        tabs[index].ariaCurrent = "location";
       }
     });
   },

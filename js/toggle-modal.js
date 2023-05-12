@@ -1,12 +1,19 @@
 // const modal = document.getElementById;
 
 window.openModal = function (modalID) {
-  document.getElementById(modalID).style.display = "block";
   document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+  document.getElementsByTagName("body")[0].ariaHidden = "true";
+  const element = document.getElementById(modalID);
+  element.style.display = "block";
+  element.ariaHidden = "false";
 };
 window.closeModal = function (modalID) {
-  document.getElementById(modalID).style.display = "none";
+  const element = document.getElementById(modalID);
+
   document.getElementsByTagName("body")[0].style.overflowY = "auto";
+  document.getElementsByTagName("body")[0].ariaHidden = "false";
+  element.style.display = "none";
+  element.ariaHidden = "true";
 };
 
 // Close all modals when press ESC
@@ -14,9 +21,10 @@ document.onkeydown = function (event) {
   event = event || window.event;
   if (event.keyCode === 27) {
     document.getElementsByTagName("body")[0].style.overflowY = "auto";
-    let modals = document.getElementsByClassName("modal");
+    let modals = document.getElementsByClassName("modal-container");
     Array.prototype.slice.call(modals).forEach((i) => {
       i.style.display = "none";
+      i.ariaHidden = "true";
     });
   }
 };

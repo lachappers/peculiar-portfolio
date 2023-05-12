@@ -1,6 +1,6 @@
 # Accessible and Responsive Portfolio Page
 
-This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, CSS and JS.
+This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, custom CSS and vanilla JS.
 <br><br>
 
 > Live demo [_here_](link)
@@ -37,7 +37,7 @@ Guidelines for accessibility include the Web Content Accessibility Guidelines ([
 
 ### Responsive Design
 
-Responsive design ensures that sites can provide an effective User Experience across different browsers and screens to support different technologies.
+Responsive design ensures that sites can provide an effective User Experience across different browsers and screens to support different technologies. This includes, for example, ensuring that text in modals (or pop-ups) are full screen width on smaller screen sizes, and that when a modal is open, screen readers and other assistive technologies only focus on that element and can't access the page behind it.
 
 ## Core Features
 
@@ -74,7 +74,7 @@ When a user reads text or has it announced to them, they should be able to immed
 
 - Ensuring `links` contain appropriate context, not just "click here"
 - Ensuring `forms` provide meaningful errors with helpful advice
-- Ensuring all `images` contain at least `alt=''` (to avoid screen readers announcing a confusing image name), but preferably appropriate alt text to describe the image to the user
+- Ensuring all `images` contain at least `alt=''` (to avoid screen readers announcing a confusing image name), but preferably appropriate alt text to describe the image to the user.
 
 ### WAI-ARIA
 
@@ -154,6 +154,8 @@ Contributions to this project are welcome. If you find a bug or have a suggestio
 ## Credits
 
 <hr>
+
+Accessible Modal guidance borrowed from: [Carnegie Museums of Pittsburgh](http://web-accessibility.carnegiemuseums.org/code/dialogs/#:~:text=For%20a%20modal%20that%20effectively,and%20one%20for%20your%20modal.) and [Giacomo Mariani](https://levelup.gitconnected.com/an-accessible-modal-dialog-with-html-css-and-javascript-d885004d0b3a).
 
 Author: Lucy Chaplin, for [Peculiar Dynamics Ltd](https://peculiardynamics.co.uk/).
 
