@@ -168,16 +168,18 @@
       </section>
 
       <section class="resume page" id="resume">
-        <h2>My Resume</h2>
-        <p>
-          I started my career in tech, took a detour to learn about how
-          businesses (and people) actually work and now I combine the two; offering advisory services through <a href="https://peculiardynamics.co.uk/">Peculiar Dynamics</a> whilst working on my own ventures.
-        </p>
+        <header class="title">
+          <h2>My Resume</h2>
+          <p>
+            I started my career in tech, took a detour to learn about how
+            businesses (and people) actually work and now I combine the two; offering advisory services through <a href="https://peculiardynamics.co.uk/">Peculiar Dynamics</a> whilst working on my own ventures.
+          </p>
+        </header>
         <aside class="employment">
-          <div class="employment-title">
+          <header class="title">
             <h3 class="">Employers</h3>
             <div role="doc-subtitle">I've worked in a wide range of technology-driven companies through my career; completing the rigorous hiring processes at Google and Amazon, pulling the long hours and crazy travel required in consulting, and riding the rollercoaster of life in leadership of Startups.</div>
-          </div>
+          </header>
           <!-- Unstyled lists are not announed as lists by Voiceover. Add role = "list" to combat this -->
           <ol class="timeline" role="list">
             <li class="timeline-card card" aria-haspopup="dialog">
@@ -445,10 +447,10 @@
 
         <div class="cv-content">
           <div class="cv-container">
-            <div class="cv-title">
+            <header class="title">
               <h3 class="card-title">Freelance and Advisory</h3>
               <div role="doc-subtitle">Whilst studying for my MBA, I took on small pieces of technical freelance work, whilst also starting a career coaching business to make the tools and techniques I'd learnt available more widely. I'm not currently pursuing coaching, but I'm always on the lookout for interesting challenges and people!</div>
-            </div>
+            </header>
             <ul class="ventures cards" role="list">
               <li class="card">
                 <div class="card-text">
@@ -482,10 +484,10 @@
             </ul>
           </div>
           <div class="cv-container">
-            <div class="cv-title">
+            <header class="title">
               <h3 class="">Education</h3>
               <div role="doc-subtitle">Despite being the first member of my family to complete secondary education, I've been lucky enough to study at two of the top academic and most competitive universities globally.</div>
-            </div>
+            </header>
             <ul class="education cards" role="list">
               <li class="card">
                 <div class="card-img">
@@ -575,12 +577,12 @@
       </section>
 
       <section class="expertise page" id="expertise">
-        <div class="expertise-header">
+        <header class="title">
           <h2>My Expertise</h2>
           <p>
             I love solving systemic problems, the really complex and/or broad type of challenges that don't fall neatly into a single disclipline. If I had to put some labels on my expertise, I'd probably use the following:
           </p>
-        </div>
+        </header>
         <div class="expertise-container">
           <div class="expertise-card card">
             <img src="" alt="" />
@@ -623,6 +625,31 @@
         </div>
 
         <div class="tech-tools">
+          <div class="badges">
+            <div class="badge">
+              <div class="badge-image purple"><img src="./images/HTML5_logo_and_wordmark.png" alt="" ></div>
+              <div class="badge-text">HTML</div>
+            </div>
+            <div class="badge">
+              <img src="./images/HTML5_logo_and_wordmark.png" alt="" class="badge-image yellow">
+              <div class="badge-text">HTML Potato pies</div>
+            </div>
+            <div class="badge">
+              <img src="./images/HTML5_logo_and_wordmark.png" alt="" class="badge-image blue">
+              <div class="badge-text">HTML Potato pies</div>
+            </div>
+            <div class="badge">
+              <img src="./images/HTML5_logo_and_wordmark.png" alt="" class="badge-image">
+              <div class="badge-text">HTML Potato pies</div>
+            </div>
+          </div>
+          <!-- <div class="social">
+            <div class="badge-3 yellow">
+              <img src="./images/HTML5_logo_and_wordmark.png" alt="">
+              HTML Potato pies
+            </div>
+          </div> -->
+
           <div class="tech-stack">
             <h3>My preferred tech stack</h3>
           <ul class="icon-list">
@@ -678,11 +705,80 @@
       </section>
 
       <section class="portfolio page" id="portfolio">
-        <div class="portfolio-header">
+        <header class="title">
           <h2>Portfolio</h2>
           <p>Notable projects I've delivered, roles that I've held and work I've produced.</p>
+        </header>
+        <div class="filter-buttons">
+          <button class="mobile-only" aria-expanded="false" onclick="expand('readMoreModalEntia')">
+            Filters & Sorting
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+          </button>
+          
+          <div class="filters">
+            <details class="tech-filter">
+              <summary class="filter-button">
+                Tech
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+              </summary>
+              <div class="options">
+                <header>
+                  <span>0 selected</span>
+                  <button type="reset"> Reset</button>
+                </header>
+                <ul>
+                  <li>
+                    <label for="FilterVanillaJS">
+                      <input type="checkbox" id="FilterVanillaJS"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+                      Vanilla JS
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details class="">
+              <summary class="filter-button">
+                Topic
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+              </summary>
+              <div class="options">
+                <header>
+                </header>
+              </div>
+            </details>
+          </div>
         </div>
-        <article class="portfolio-card card">
+
+
+      </section>
+
+
+
+
+
+          <!-- <button class="filter-button active-button" onclick="filterSelection('all')">Show All</button>
+          <button class="filter-button" onclick="filterSelection('ops')">Strategy and Operations</button>
+          <button class="filter-button" onclick="filterSelection('dev')">Web & App Dev</button>
+          <button class="filter-button" onclick="filterSelection('tech')">Tech Projects</button>
+          <button class="filter-button"onclick="filterSelection('case')">Consulting Case Studies</button> -->
+        <!-- </div> -->
+        <!-- <div class="portfolio-container">
+          <article class="filterable ops">
+            <img src="https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400" alt="">
+            <div class="filterable-text">
+              <h3>Redesign</h3>
+              <p>OPS</p>
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </article>
+          <article class="filterable dev">dev</article>
+          <article class="filterable tech">tech</article>
+          <article class="filterable ops case">ops case</article>
+          <article class="filterable dev tech">tech</article>
+        </div> -->
+        <!-- <article class="portfolio-card card">
           <figure><img src="" alt=""></figure>
           <div class="card-body">
             <h3 class="card-title">Strategy and Operations review and restructure</h3>
@@ -690,11 +786,11 @@
             <div class="card-actions"><button>More Details...</button></div>
             <span class="tag">Strategy</span><span class="tag">Operations</span>
             <p>tech</p>
-          </div>
-        </article>
+          </div> -->
+        <!-- </article> -->
 
 
-      </section>
+      <!-- </section> -->
 
 
       <section class="contact page" id="contact">
@@ -882,6 +978,7 @@
     </main>
     <!-- <footer> can be in elements including sections or articles; containing a contentinfo landmark if footer of body-->
     <footer role="contentinfo">
+      <!-- add list of tech used to build the site -->
       <a href="https://github.com/lachappers" rel="noopener noreferrer" target="_blank">
         Designed &amp; Built by Lucy Chaplin
         <!-- <div class="github-stats">
