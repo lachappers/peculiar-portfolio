@@ -1,0 +1,24 @@
+{
+  "name": "peculiar-portfolio",
+  "version": "1.0.0",
+  "description": "This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, custom CSS and vanilla JS. <br><br>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
