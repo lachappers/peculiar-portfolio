@@ -181,7 +181,7 @@
             <div role="doc-subtitle">I've worked in a wide range of technology-driven companies through my career; completing the rigorous hiring processes at Google and Amazon, pulling the long hours and crazy travel required in consulting, and riding the rollercoaster of life in leadership of Startups.</div>
           </header>
           <!-- Unstyled lists are not announed as lists by Voiceover. Add role = "list" to combat this -->
-          <ol class="timeline" role="list">
+          <ol class="timeline cards" role="list">
             <li class="timeline-card card" aria-haspopup="dialog">
               <div class="timeline-style"></div>
               <div class="card-text">
@@ -511,11 +511,11 @@
               </li>
             </ul>
           </div>
-          <div class="prof-dev cv-container" role="list">
-            <div class="cv-title">
-              <h3 class="card-title">Learning and Professional Development</h3>
+          <div class="cv-container">
+            <header class="title">
+              <h3>Learning and Professional Development</h3>
               <div role="doc-subtitle">I love learning new skills, refreshing old ones and finding connections between diverse subjects.</div>
-            </div>
+            </header>
             <div class="icon-group ">
               <div class="icon-card">
                 <a href="https://www.theodinproject.com/" role="link" target="_blank" rel="noopener noreferrer" >
@@ -535,20 +535,16 @@
               <div class="icon-card">
                 <a href="https://www.cipd.org/en/" role="link" target="_blank" rel="noopener noreferrer" >
                   <img src="../src/images/CIPD.webp" alt="CIPD Home">
-                  <p></p>
                 </a>
               </div>
               <div class="icon-card">
                 <a href="https://www.mba.com/"role="link" target="_blank" rel="noopener noreferrer"  >
                   <img src="../src/images/gmat.png" alt="GMAT Home">
-                  <p></p>
                 </a>
               </div>
             </div>
-            <div class="expired card">
-              <div class="card-text">
-                <h4>Expired Certifications</h4>
-              </div>
+            <div class="expired">
+
               <ul class="icon-group">
                 <li class="icon-card">
                   <img src="../src/images/(ISC)2_logo.png" alt="">
@@ -559,6 +555,10 @@
                   <p>PRINCE2 Practitioner</p>
                 </li>
                 <li class="icon-card">
+                  <img src="../src/images/cloud-architect.png" alt="">
+                  <p>Google Cloud Architect</p>
+                </li>
+                <li class="icon-card">
                   <img src="../src/images/iso_27001_02.png" alt="">
                   <p>ISO27001 Lead Auditor</p>
                 </li>
@@ -566,11 +566,9 @@
                   <img src="../src/images/ITIL-Logo.png" alt="">
                   <p>ITILv3 Foundation</p>
                 </li>
-                <li class="icon-card">
-                  <img src="../src/images/cloud-architect.png" alt="">
-                  <p>Google Cloud Architect</p>
-                </li>
+
               </ul>
+              <h4>Expired Certifications</h4>
             </div>
           </div>
         </div>
@@ -625,10 +623,10 @@
         </div>
 
         <div class="tech-tools">
-          <div class="badges">
+          <div class="badge-container">
             <div class="badge">
               <div class="badge-image purple"><img src="../src/images/HTML5_logo_and_wordmark.png" alt="" ></div>
-              <div class="badge-text">HTML</div>
+              <!-- <div class="badge-text">HTML</div> -->
             </div>
             <div class="badge">
               <img src="../src/images/HTML5_logo_and_wordmark.png" alt="" class="badge-image yellow">
@@ -654,7 +652,7 @@
             <h3>My preferred tech stack</h3>
           <ul class="icon-list">
             <li class="icon-group">
-              <img src="../src/images/HTML5_logo_and_wordmark.png" alt="">
+              <img src="../src/images/HTML5_logo_and_wordmark.png" alt="" class="icon">
               <img src="../src/images/CSS3_logo_and_wordmark.png" alt="">
               <img src="../src/images/JavaScript-logo.png" alt="">
               <img src="../src/images/logo-react-js.png" alt="">
@@ -710,10 +708,10 @@
           <p>Notable projects I've delivered, roles that I've held and work I've produced.</p>
         </header>
         <div class="filter-buttons">
-          <button class="mobile-only" aria-expanded="false" onclick="expand('readMoreModalEntia')">
+          <!-- <button class="mobile-only filter-button" aria-expanded="false">
             Filters & Sorting
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-          </button>
+          </button> -->
           
           <div class="filters">
             <details class="tech-filter">
@@ -749,6 +747,7 @@
               </div>
             </details>
           </div>
+
           <div class="sort">
             <label for="sortBy" class="sr-only">SortBy</label>
     
@@ -762,6 +761,33 @@
           </div>
         </div>
 
+        <div class="portfolio-container cards">
+          <article class="portfolio-card clickable-card card">
+            <div class="card-img"><img src="" alt=""></div>
+            <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
+            <p>CATEGORIES:</p>
+            <div class="tag-container">
+              <span class="tag">Process Automation</span
+                ><span class="tag">Product Management</span>
+            </div>
+            <div class="badge-container">
+
+            </div>
+
+
+          </article>
+        </div>
+
+        <div >
+          <ol class="pagination">
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;"><title>chevron-double-left</title><path d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z" /></svg></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;"><title>chevron-double-right</title><path d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" /></svg></a></li>
+          </ol>
+        </div>
 
 
 
@@ -1016,9 +1042,7 @@
         </svg>
       </a> -->
     <!-- </div> -->
-    <!-- <script src="../src/js/nav-animation.js"></script>
-    <script src="../src/js/script.js"></script>
-    <script src="../src/js/toggle-modal.js"></script> -->
+
     <script src="bundle.js"></script>
   <script defer src="bundle.js"></script></body>
 
