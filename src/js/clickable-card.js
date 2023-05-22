@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".cickable-card");
 Array.prototype.forEach.call(cards, (card) => {
   let down,
     up,

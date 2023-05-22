@@ -188,41 +188,38 @@
                 <h4>Head of People</h4>
                 <div role="doc-subtitle">Remote patient monitoring medical device development in oncology</div>
                 <p class="more">Responsible for developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.</p>
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalEntia')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button class="read-more-btn" data-modal="entiaModal" type="button">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://www.entia.co/"  role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/entia-logo-condensed.png" alt="Entia Home"></a>
               </div>
-
-                <div id="readMoreModalEntia" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at Entia">
-                  <!-- Modal content -->
-                  <div class="modal">
-                    <!-- Modal header -->
-                    <div class="modal-close" >
-                      <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalEntia')">
-                          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>></svg>
-                          <span class="sr-only">Close modal</span> 
+                <dialog class = "resume-modal" id="entiaModal" aria-label="My role at Entia">                
+                    <header>
+                      <button type="button" aria-label="close modal" class="close-button">
+                        <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
                       </button>
-                    </div>
+                    </header>
                     <!-- Modal body -->
-                    <div class="modal-body">
-                      <img src="../src/images/entia-logo-condensed.png" alt="Entia Ltd">
+                    <main class="modal-body">
+                      <img src="../src/images/entia-logo-condensed.png" alt="Entia Ltd" style="width: 4rem; height: 4rem;">
                       <h3 class="text-xl font-medium text-gray-900 dark:text-white">
                         Head of People
                       </h3>
                       <time class="">2021 - 2023</time>
                       <div role="doc-subtitle">Remote patient monitoring medical device development in oncology</div>
-                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      <p class="">
                         Responsible for:
                       </p>
-                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      <p class="">
                         Developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </main>
+                </dialog>
             </li>
 
             <li class="timeline-card card">
@@ -231,26 +228,25 @@
                 <time class="">2021</time>
                 <h4>Senior Program Manager</h4>
                 <div role="doc-subtitle">Amazon Diagnostics - Healthcare</div>
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalAmazon')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button class="read-more-btn" type="button" data-modal = "amazonModal">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
               </div>
               <div class="card-img">
                 <a href="https://www.amazon.co.uk/" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/Amazon_logo.svg" alt="Amazon Home" ></a>
               </div>
-
-              <div id="readMoreModalAmazon" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at Amazon">
                 <!-- Modal content -->
-                <div class="modal">
-                  <!-- Modal header -->
-                  <div class="modal-close" >
-                    <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalAmazon')">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>></svg>
-                        <span class="sr-only">Close modal</span> 
-                    </button>
-                  </div>
+              <dialog class = "resume-modal" id="amazonModal" aria-label="My role at Amazon">
+                    <header>
+                      <button type="button" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalAmazon')">
+                          <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>></svg>
+                          <span class="sr-only">Close modal</span>
+                      </button>
+                    </header>
+
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <main class="modal-body">
                     <img src="../src/images/Amazon_logo.svg" alt="Amazon Ltd Logo" >
                     <h3 class="">
                       Senior Program Manager
@@ -263,9 +259,8 @@
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                       Facilitating the EU-Global 2022 strategy and operational planning process (OP1) to transition 400-person internal COVID testing laboratory capability into customer product development.
                     </p>
-                  </div>
-                </div>
-              </div>
+                  </main>
+              </dialog>
             </li>
 
             <li class="timeline-card card">
@@ -766,8 +761,8 @@
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
             <p>CATEGORIES:</p>
             <div class="tag-container">
-              <span class="tag">Process Automation</span
-                ><span class="tag">Product Management</span>
+              <span class="tag small">Process Automation</span
+                ><span class="tag small">Product Management</span>
             </div>
             <ul class="badge-container">
               <li><img src="../src/images/HTML5_logo_and_wordmark.png" alt="" class="icon"></li>
