@@ -1448,6 +1448,7 @@ details .options {
   padding: 0 0 0.5rem 0;
 }
 .portfolio-card .badge-container {
+  padding-top: 0.5rem;
   border-top: 2px double fuchsia;
   width: 100%;
   display: flex;

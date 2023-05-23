@@ -1,41 +1,55 @@
-const modals = document.querySelector("dialog");
-
 let readButtons = document.querySelectorAll(".read-more-btn");
 let closeButtons = document.querySelectorAll(".close-button");
-const dialog = document.querySelector("dialog");
-const closestDialog = this.closest("dialogue");
+let dialogs = document.querySelectorAll("dialog");
+// const dialog = document.querySelector("dialog");
+
+// const closestDialog = this.closest("dialogue");
 
 readButtons.forEach((button) => {
-  let goal = document.getElementById(button.dataset.modal);
+  let dialog = document.getElementById(button.dataset.modal);
   button.addEventListener("click", (event) => {
-    if (typeof goal.showModal === "function") {
-      goal.showModal();
+    if (typeof dialog.showModal === "function") {
+      dialog.showModal();
+
       console.log("hurrah!");
+
+      dialog.addEventListener("click", ({ target: dialog }) => {
+        if (dialog.nodeName === "DIALOG") {
+          dialog.close("dismiss");
+        }
+      });
     } else {
       console.log("The <dialog> AI is not supported by this browser");
     }
+    event.stopImmediatePropagation();
   });
 });
 
 closeButtons.forEach((button) => {
-  let goal = document.querySelector("dialog");
+  let goal = button.closest("dialog");
   button.addEventListener("click", (event) => {
     console.log(goal);
-    button.closest("dialog").close();
+    goal.close();
+    event.stopImmediatePropagation();
   });
 });
 
-dialog.addEventListener("click", (e) => {
-  const dialogDimensions = dialog.getBoundingClientRect();
-  if (
-    e.clientX < dialogDimensions.left ||
-    e.clientX > dialogDimensions.right ||
-    e.clientY < dialogDimensions.top ||
-    e.clientY > dialogDimensions.bottom
-  ) {
-    closestDialog.close();
-  }
-});
+// document.addEventListener("click", (e) => {
+//   console.log(e.target.nodeName);
+//   if (e.target.nodeName == "DIALOG") {
+//     console.log(e.target.nodeName);
+//     if (e.target.classList.contains("resume-modal")) {
+//       e.target.close();
+//     }
+//     return;
+//   } else {
+//     return;
+//   }
+// });
+
+// dialogs.forEach((dialog) =>{
+//     dialog.addEventListener
+// })
 
 // const closeBtn = document.getElementsByClassName("close-button");
 

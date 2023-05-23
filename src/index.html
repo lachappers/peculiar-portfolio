@@ -229,7 +229,8 @@
                 <h4>Senior Program Manager</h4>
                 <div role="doc-subtitle">Amazon Diagnostics - Healthcare</div>
                 <button class="read-more-btn" type="button" data-modal = "amazonModal">Read more
-                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://www.amazon.co.uk/" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/Amazon_logo.svg" alt="Amazon Home" ></a>
@@ -237,11 +238,11 @@
                 <!-- Modal content -->
               <dialog class = "resume-modal" id="amazonModal" aria-label="My role at Amazon">
                     <header>
-                      <button type="button" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalAmazon')">
-                          <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>></svg>
-                          <span class="sr-only">Close modal</span>
+                      <button type="button" aria-label="close modal" class="close-button">
+                        <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
                       </button>
                     </header>
 
@@ -253,10 +254,10 @@
                     </h3>
                     <time class="">2021</time>
                     <div role="doc-subtitle">Amazon Diagnostics - Healthcare</div>
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    <p >
                       Responsible for:
                     </p>
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    <p >
                       Facilitating the EU-Global 2022 strategy and operational planning process (OP1) to transition 400-person internal COVID testing laboratory capability into customer product development.
                     </p>
                   </main>
@@ -270,23 +271,25 @@
                 <h4>Head of Operations</h4>
                 <div role="doc-subtitle">Primary electronic health record technology in NHS and Private Practice</div>
 
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalEva')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+
+                <button class="read-more-btn" type="button" data-modal = "evaModal">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://evahealth.co.uk/" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/eva.png" alt="Eva Home"></a>
               </div>
-              <div id="readMoreModalEva" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at Entia">
-                <!-- Modal content -->
-                <div class="modal">
+              <!-- Modal content -->
+              <dialog id="evaModal" class="resume-modal" aria-label="My role at Entia">
                   <!-- Modal header -->
-                  <div class="modal-close" >
-                    <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalEva')">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>></svg>
-                        <span class="sr-only">Close modal</span> 
+                  <header >
+                    <button type="button" aria-label="close modal" class="close-button">
+                      <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
                     </button>
-                  </div>
+                  </header>
                   <!-- Modal body -->
                   <div class="modal-body">
                     <img src="../src/images/entia-logo-condensed.png" alt="Entia Ltd">
@@ -303,7 +306,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </dialog>
             </li>
 
             <li class="timeline-card card">
@@ -313,40 +316,41 @@
                 <h4>Cloud Consultant, MBA</h4>
                 <div role="doc-subtitle">Cloud Professional Services Org (PSO)</div>
 
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalGoogle')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button class="read-more-btn" type="button" data-modal = "googleModal">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://www.google.com/" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/Google_2015_logo.svg" alt="Google Home"></a>
               </div>
 
-              <div id="readMoreModalGoogle" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at Google">
-                <!-- Modal content -->
-                <div class="modal">
-                  <!-- Modal header -->
-                  <div class="modal-close" >
-                    <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalGoogle')">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>></svg>
-                        <span class="sr-only">Close modal</span> 
-                    </button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <img src="../src/images/Google_2015_logo.svg" alt="Google Ltd">
-                    <h3 class="">
-                      Cloud Consultant, MBA
-                    </h3>
-                    <time class="">2019</time>
-                    <div role="doc-subtitle">Cloud Professional Services Org (PSO)</div>
-                    <p class="">
-                      Responsible for:
-                    </p>
-                    <p class="">Supporting early stage development of Google’s enterprise migration services.</p>
-                    <p>Senior Individual Contributor</p>
-                  </div>
+              <dialog id="googleModal" class="resume-modal" aria-label="My role at Google">
+                <!-- Modal header -->
+                <header >
+                  <button type="button" aria-label="close modal" class="close-button">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </header>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="../src/images/Google_2015_logo.svg" alt="Google Ltd">
+                  <h3 class="">
+                    Cloud Consultant, MBA
+                  </h3>
+                  <time class="">2019</time>
+                  <div role="doc-subtitle">Cloud Professional Services Org (PSO)</div>
+                  <p class="">
+                    Responsible for:
+                  </p>
+                  <p class="">Supporting early stage development of Google’s enterprise migration services.</p>
+                  <p>Senior Individual Contributor</p>
                 </div>
               </div>
+            </dialog>
+
             </li>
 
             <li class="timeline-card card">
@@ -356,42 +360,41 @@
                 <h4>Managing Consultant</h4>
                 <div role="doc-subtitle">Global Cybersecurity and Emerging Technology Consulting</div>
 
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalWavestone')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button class="read-more-btn" type="button" data-modal = "wavestoneModal">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://www.wavestone.com/en/" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/Wavestone.png" alt="Wavestone Home"></a>
               </div>
 
-              <div id="readMoreModalWavestone" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at Wavestone">
-                <!-- Modal content -->
-                <div class="modal">
-                  <!-- Modal header -->
-                  <div class="modal-close" >
-                    <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalWavestone')">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>></svg>
-                        <span class="sr-only">Close modal</span> 
-                    </button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <img src="../src/images/Wavestone.png" alt="Wavestone Home">
-                    <h3 class="">
-                      Managing Consultant
-                    </h3>
-                    <time class="">2017 - 2018</time>
-                    <div role="doc-subtitle">Global Cybersecurity and Emerging Technology Consulting</div>
-                    <p class="">
-                      Responsible for:
-                    </p>
-                    <p class="">Client consulting, building operational processes and Career Development Manager for team of 7 (staffing and development). Annual sales target of £1m.</p>
-                    <p class="">
-                      Sat on Management Committee of Wavestone UK.
-                    </p>
-                  </div>
+              <dialog id="wavestoneModal" class="resume-modal" aria-label="My role at Wavestone">
+                <!-- Modal header -->
+                <header >
+                  <button type="button" aria-label="close modal" class="close-button">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </header>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="../src/images/Wavestone.png" alt="Wavestone Home">
+                  <h3 class="">
+                    Managing Consultant
+                  </h3>
+                  <time class="">2017 - 2018</time>
+                  <div role="doc-subtitle">Global Cybersecurity and Emerging Technology Consulting</div>
+                  <p class="">
+                    Responsible for:
+                  </p>
+                  <p class="">Client consulting, building operational processes and Career Development Manager for team of 7 (staffing and development). Annual sales target of £1m.</p>
+                  <p class="">
+                    Sat on Management Committee of Wavestone UK.
+                  </p>
                 </div>
-              </div>
+            </dialog>
             </li>
 
             <li class="timeline-card card">
@@ -400,41 +403,39 @@
                 <time class="">2012 - 2017</time>
                 <h4>Manager, Advisory</h4>
                 <div role="doc-subtitle">Data Analytics, Culture Change, Cyber Security, Financial Services Advisory</div>
-
-                <button class="read-more-btn" id="readMoreButton" type="button" onclick="openModal('readMoreModalKPMG')">Read more<svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <button class="read-more-btn" type="button" data-modal = "kpmgModal">Read more
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
               </div>
               <div class="card-img">
                 <a href="https://www.kpmg.co.uk" role="link" target="_blank" rel="noopener noreferrer"><img src="../src/images/KPMG-logo.svg" alt="KPMG Home"></a>
               </div>
 
-              <div id="readMoreModalKPMG" class="modal-container" aria-hidden="true" aria-modal="true" role="dialog" aria-label="My role at KPMG">
-                <!-- Modal content -->
-                <div class="modal">
-                  <!-- Modal header -->
-                  <div class="modal-close" >
-                    <button type="button" tabindex="0" aria-label="close modal" class="close-button" onclick="closeModal('readMoreModalKPMG')">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"></path>></svg>
-                        <span class="sr-only">Close modal</span> 
-                    </button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <img src="../src/images/KPMG-logo.svg" alt="KPMG">
-                    <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                      Manager, Advisory
-                    </h3>
-                    <time class="">2012 - 2017</time>
-                    <div role="doc-subtitle">Data Analytics, Culture Change, Cyber Security, Financial Services Advisory</div>
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      Responsible for:
-                    </p>
-                    <p class="">End to end sales and delivery of advisory services, product management and development, public speaking and performance management (career development) of up to 8 team members. </p>
-                    <p>Fast-tracked through KPMGs Leadership Development path.</p>
-                  </div>
+              <dialog id="kpmgModal" class="resume-modal" aria-label="My role at KPMG">
+                <!-- Modal header -->
+                <header >
+                  <button type="button" aria-label="close modal" class="close-button">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </header>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="../src/images/KPMG-logo.svg" alt="KPMG">
+                  <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                    Manager, Advisory
+                  </h3>
+                  <time class="">2012 - 2017</time>
+                  <div role="doc-subtitle">Data Analytics, Culture Change, Cyber Security, Financial Services Advisory</div>
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Responsible for:
+                  </p>
+                  <p class="">End to end sales and delivery of advisory services, product management and development, public speaking and performance management (career development) of up to 8 team members. </p>
+                  <p>Fast-tracked through KPMGs Leadership Development path.</p>
                 </div>
-              </div>
+            </dialog>
             </li>
           </ol>
         </aside>
