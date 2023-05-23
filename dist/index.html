@@ -57,7 +57,7 @@
       <!-- <section> divides doc into groups of related content and should always have a heading-->
       <section class="page" id="home" aria-label="Hi, I'm Lucy">
         <div class="introduction">
-          <div class="intro-text">
+          <header class="intro-text">
             <h1>I'm Lucy</h1>
             <div>
               <p><b>DEVELOPER</b></p>
@@ -68,21 +68,22 @@
               I combine Data and Technology with People Skills to transform
               businesses and solve complex problems.
             </p>
-          </div>
-          <div class="headshot">
+          </header>
+          <div class="headshot" aria-hidden="true">
             <img
               src="../src/images/headshot-highres-foreground.png"
               alt=""
               sizes="(max-width 600px) 50vw, 300x"
             />
           </div>
-          <div class="action-buttons">
+          <nav class="action-buttons">
             <a href="#contact" class="">Contact Me</a>
             <a href="#about" class="learn-more">
               Learn More <svg style="margin-left: 0.5rem; margin-right:-0.25rem; width: 1.25rem; height: 1.25rem " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-          </div>
+          </nav>
         </div>
+
         <aside class="stat-banner">
           <dl class="stats">
             <div class="stat">
@@ -130,7 +131,7 @@
       </section> -->
 
       <section class="about page" id="about" aria-labelledby="about-title">
-        <div class="about-image">
+        <div class="about-image" aria-hidden="true">
           <img src="../src/images/full highres foreground.png" alt="" />
         </div>
         <div class="about-text">
@@ -174,13 +175,14 @@
             businesses (and people) actually work and now I combine the two; offering advisory services through <a href="https://peculiardynamics.co.uk/">Peculiar Dynamics</a> whilst working on my own ventures.
           </p>
         </header>
-        <aside class="employment">
-          <header class="title">
+        <details class="employment">
+          <summary class="title">
             <h3 class="">Employers</h3>
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 2rem; width: 2rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
             <div role="doc-subtitle">I've worked in a wide range of technology-driven companies through my career; completing the rigorous hiring processes at Google and Amazon, pulling the long hours and crazy travel required in consulting, and riding the rollercoaster of life in leadership of Startups.</div>
-          </header>
+          </summary>
           <!-- Unstyled lists are not announed as lists by Voiceover. Add role = "list" to combat this -->
-          <ol class="timeline cards" role="list">
+          <ol class="content timeline cards" role="list">
             <li class="timeline-card card" aria-haspopup="dialog">
               <div class="timeline-style"></div>
               <div class="card-text">
@@ -188,7 +190,7 @@
                 <h4>Head of People</h4>
                 <div role="doc-subtitle">Remote patient monitoring medical device development in oncology</div>
                 <p class="more">Responsible for developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.</p>
-                <button class="read-more-btn" data-modal="entiaModal" type="button">Read more
+                <button class="read-more-btn" data-modal="entiaModal" type="button" aria-label="Read more about my role at Entia">Read more
                   <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
               </div>
@@ -438,15 +440,16 @@
             </dialog>
             </li>
           </ol>
-        </aside>
+        </details>
 
         <div class="cv-content">
-          <div class="cv-container">
-            <header class="title">
-              <h3 class="card-title">Freelance and Advisory</h3>
+          <details class="cv-container">
+            <summary class="title">
+              <h3>Freelance and Advisory</h3>
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 2rem; width: 2rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
               <div role="doc-subtitle">Whilst studying for my MBA, I took on small pieces of technical freelance work, whilst also starting a career coaching business to make the tools and techniques I'd learnt available more widely. I'm not currently pursuing coaching, but I'm always on the lookout for interesting challenges and people!</div>
-            </header>
-            <ul class="ventures cards" role="list">
+            </summary>
+            <ul class="content ventures cards" role="list">
               <li class="card">
                 <div class="card-text">
                   <h4>Peculiar Dynamics</h4>
@@ -477,13 +480,14 @@
                 <p></p>
               </li> -->
             </ul>
-          </div>
-          <div class="cv-container">
-            <header class="title">
+          </details>
+          <details class="cv-container">
+            <summary class="title">
               <h3 class="">Education</h3>
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 2rem; width: 2rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
               <div role="doc-subtitle">Despite being the first member of my family to complete secondary education, I've been lucky enough to study at two of the top academic and most competitive universities globally.</div>
-            </header>
-            <ul class="education cards" role="list">
+            </summary>
+            <ul class="content education cards" role="list">
               <li class="card">
                 <div class="card-img">
                     <img src="../src/images/London_Business_School_logo.svg" alt="London Business School">
@@ -505,67 +509,68 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="cv-container">
-            <header class="title">
+          </details>
+          <details class="cv-container">
+            <summary class="title">
               <h3>Learning and Professional Development</h3>
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 2rem; width: 2rem;" aria-hidden="true" focusable="false"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
               <div role="doc-subtitle">I love learning new skills, refreshing old ones and finding connections between diverse subjects.</div>
-            </header>
-            <div class="icon-group ">
-              <div class="icon-card">
-                <a href="https://www.theodinproject.com/" role="link" target="_blank" rel="noopener noreferrer" >
-                  <img src="../src/images/odin.svg" alt="">
-                </a>
+            </summary>
+            <div class="content">
+              <div class="icon-group ">
+                <div class="icon-card">
+                  <a href="https://www.theodinproject.com/" role="link" target="_blank" rel="noopener noreferrer" >
+                    <img src="../src/images/odin.svg" alt="">
+                  </a>
+                </div>
+                <div class="icon-card">
+                  <a href="https://automatetheboringstuff.com/" role="link" target="_blank" rel="noopener noreferrer">
+                    <img src="../src/images/cover_automate2_thumb.jpg" alt="">
+                  </a>
+                </div>
+                <div class="icon-card">
+                  <a href="https://mhfaengland.org/" role="link" target="_blank" rel="noopener noreferrer">
+                    <img src="../src/images/mhfa.webp" alt="Mental Health First Aid Home">
+                  </a>
+                </div>
+                <div class="icon-card">
+                  <a href="https://www.cipd.org/en/" role="link" target="_blank" rel="noopener noreferrer" >
+                    <img src="../src/images/CIPD.webp" alt="CIPD Home">
+                  </a>
+                </div>
+                <div class="icon-card">
+                  <a href="https://www.mba.com/"role="link" target="_blank" rel="noopener noreferrer"  >
+                    <img src="../src/images/gmat.png" alt="GMAT Home">
+                  </a>
+                </div>
               </div>
-              <div class="icon-card">
-                <a href="https://automatetheboringstuff.com/" role="link" target="_blank" rel="noopener noreferrer">
-                  <img src="../src/images/cover_automate2_thumb.jpg" alt="">
-                </a>
-              </div>
-              <div class="icon-card">
-                <a href="https://mhfaengland.org/" role="link" target="_blank" rel="noopener noreferrer">
-                  <img src="../src/images/mhfa.webp" alt="Mental Health First Aid Home">
-                </a>
-              </div>
-              <div class="icon-card">
-                <a href="https://www.cipd.org/en/" role="link" target="_blank" rel="noopener noreferrer" >
-                  <img src="../src/images/CIPD.webp" alt="CIPD Home">
-                </a>
-              </div>
-              <div class="icon-card">
-                <a href="https://www.mba.com/"role="link" target="_blank" rel="noopener noreferrer"  >
-                  <img src="../src/images/gmat.png" alt="GMAT Home">
-                </a>
+              <div class="expired">
+                <ul class="icon-group">
+                  <li class="icon-card">
+                    <img src="../src/images/(ISC)2_logo.png" alt="">
+                    <p>CISSP (As.)</p>
+                  </li>
+                  <li class="icon-card">
+                    <img src="../src/images/prince2-small-2.png" alt="">
+                    <p>PRINCE2 Practitioner</p>
+                  </li>
+                  <li class="icon-card">
+                    <img src="../src/images/cloud-architect.png" alt="">
+                    <p>Google Cloud Architect</p>
+                  </li>
+                  <li class="icon-card">
+                    <img src="../src/images/iso_27001_02.png" alt="">
+                    <p>ISO27001 Lead Auditor</p>
+                  </li>
+                  <li class="icon-card">
+                    <img src="../src/images/ITIL-Logo.png" alt="">
+                    <p>ITILv3 Foundation</p>
+                  </li>
+                </ul>
+                <h4>Expired Certifications</h4>
               </div>
             </div>
-            <div class="expired">
-
-              <ul class="icon-group">
-                <li class="icon-card">
-                  <img src="../src/images/(ISC)2_logo.png" alt="">
-                  <p>CISSP (As.)</p>
-                </li>
-                <li class="icon-card">
-                  <img src="../src/images/prince2-small-2.png" alt="">
-                  <p>PRINCE2 Practitioner</p>
-                </li>
-                <li class="icon-card">
-                  <img src="../src/images/cloud-architect.png" alt="">
-                  <p>Google Cloud Architect</p>
-                </li>
-                <li class="icon-card">
-                  <img src="../src/images/iso_27001_02.png" alt="">
-                  <p>ISO27001 Lead Auditor</p>
-                </li>
-                <li class="icon-card">
-                  <img src="../src/images/ITIL-Logo.png" alt="">
-                  <p>ITILv3 Foundation</p>
-                </li>
-
-              </ul>
-              <h4>Expired Certifications</h4>
-            </div>
-          </div>
+          </details>
         </div>
       </section>
 
@@ -577,9 +582,11 @@
           </p>
         </header>
         <div class="expertise-container">
-          <div class="expertise-card card">
-            <img src="" alt="" />
-            <h3>Technology</h3>
+          <div class=" card expertise-card">
+            <header>
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 0.25rem; margin-right:-0.25rem; width: 2rem; height: 2rem; " fill="currentColor"><title>data-matrix-scan</title><path d="M2 2H6V0H2C.9 0 0 .9 0 2V6H2V2M22 0H18V2H22V6H24V2C24 .9 23.1 0 22 0M2 18H0V22C0 23.1 .9 24 2 24H6V22H2V18M22 22H18V24H22C23.1 24 24 23.1 24 22V18H22V22M8 6V4H10V6H8M10 14V12H12V14H10M16 4H18V6H16V4M18 6H20V8H18V6M18 14H20V16H18V14M20 12H16V18H20V20H4V4H6V6H8V10H6V12H8V14H10V16H12V18H14V16H12V14H14V10H10V6H12V4H14V8H16V10H20V12M8 18V16H6V18H8Z" /></svg>
+              <h3>Technology</h3>
+            </header>
             <div class="tag-container">
               <span class="tag">Full-Stack Development</span
               ><span class="tag">Enterprise Technology</span
@@ -590,8 +597,10 @@
             </div>
           </div>
           <div class="expertise-card card">
-            <img src="" alt="" />
-            <h3>Business</h3>
+            <header>
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 0.25rem; margin-right:-0.25rem; width: 2rem; height: 2rem; " fill="currentColor"><title>handshake-outline</title><path d="M21.71 8.71C22.96 7.46 22.39 6 21.71 5.29L18.71 2.29C17.45 1.04 16 1.61 15.29 2.29L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59V14.59L2.29 15.29C1.04 16.55 1.61 18 2.29 18.71L5.29 21.71C5.83 22.25 6.41 22.45 6.96 22.45C7.67 22.45 8.32 22.1 8.71 21.71L11.41 19H15C16.7 19 17.56 17.94 17.87 16.9C19 16.6 19.62 15.74 19.87 14.9C21.42 14.5 22 13.03 22 12V9H21.41L21.71 8.71M20 12C20 12.45 19.81 13 19 13L18 13L18 14C18 14.45 17.81 15 17 15L16 15L16 16C16 16.45 15.81 17 15 17H10.59L7.31 20.28C7 20.57 6.82 20.4 6.71 20.29L3.72 17.31C3.43 17 3.6 16.82 3.71 16.71L5 15.41V11.41L7 9.41V11C7 12.21 7.8 14 10 14S13 12.21 13 11H20V12M20.29 7.29L18.59 9H11V11C11 11.45 10.81 12 10 12S9 11.45 9 11V8C9 7.54 9.17 6 11 6H14.41L16.69 3.72C17 3.43 17.18 3.6 17.29 3.71L20.28 6.69C20.57 7 20.4 7.18 20.29 7.29Z" /></svg>
+              <h3>Business</h3>
+            </header>
             <div class="tag-container">
               <span class="tag">Strategy</span
               ><span class="tag">Business Operations</span
@@ -604,8 +613,10 @@
             </div>
           </div>
           <div class="expertise-card card">
-            <img src="" alt="" />
-            <h3>Psychology</h3>
+            <header>
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 0.25rem; margin-right:-0.25rem; width: 2rem; height: 2rem; " fill="currentColor"><title>head-cog-outline</title><path d="M13 3C16.88 3 20 6.14 20 10C20 12.8 18.37 15.19 16 16.31V21H9V18H8C6.89 18 6 17.11 6 16V13H4.5C4.08 13 3.84 12.5 4.08 12.19L6 9.66C6.19 5.95 9.23 3 13 3M13 1C8.42 1 4.61 4.43 4.06 8.91L2.5 11C1.92 11.72 1.82 12.72 2.24 13.59C2.6 14.31 3.24 14.8 4 14.95V16C4 17.86 5.28 19.43 7 19.87V23H18V17.47C20.5 15.83 22 13.06 22 10C22 5.04 17.96 1 13 1M16.1 9.42V9C16.1 8.85 16.1 8.76 16.04 8.62L16.93 7.96C17 7.92 17 7.78 17 7.68L16.18 6.32C16.13 6.23 16 6.18 15.9 6.23L14.91 6.65C14.73 6.46 14.5 6.32 14.26 6.23L14.1 5.2C14.07 5.06 14 5 13.88 5H12.29C12.19 5 12.1 5.06 12.1 5.2L11.96 6.23C11.73 6.32 11.5 6.46 11.3 6.65L10.27 6.23C10.18 6.18 10.1 6.23 10.04 6.32L9.24 7.68C9.19 7.82 9.19 7.92 9.29 7.96L10.13 8.62C10.13 8.76 10.1 8.9 10.1 9C10.1 9.14 10.13 9.28 10.13 9.42L9.29 10.07C9.19 10.12 9.19 10.21 9.24 10.31L10.04 11.71C10.1 11.81 10.18 11.81 10.27 11.81L11.26 11.38C11.5 11.57 11.68 11.67 11.96 11.76L12.1 12.84C12.1 12.93 12.19 13 12.29 13H13.88C14 13 14.07 12.93 14.1 12.84L14.26 11.76C14.5 11.67 14.73 11.57 14.91 11.39L15.9 11.81C16 11.81 16.13 11.81 16.18 11.71L17 10.31C17 10.21 17 10.12 16.93 10.07L16.1 9.42M13.1 10.45C12.32 10.45 11.68 9.79 11.68 9S12.29 7.59 13.1 7.59C13.88 7.59 14.54 8.2 14.54 9S13.88 10.45 13.1 10.45Z" /></svg>
+              <h3>Psychology</h3>
+            </header>
             <div class="tag-container">
               <span class="tag">Organisational Behaviour</span
               ><span class="tag">Employee Engagement</span
@@ -770,9 +781,8 @@
               <li><img src="../src/images/CSS3_logo_and_wordmark.png" alt="" class="icon"></li>
               <li><img src="../src/images/JavaScript-logo.png" alt="" class="icon"></li>
             </ul>
-
-
           </article>
+
           <article class="portfolio-card clickable-card card">
             <div class="card-img"><img src="" alt=""></div>
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
@@ -852,53 +862,24 @@
 
 
 
-          <!-- <button class="filter-button active-button" onclick="filterSelection('all')">Show All</button>
-          <button class="filter-button" onclick="filterSelection('ops')">Strategy and Operations</button>
-          <button class="filter-button" onclick="filterSelection('dev')">Web & App Dev</button>
-          <button class="filter-button" onclick="filterSelection('tech')">Tech Projects</button>
-          <button class="filter-button"onclick="filterSelection('case')">Consulting Case Studies</button> -->
-        <!-- </div> -->
-        <!-- <div class="portfolio-container">
-          <article class="filterable ops">
-            <img src="https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400" alt="">
-            <div class="filterable-text">
-              <h3>Redesign</h3>
-              <p>OPS</p>
-              <button class="read-more-btn">Read More</button>
-            </div>
-          </article>
-          <article class="filterable dev">dev</article>
-          <article class="filterable tech">tech</article>
-          <article class="filterable ops case">ops case</article>
-          <article class="filterable dev tech">tech</article>
-        </div> -->
-        <!-- <article class="portfolio-card card">
-          <figure><img src="" alt=""></figure>
-          <div class="card-body">
-            <h3 class="card-title">Strategy and Operations review and restructure</h3>
-            <p class="portfolio-client"></p>
-            <div class="card-actions"><button>More Details...</button></div>
-            <span class="tag">Strategy</span><span class="tag">Operations</span>
-            <p>tech</p>
-          </div> -->
-        <!-- </article> -->
-
-
-      <!-- </section> -->
-
 
       <section class="contact page" id="contact">
-        <h2>Get in touch</h2>
-          <div class="email-me contact-details card">
-            <a class="email-link" href="mailto:lucy@peculiardynamics.co.uk" role= "link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 2rem; height: 2rem;" fill="currentColor"><title>email me</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>Drop me an Email</a>
-            <!-- <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
-            <p>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <header class="title">
+          <h2>Get in touch</h2>
+          <div role="doc-subtitle">
           </div>
-          <div class="work-together contact-details card">
-            <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank"><img src="../src/images/logo-icon.svg" alt="" style="width: 2rem; height: 2rem;">Introducing Peculiar Dynamics</a>
-            <p>If you've got a specific problem you'd like help solving, you can learn more about how I can help at <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank">PeculiarDynamics.co.uk</a>.</p>
-          </div>
-        <div class="contact-form"></div>
+        </header>
+          <main class="contact-container">
+            <div class="email-me contact-details">
+              <a class="email-link" href="mailto:lucy@peculiardynamics.co.uk" role= "link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 2rem; height: 2rem;" fill="currentColor"><title>email me</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>Drop me an Email</a>
+              <!-- <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
+              <p>My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+            </div>
+            <div class="work-together contact-details">
+              <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank"><img src="../src/images/logo-icon.svg" alt="" style="width: 2rem; height: 2rem;">Introducing Peculiar Dynamics</a>
+              <p>If you've got a specific problem you'd like help solving, you can learn more about how I can help at <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank">PeculiarDynamics.co.uk</a>.</p>
+            </div>
+          </main>
       </section>
 
       <!-- <div class="main-wrapper"> -->
