@@ -1152,6 +1152,7 @@ button.read-more-btn:active::before {
 }
 .cv-container {
   flex: auto;
+  width: auto;
   /* position: relative; */
 
   display: flex;
@@ -1513,80 +1514,85 @@ details .options {
 }
 
 .badge-container {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.badge-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .badge {
-  /* border: 1px solid fuchsia; */
-  position: relative;
-  width: 5rem;
+  margin: 0.25rem;
+  width: 4.5rem;
   height: 5rem;
-  margin: 1rem;
-  /* background: deepskyblue; */
+  border-radius: 20%;
+  /* display: inline-block; */
+  top: 0;
+  position: relative;
+
+  transition: all 0.2s ease;
+  /* box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43); */
 }
 
-.badge:hover .badge-image {
-  transform: translate(-0.75rem, -0.75rem);
-}
-
-.badge:hover .badge-text {
-  transform: translate(0.75rem, 0.75rem);
-}
-
-.badge-image {
-  border: 1px solid forestgreen;
-  border-radius: 0.325rem;
-  padding: 0.25rem;
+.badge::before {
+  content: "";
   position: absolute;
-  top: -1;
+  height: 3.5rem;
+  width: 3.5rem;
+  background: #fefefe;
+  z-index: 9;
+  top: -1rem;
   left: 0;
-  /* width: 100%; */
-  /* height: 100%; */
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* border-radius: 50%; */
+  border-radius: 30%;
 
-  width: 6rem;
-  aspect-ratio: 0.866;
-  object-fit: scale-down;
-  object-position: center;
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
-  transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
-  cursor: pointer;
-  transition: 0.2s linear;
+  /* margin: 1rem 1rem auto; */
+
+  /* box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23); */
 }
 
 .badge img {
-  background: white;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  z-index: 10;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   padding: 0.25rem;
-  /* object-fit: contain; */
-  border-radius: 9999px;
-  /* width: 30rem;
-  height: 30rem; */
-  object-fit: scale-down;
-  object-position: bottom;
+  /* margin: auto; */
 }
 
-.badge-text {
-  border: 1px solid sandybrown;
-  /* box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23); */
-  border-radius: 0.325rem;
+.badge > p {
+  border-radius: 0.385rem;
+  padding: 0;
+  width: 110%;
+
+  color: #fff;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* padding: 1.5rem; */
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 1;
-  align-items: flex-end;
+  z-index: 11;
+  bottom: 0.25rem;
+  left: -5%;
+  font-size: 0.75rem;
   text-align: center;
-  transition: 0.5s ease-in-out;
+  border: solid 1px gainsboro;
+
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27); */
+  /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom right, #989898 0%, #333 100%);
+
+  cursor: default;
 }
 
 .yellow {
@@ -1600,6 +1606,24 @@ details .options {
 .purple {
   background: linear-gradient(to bottom right, #ab47bc 0%, #4527a0 100%);
   color: #7127a8;
+}
+.grey {
+  background: linear-gradient(to bottom right, #e0e0e0 0%, #bdbdbd 100%);
+  color: #9e9e9e;
+}
+.green {
+  background: linear-gradient(to bottom right, #cddc39 0%, #8bc34a 100%);
+  color: #7cb342;
+}
+
+.orange {
+  background: linear-gradient(to bottom right, #ffc107 0%, #f57c00 100%);
+  color: #f68401;
+}
+
+.pink {
+  background: linear-gradient(to bottom right, #f48fb1 0%, #d81b60 100%);
+  color: #dc306f;
 }
 
 .icon {
