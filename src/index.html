@@ -207,7 +207,7 @@
                       </button>
                     </header>
                     <!-- Modal body -->
-                    <main class="modal-body">
+                    <div class="modal-body">
                       <img src="../src/images/entia-logo-condensed.png" alt="Entia Ltd" style="width: 4rem; height: 4rem;">
                       <h3 class="text-xl font-medium text-gray-900 dark:text-white">
                         Head of People
@@ -220,7 +220,7 @@
                       <p class="">
                         Developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.
                       </p>
-                    </main>
+                    </div>
                 </dialog>
             </li>
 
@@ -249,7 +249,7 @@
                     </header>
 
                   <!-- Modal body -->
-                  <main class="modal-body">
+                  <div class="modal-body">
                     <img src="../src/images/Amazon_logo.svg" alt="Amazon Ltd Logo" >
                     <h3 class="">
                       Senior Program Manager
@@ -262,7 +262,7 @@
                     <p >
                       Facilitating the EU-Global 2022 strategy and operational planning process (OP1) to transition 400-person internal COVID testing laboratory capability into customer product development.
                     </p>
-                  </main>
+                  </div>
               </dialog>
             </li>
 
@@ -778,25 +778,70 @@
           </div>
         </div>
 
-        <div class="portfolio-container cards">
-          <article class="portfolio-card clickable-card card">
-            <div class="card-img">
+        <ul class="portfolio-container">
+          <article class="portfolio-card clickable-card">
+            <div class="portfolio-card-img">
               <img src="../src/images/this-site.png" alt="">
             </div>
-            <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
-            <p>CATEGORIES:</p>
-            <div class="tag-container">
-              <span class="tag small">Process Automation</span
-                ><span class="tag small">Product Management</span>
+            <div class="card-text">
+              <div class="tag-container">
+                <span class="tag small">Process Automation</span
+                  ><span class="tag small">Product Management</span>
+              </div>
+              <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
+              <div role="doc-subtitle">
+                <a href="www.lucy.chaplin.tech">www.lucy.chaplin.tech <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a>
+              </div>
+              <p>This site demonstrates custom, accessible components built using HTML, CSS and vanilla Javascript, bundled using webpack, deployed on XXX, with version control managed by Github.</p>
+              <ul class="badge-container">
+                <li class="icon">
+                  <img src="../src/images/HTML5_logo_and_wordmark.png" alt=""  aria-labelledby="html-tooltip"> 
+                  <div role="tooltip" id="html-tooltip">HTML</div></li>
+                <li class="icon">
+                  <img src="../src/images/CSS3_logo_and_wordmark.png" alt="" aria-labelledby="css-tooltip">
+                  <div role="tooltip" id="css-tooltip">CSS</div></li>
+                </li>
+                <li class="icon">
+                  <img src="../src/images/JavaScript-logo.png" alt="" aria-labelledby="javascript-tooltip">
+                  <div role="tooltip" id="javascript-tooltip">Javascript</div>
+                </li>
+              </ul>
+              <div class="portfolio-card-buttons">
+                <button class="secondary-button" type="button" data-modal = "portfolioSiteModal">Read case study
+                  <svg style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+                <a href="www.lucy.chaplin.tech" class="link-btn">Live preview <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="margin-left: 0.25rem; margin-right:-0.25rem; width: 1rem; height: 1rem; " fill="currentColor"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a>
+              </div>
             </div>
-            <ul class="badge-container">
-              <li><img src="../src/images/HTML5_logo_and_wordmark.png" alt="" class="icon"></li>
-              <li><img src="../src/images/CSS3_logo_and_wordmark.png" alt="" class="icon"></li>
-              <li><img src="../src/images/JavaScript-logo.png" alt="" class="icon"></li>
-            </ul>
+
+            <dialog class = "portfolio-modal" id="portfolioSiteModal" aria-label="Case study on building this site">                
+              <header>
+                <button type="button" aria-label="close modal" class="close-button">
+                  <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </header>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <img src="" alt="" style="width: 4rem; height: 4rem;">
+                <h3 class="">
+                  
+                </h3>
+                <time class="">2021 - 2023</time>
+                <div role="doc-subtitle"><a href="www.lucy.chaplin.tech">www.lucy.chaplin.tech <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a></div>
+                <p class="">
+                  Responsible for:
+                </p>
+                <p class="">
+                  Developing organisational strategy, technology infrastructure and environments that enable high-performance and high engagement.
+                </p>
+              </div>
+            </dialog>
           </article>
 
-          <article class="portfolio-card clickable-card card">
+          <article class="portfolio-card clickable-card">
             <div class="card-img"><img src="" alt=""></div>
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
             <p>CATEGORIES:</p>
@@ -812,7 +857,7 @@
 
 
           </article>
-          <article class="portfolio-card clickable-card card ">
+          <article class="portfolio-card clickable-card ">
             <div class="card-img"><img src="" alt=""></div>
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
             <p>CATEGORIES:</p>
@@ -826,7 +871,7 @@
 
 
           </article>
-          <article class="portfolio-card clickable-card card">
+          <article class="portfolio-card clickable-card ">
             <div class="card-img"><img src="" alt=""></div>
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
             <p>CATEGORIES:</p>
@@ -840,7 +885,7 @@
 
 
           </article>
-          <article class="portfolio-card clickable-card card">
+          <article class="portfolio-card clickable-card">
             <div class="card-img"><img src="" alt=""></div>
             <h3><a href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/">Bespoke Accessible Portfolio Site</a></h3>
             <p>CATEGORIES:</p>
@@ -854,7 +899,8 @@
 
 
           </article>
-        </div>
+        </ul>
+       
 
           <ol class="pagination">
             <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1rem; width: 1rem;"><title>chevron-double-left</title><path d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z" /></svg></a></li>
@@ -872,7 +918,7 @@
           <div role="doc-subtitle">
           </div>
         </header>
-          <main class="contact-container">
+          <div class="contact-container">
             <div class="email-me contact-details">
               <a class="email-link" href="mailto:lucy@peculiardynamics.co.uk" role= "link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 2rem; height: 2rem;" fill="currentColor"><title>email me</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>Drop me an Email</a>
               <!-- <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
@@ -882,7 +928,7 @@
               <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank"><img src="../src/images/logo-icon.svg" alt="" style="width: 2rem; height: 2rem;">Introducing Peculiar Dynamics</a>
               <p>If you've got a specific problem you'd like help solving, you can learn more about how I can help at <a href="https://peculiardynamics.co.uk/" role= "link" rel="noopener noreferrer" target="_blank">PeculiarDynamics.co.uk</a>.</p>
             </div>
-          </main>
+          </div>
       </section>
 
       <!-- <div class="main-wrapper"> -->
