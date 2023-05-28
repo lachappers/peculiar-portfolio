@@ -1,4 +1,4 @@
-let readButtons = document.querySelectorAll(".read-more-btn");
+let readButtons = document.querySelectorAll(".modal-btn");
 let closeButtons = document.querySelectorAll(".close-button");
 let dialogs = document.querySelectorAll("dialog");
 // const dialog = document.querySelector("dialog");
