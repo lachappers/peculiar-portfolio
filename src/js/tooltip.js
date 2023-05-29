@@ -83,7 +83,7 @@ class Tooltip {
 
   // Get the desired default position for the tooltip (defaults to 'bottom')
   getTooltipPosition() {
-    let attribute = this.container.getAttribute("data-tooltip-position");
+    const attribute = this.container.getAttribute("data-tooltip-position");
     let setting = "bottom";
 
     if (attribute === "top") {
@@ -108,14 +108,14 @@ class Tooltip {
 
   // Calculate if the tooltip is within the viewport
   checkBoundingBox() {
-    let bounds = this.tooltip.getBoundingClientRect();
+    const bounds = this.tooltip.getBoundingClientRect();
 
     this.checkHorizontalBounding(bounds);
     this.checkVerticalBounding(bounds);
   }
 
   checkHorizontalBounding(bounds) {
-    let windowWidth = window.innerWidth;
+    const windowWidth = window.innerWidth;
 
     // If the tooltip overlaps on both sides, throw an error
     if (bounds.right > windowWidth && bounds.left < 0) {
@@ -134,7 +134,7 @@ class Tooltip {
   }
 
   checkVerticalBounding(bounds) {
-    let windowHeight = window.innerHeight;
+    const windowHeight = window.innerHeight;
 
     // If the tooltip overlaps on both sides, throw an error
     if (bounds.bottom > windowHeight && bounds.top < 0) {
@@ -158,7 +158,7 @@ class Tooltip {
   }
 
   moveTooltipRight(bounds) {
-    let numToMove = Math.floor(bounds.width / 2);
+    const numToMove = Math.floor(bounds.width / 2);
     this.tooltip.style.left = `${numToMove}px`;
   }
 
@@ -167,7 +167,7 @@ class Tooltip {
   }
 
   moveTooltipLeft(bounds, windowWidth) {
-    let translateAmount =
+    const translateAmount =
       windowWidth - Math.round(bounds.right) - Math.round(bounds.width) / 1.6;
     this.tooltip.style.transform = `translateX(${translateAmount}px)`;
   }
@@ -184,6 +184,7 @@ class Tooltip {
 }
 
 Array.from(document.querySelectorAll(".icon")).forEach((element) => {
+  // eslint-disable-next-line no-new
   new Tooltip(element);
   //   console.log(element);
 });

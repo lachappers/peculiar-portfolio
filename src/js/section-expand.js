@@ -1,3 +1,4 @@
+// eslint-disable-next-line func-names
 (function () {
   // check for <template> support
   if ("content" in document.createElement("template")) {
@@ -64,9 +65,9 @@
           //   get first heading
           const oldHeading = this.querySelector("header :first-child");
           // cast its heading level which should (but may not) exist
-          let level = parseInt(oldHeading.tagName.substr(1));
+          const level = parseInt(oldHeading.tagName.substr(1), 10);
           // Then take its `id` (may be null)
-          let id = oldHeading.id;
+          const { id } = oldHeading;
           // Get the Shadow DOM <h3>
           this.heading = this.shadowRoot.querySelector("h3");
           // If `id` exists, apply it
@@ -85,15 +86,13 @@
           if (level && level !== 3) {
             this.heading.setAttribute("aria-level", level);
           }
-          console.log(oldHeading);
-          console.log(oldHeader);
           // Add the Light DOM heading label to the innerHTML of the toggle button
           // and remove the now unwanted Light DOM heading
           this.btn.innerHTML = oldHeading.textContent + this.btn.innerHTML;
           oldHeading.parentNode.removeChild(oldHeading);
           // The main state switching function
           this.switchState = () => {
-            let expanded = this.getAttribute("open") === "true" || false;
+            const expanded = this.getAttribute("open") === "true" || false;
             // Toggle `aria-expanded`
             this.btn.setAttribute("aria-expanded", expanded);
             // Toggle the `.content` element's visibility
@@ -101,12 +100,13 @@
           };
           this.btn.onclick = () => {
             // Change the component's `open` attribute value on click
-            let open = this.getAttribute("open") === "true" || false;
+            const open = this.getAttribute("open") === "true" || false;
             this.setAttribute("open", open ? "false" : "true");
             // Update the hash if the collapsible section's
             // heading has an `id` and we are opening, not closing
             if (this.heading.id && !open) {
-              history.pushState(null, null, "#" + this.heading.id);
+              // eslint-disable-next-line no-restricted-globals
+              history.pushState(null, null, `#${this.heading.id}`);
             }
           };
         }
@@ -151,7 +151,7 @@
       // Place the click on the parent <ul>...
       buttons.addEventListener("click", (e) => {
         // ...then determine which button was the target
-        let expand = e.target.id === "expand" ? true : false;
+        const expand = e.target.id === "expand";
 
         // Iterate over the toggle sections to switch
         // each one's state uniformly

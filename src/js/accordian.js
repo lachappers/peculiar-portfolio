@@ -61,7 +61,9 @@ class Accordion {
     // When the animation is complete, call onAnimationFinish()
     this.animation.onfinish = () => this.onAnimationFinish(false);
     // If the animation is cancelled, isClosing variable is set to false
-    this.animation.oncancel = () => (this.isClosing = false);
+    this.animation.oncancel = () => {
+      this.isClosing = false;
+    };
   }
 
   open() {
@@ -103,7 +105,9 @@ class Accordion {
     // When the animation is complete, call onAnimationFinish()
     this.animation.onfinish = () => this.onAnimationFinish(true);
     // If the animation is cancelled, isExpanding variable is set to false
-    this.animation.oncancel = () => (this.isExpanding = false);
+    this.animation.oncancel = () => {
+      this.isExpanding = false;
+    };
   }
 
   onAnimationFinish(open) {
@@ -115,10 +119,12 @@ class Accordion {
     this.isClosing = false;
     this.isExpanding = false;
     // Remove the overflow hidden and the fixed height
-    this.el.style.height = this.el.style.overflow = "";
+    this.el.style.height = "";
+    this.el.style.overflow = "";
   }
 }
 
 document.querySelectorAll("details").forEach((el) => {
+  // eslint-disable-next-line no-new
   new Accordion(el);
 });

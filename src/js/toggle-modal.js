@@ -1,21 +1,21 @@
-let readButtons = document.querySelectorAll(".modal-btn");
-let closeButtons = document.querySelectorAll(".close-button");
-let dialogs = document.querySelectorAll("dialog");
+const readButtons = document.querySelectorAll(".modal-btn");
+const closeButtons = document.querySelectorAll(".close-button");
+// const dialogs = document.querySelectorAll("dialog");
 // const dialog = document.querySelector("dialog");
 
 // const closestDialog = this.closest("dialogue");
 
 readButtons.forEach((button) => {
-  let dialog = document.getElementById(button.dataset.modal);
+  const dialog = document.getElementById(button.dataset.modal);
   button.addEventListener("click", (event) => {
     if (typeof dialog.showModal === "function") {
       dialog.showModal();
 
       console.log("hurrah!");
 
-      dialog.addEventListener("click", ({ target: dialog }) => {
-        if (dialog.nodeName === "DIALOG") {
-          dialog.close("dismiss");
+      dialog.addEventListener("click", ({ target: dialogTarget }) => {
+        if (dialogTarget.nodeName === "DIALOG") {
+          dialogTarget.close("dismiss");
         }
       });
     } else {
@@ -26,7 +26,7 @@ readButtons.forEach((button) => {
 });
 
 closeButtons.forEach((button) => {
-  let goal = button.closest("dialog");
+  const goal = button.closest("dialog");
   button.addEventListener("click", (event) => {
     console.log(goal);
     goal.close();
