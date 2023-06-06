@@ -4,7 +4,6 @@
   "repository": {
     "url": "git+https://github.com/lachappers/peculiar-portfolio.git"
   },
-  // "homepage": "https://lachappers.github.io/peculiar-portfolio",
   "description": "This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, custom CSS and vanilla JS. <br><br>",
   "private": true,
   "scripts": {
