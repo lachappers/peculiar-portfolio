@@ -21,7 +21,7 @@ module.exports = {
       title: "Lucy Chaplin",
       template: "./src/index.html",
       inject: "body",
-      publicPath: "/peculiar-portfolio/",
+      // publicPath: "/peculiar-portfolio/",
     }),
   ],
   output: {
