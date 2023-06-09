@@ -183,7 +183,7 @@ class Tooltip {
   }
 }
 
-Array.from(document.querySelectorAll(".icon")).forEach((element) => {
+Array.from(document.querySelectorAll(".icon, .badge")).forEach((element) => {
   // eslint-disable-next-line no-new
   new Tooltip(element);
   //   console.log(element);
