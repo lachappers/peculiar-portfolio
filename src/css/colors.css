@@ -8,7 +8,7 @@
   --main-black: #424242;
 
   --main-surface: #fffbff;
-  --main-surface-dim: #e6e0ec;
+  --main-surface-dim: #f7f5ff;
 
   --main-light-99: #fffbff;
   --main-light-98: #f7f5fd;
@@ -32,7 +32,7 @@
   --main-secondary-dark: #1b8f3e;
   --main-secondary-darkest: #005323;
   --main-secondary-light: #49df76;
-  --main-secondary-lightest: #ddfee7;
+  --main-secondary-lightest: rgb(221, 254, 231);
 
   --main-tertiary: rgb(245, 85, 80);
   --main-tertiary-dark: #e24229;
@@ -44,7 +44,7 @@
   --main-comp-dark: #ffd618;
   --main-comp-darkest: #906b03;
   --main-comp-light: #ffe779;
-  --main-comp-lightest: #fff6cc;
+  --main-comp-lightest: rgb(255, 246, 204);
 
   --md-sys-typescale-display-large-family: Roboto;
   --md-sys-typescale-display-large-weight: Regular;

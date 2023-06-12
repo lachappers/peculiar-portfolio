@@ -16,7 +16,9 @@
     <header>
       <nav class="side-nav" role="navigation">
         <aside class="nav-about" role="complementary">
-          <a class="logo" href="#" title="Return to top">Lucy<br />Chaplin </a>
+          <a class="site-logo" href="#" title="Return to top"
+            >Lucy<br />Chaplin
+          </a>
           <p>Nerd for psychology, technology and the business of business.</p>
           <!-- <div> tags can be used to group content for styling -->
           <div class="icon-group">
@@ -85,7 +87,11 @@
           </li>
         </ol>
         <!-- Decorative images are identified by an empty alt to make screen readers recognise the image, but not attempt to describe the image -->
-        <img src="../src/images/full highres foreground.png" alt="" />
+        <img
+          class="nav-pic"
+          src="../src/images/full highres foreground.png"
+          alt=""
+        />
       </nav>
     </header>
 
@@ -135,13 +141,8 @@
             <a href="#about" class="purple-outline">
               Learn More
               <svg
-                style="
-                  margin-left: 0.5rem;
-                  margin-right: -0.5rem;
-                  width: 1.25rem;
-                  height: 1.25rem;
-                  transform: rotate(90deg);
-                "
+                class="icon-small"
+                style="transform: rotate(90deg)"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,15 +281,17 @@
           <a href="#resume" class="next-btn">
             <p>Next</p>
             <svg
-              style="width: 2.5rem; height: 2.5rem; transform: rotate(90deg)"
+              style="width: 2.5rem; height: 2.5rem; transform: rotate(180deg)"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
               ></path>
             </svg>
           </a>
@@ -1184,15 +1187,17 @@
           <a href="#expertise" class="next-btn">
             <p>Next</p>
             <svg
-              style="width: 2.5rem; height: 2.5rem; transform: rotate(90deg)"
+              style="width: 2.5rem; height: 2.5rem; transform: rotate(180deg)"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
               ></path>
             </svg>
           </a>
@@ -1209,7 +1214,7 @@
             following:
           </p>
         </header>
-        <div class="expertise-main main">
+        <div class="main expertise-main">
           <div class="expertise-container">
             <div class="card expertise-card">
               <header>
@@ -1305,159 +1310,236 @@
               </div>
             </div>
           </div>
-          <div class="tools-content">
-            <details class="tools-container tech-stack">
-              <summary class="title">
-                <h3>My preferred tech stack</h3>
-                <svg
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  style="height: 2rem; width: 2rem"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                  />
-                </svg>
-                <p>The technologies I'm currently working with</p>
-              </summary>
-              <ul class="content">
-                <li>
-                  <h4>Front-End</h4>
-                  <ul class="">
-                    <li class="badge">
-                      <img
-                        src="../src/images/HTML5_logo_and_wordmark.png"
-                        alt=""
-                      />
-                      <div>HTML</div>
-                    </li>
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/CSS3_logo_and_wordmark.png"
-                      />
-                      <div>CSS</div>
-                    </li>
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/JavaScript-logo.png"
-                        alt=""
-                      />
-                      <div>Javascript</div>
-                    </li>
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/logo-react-js.png"
-                        alt=""
-                      />
-                      <div>React</div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>Back-End</h4>
-                  <ul class="">
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/Ruby_logo.png"
-                        alt=""
-                      />
-                      <div>Ruby</div>
-                    </li>
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/rails-logo.png"
-                      />
-                      <div>Rails</div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>Databases</h4>
-                  <ul class="">
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/postgresql.png"
-                        alt=""
-                      />
-                      <div>PostgreSQL</div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>DevOps</h4>
-                  <ul class="">
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/google-cloud-logo.png"
-                        alt=""
-                      />
-                      <div>Google Cloud</div>
-                    </li>
-                    <li class="badge">
-                      <img
-                        class="logo-small"
-                        src="../src/images/GitHub-Logo.png"
-                        alt=""
-                      />
-                      <div>Github</div>
-                    </li>
-                  </ul>
-                </li>
-                <li>Design</li>
-                <li>Frameworks</li>
-              </ul>
-            </details>
-            <details class="tools-container enterprise-software">
-              <summary class="title">
-                <h3>Some of the tools I've worked with</h3>
-                <svg
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  style="height: 2rem; width: 2rem"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                  />
-                </svg>
-                <p>
-                  Enterprise software that I've worked with, implemented or
-                  administered.
-                </p>
-              </summary>
-              <ul class="content">
-                <li>Productivity</li>
-                <li>HR/ People Ops</li>
-                <li>Finance</li>
-              </ul>
-            </details>
-          </div>
+          <!-- <div class="tools-content"> -->
+          <details class="tools-container tech-stack">
+            <summary class="">
+              <h3>My preferred tech stack</h3>
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                style="height: 2rem; width: 2rem"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                />
+              </svg>
+              <p>The technologies I'm currently working with</p>
+            </summary>
+            <ul class="content">
+              <li>
+                <h4>Front-End</h4>
+
+                <ul class="badge-container">
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="html-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/HTML5_logo_and_wordmark.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="html-tooltip" class="hidden">
+                      HTML
+                    </div>
+                  </li>
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="css-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/CSS3_logo_and_wordmark.png"
+                    />
+                    <div role="tooltip" id="html-tooltip" class="hidden">
+                      CSS
+                    </div>
+                  </li>
+                  <li
+                    class="badge"
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="js-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/JavaScript-logo.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="js-tooltip" class="hidden">
+                      Javascript
+                    </div>
+                  </li>
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="react-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/logo-react-js.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="react-tooltip" class="hidden">
+                      React
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>Back-End</h4>
+                <ul class="badge-container">
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="ruby-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/Ruby_logo.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="ruby-tooltip" class="hidden">
+                      Ruby
+                    </div>
+                  </li>
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="ruby-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/rails-logo.png"
+                    />
+                    <div role="tooltip" id="rails-tooltip" class="hidden">
+                      Rails
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>Databases</h4>
+                <ul class="badge-container">
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="post-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/postgresql.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="post-tooltip" class="hidden">
+                      PostgreSQL
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>DevOps</h4>
+                <ul class="badge-container">
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="gcp-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/google-cloud-logo.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="gcp-tooltip" class="hidden">
+                      Google Cloud
+                    </div>
+                  </li>
+                  <li
+                    class="badge"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="gh-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img
+                      class="logo-small"
+                      src="../src/images/GitHub-Logo.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="gh-tooltip" class="hidden">
+                      Github
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>Design</li>
+              <li>Frameworks</li>
+            </ul>
+          </details>
+          <details class="tools-container enterprise-software">
+            <summary class="title">
+              <h3>Some of the tools I've worked with</h3>
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                style="height: 2rem; width: 2rem"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                />
+              </svg>
+              <p>
+                Enterprise software that I've worked with, implemented or
+                administered.
+              </p>
+            </summary>
+            <ul class="content">
+              <li>Productivity</li>
+              <li>HR/ People Ops</li>
+              <li>Finance</li>
+            </ul>
+          </details>
+          <!-- </div> -->
         </div>
         <footer>
           <a href="#portfolio" class="next-btn">
             <p>Next</p>
             <svg
-              style="width: 2.5rem; height: 2.5rem; transform: rotate(90deg)"
+              style="width: 2.5rem; height: 2.5rem; transform: rotate(180deg)"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
               ></path>
             </svg>
           </a>
@@ -1472,7 +1554,7 @@
             produced.
           </p>
         </header>
-        <div class="portfolio-main main">
+        <div class="main portfolio-main">
           <div class="filter-buttons">
             <div class="filters">
               <details class="tech-filter">
@@ -1481,7 +1563,7 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    style="height: 1rem; width: 1rem"
+                    class="icon-small"
                     aria-hidden="true"
                     focusable="false"
                   >
@@ -1515,7 +1597,7 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    style="height: 1rem; width: 1rem"
+                    class="icon-small"
                     aria-hidden="true"
                     focusable="false"
                   >
@@ -1616,7 +1698,7 @@
                     </div>
                   </li>
                   <li
-                    class="icon"
+                    class="badge"
                     tabindex="0"
                     data-tooltip-position="top"
                     aria-labelledby="javascript-tooltip"
@@ -2375,15 +2457,17 @@
           <a href="#contact" class="next-btn">
             <p>Next</p>
             <svg
-              style="width: 2.5rem; height: 2.5rem; transform: rotate(90deg)"
+              style="width: 2.5rem; height: 2.5rem; transform: rotate(180deg)"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
               ></path>
             </svg>
           </a>
@@ -2397,89 +2481,51 @@
             Want to work together, know more about what I do or just say hi?
           </p>
         </header>
-        <div class="contact-container">
-          <div class="email-me contact-details">
-            <header>
-              <a
-                class="icon icon-small"
-                href="mailto:lucy@peculiardynamics.co.uk"
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
+        <div class="main contact-main">
+          <div class="contact-details" id="email-me">
+            <a
+              href="mailto:lucy@peculiardynamics.co.uk"
+              role="link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                class="icon icon-large"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  style="width: 2rem; height: 2rem"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
-                  />
-                </svg>
-              </a>
-              <h3>Drop me an Email</h3>
-            </header>
+                <title>at</title>
+                <path
+                  d="M12,15C12.81,15 13.5,14.7 14.11,14.11C14.7,13.5 15,12.81 15,12C15,11.19 14.7,10.5 14.11,9.89C13.5,9.3 12.81,9 12,9C11.19,9 10.5,9.3 9.89,9.89C9.3,10.5 9,11.19 9,12C9,12.81 9.3,13.5 9.89,14.11C10.5,14.7 11.19,15 12,15M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12V13.45C22,14.45 21.65,15.3 21,16C20.3,16.67 19.5,17 18.5,17C17.3,17 16.31,16.5 15.56,15.5C14.56,16.5 13.38,17 12,17C10.63,17 9.45,16.5 8.46,15.54C7.5,14.55 7,13.38 7,12C7,10.63 7.5,9.45 8.46,8.46C9.45,7.5 10.63,7 12,7C13.38,7 14.55,7.5 15.54,8.46C16.5,9.45 17,10.63 17,12V13.45C17,13.86 17.16,14.22 17.46,14.53C17.76,14.84 18.11,15 18.5,15C18.92,15 19.27,14.84 19.57,14.53C19.87,14.22 20,13.86 20,13.45V12C20,9.81 19.23,7.93 17.65,6.35C16.07,4.77 14.19,4 12,4C9.81,4 7.93,4.77 6.35,6.35C4.77,7.93 4,9.81 4,12C4,14.19 4.77,16.07 6.35,17.65C7.93,19.23 9.81,20 12,20H17V22H12C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z"
+                />
+              </svg>
+              <h3>Say Hi</h3>
+            </a>
 
             <!-- <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
-            <p>
+            <!-- <p>
               My inbox is always open. Whether you have a question or just want
               to say hi, I’ll try my best to get back to you!
-            </p>
+            </p> -->
           </div>
-          <div class="work-together contact-details">
-            <header>
-              <a
-                href="https://peculiardynamics.co.uk/"
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
-                ><img
-                  src="../src/images/logo-icon.svg"
-                  alt=""
-                  style="width: 2rem; height: 2rem"
-              /></a>
-              <h3>Professional Services</h3>
-            </header>
-            <p>
-              If you've got a specific problem you'd like help solving, you can
-              learn more about how I can help at
-              <a
-                href="https://peculiardynamics.co.uk/"
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
-                >PeculiarDynamics.co.uk</a
-              >.
-            </p>
-          </div>
-          <div class="contact-details">
-            <header>
-              <a
-                class="email-link"
-                href="mailto:lucy@peculiardynamics.co.uk"
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  style="width: 2rem; height: 2rem"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
-                  />
-                </svg>
-              </a>
-              <h3>Press and Event Enquiries</h3>
-            </header>
-            <p>Want some words from me on things?</p>
+          <div class="contact-details" id="work-together">
+            <a
+              href="https://peculiardynamics.co.uk/"
+              role="link"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img
+                class="icon icon-large"
+                src="../src/images/logo-icon.svg"
+                alt=""
+              />
+              <h3>Hire Me</h3></a
+            >
           </div>
         </div>
       </section>
     </main>
+
     <!-- <footer> can be in elements including sections or articles; containing a contentinfo landmark if footer of body-->
     <footer role="contentinfo">
       <!-- add list of tech used to build the site -->
