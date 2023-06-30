@@ -1826,6 +1826,13 @@ details .options {
   justify-content: start;
 }
 
+.enterprise-software .badge-container {
+  gap: 0.5rem;
+  justify-content: center;
+}
+.enterprise-software .badge-container * {
+}
+
 .badge {
   position: relative;
   display: inline-block;
