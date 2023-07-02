@@ -1,3 +1,5 @@
+import GuiDialog from "./dialog-features";
+
 const readButtons = document.querySelectorAll(".modal-btn");
 const closeButtons = document.querySelectorAll(".close-button");
 // const dialogs = document.querySelectorAll("dialog");
@@ -7,9 +9,11 @@ const closeButtons = document.querySelectorAll(".close-button");
 
 readButtons.forEach((button) => {
   const dialog = document.getElementById(button.dataset.modal);
+  GuiDialog(dialog);
   button.addEventListener("click", (event) => {
     if (typeof dialog.showModal === "function") {
       dialog.showModal();
+      // document.body.style.overflow = "hidden";
 
       console.log("hurrah!");
 
