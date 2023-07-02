@@ -136,9 +136,9 @@
               sizes="(max-width 600px) 50vw, 300x"
             />
           </div>
-          <nav class="action-buttons">
-            <a href="#contact" class="purple">Contact Me</a>
-            <a href="#about" class="purple-outline">
+          <div class="action-buttons">
+            <a href="#contact" class="button">Contact Me</a>
+            <a href="#about" class="button-alt">
               Learn More
               <svg
                 class="icon-small"
@@ -154,7 +154,7 @@
                 ></path>
               </svg>
             </a>
-          </nav>
+          </div>
         </div>
 
         <aside class="stat-banner">
@@ -313,7 +313,7 @@
 
         <div class="resume-main main">
           <details class="employment">
-            <summary class="title">
+            <summary>
               <h3 class="">Employers</h3>
               <svg
                 fill="currentColor"
@@ -352,7 +352,7 @@
                     high-performance and high engagement.
                   </p>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     data-modal="entiaModal"
                     type="button"
                     aria-label="Read more about my role at Entia"
@@ -442,7 +442,7 @@
                   <h4>Senior Program Manager</h4>
                   <div role="doc-subtitle">Amazon Diagnostics - Healthcare</div>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     type="button"
                     data-modal="amazonModal"
                   >
@@ -535,7 +535,7 @@
                     Private Practice
                   </div>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     type="button"
                     data-modal="evaModal"
                   >
@@ -629,7 +629,7 @@
                     Cloud Professional Services Org (PSO)
                   </div>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     type="button"
                     data-modal="googleModal"
                   >
@@ -721,7 +721,7 @@
                     Global Cybersecurity and Emerging Technology Consulting
                   </div>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     type="button"
                     data-modal="wavestoneModal"
                   >
@@ -814,7 +814,7 @@
                     Services Advisory
                   </div>
                   <button
-                    class="read-more-btn modal-btn"
+                    class="button modal-btn"
                     type="button"
                     data-modal="kpmgModal"
                   >
@@ -905,7 +905,7 @@
           </details>
           <div class="cv-content">
             <details class="cv-container">
-              <summary class="title">
+              <summary>
                 <h3>Freelance and Advisory</h3>
                 <svg
                   fill="currentColor"
@@ -985,7 +985,7 @@
               </ul>
             </details>
             <details class="cv-container">
-              <summary class="title">
+              <summary>
                 <h3 class="">Education</h3>
                 <svg
                   fill="currentColor"
@@ -1040,7 +1040,7 @@
               </ul>
             </details>
             <details class="cv-container">
-              <summary class="title">
+              <summary>
                 <h3>Learning, Certifications and Professional Development</h3>
                 <svg
                   fill="currentColor"
@@ -1059,8 +1059,8 @@
                   connections between diverse subjects.
                 </div>
               </summary>
-              <div class="content">
-                <div class="icon-group">
+              <div class="content education cards">
+                <div class="card">
                   <a
                     href="https://www.theodinproject.com/"
                     role="link"
@@ -1125,7 +1125,7 @@
                   </a>
                 </div>
                 <div class="expired">
-                  <ul class="icon-group" role="list">
+                  <ul class="" role="list">
                     <li
                       class="badge"
                       tabindex="0"
@@ -1143,37 +1143,69 @@
                       </div>
                     </li>
 
-                    <li class="">
+                    <li
+                      class="badge"
+                      tabindex="0"
+                      data-tooltip-position="top"
+                      aria-labelledby="prince-tooltip"
+                      data-tooltip-trigger
+                    >
                       <img
                         class="logo-small"
                         src="img/prince2-small-2.png"
                         alt=""
                       />
-                      <p>PRINCE2 Practitioner</p>
+                      <div role="tooltip" id="prince-tooltip" class="hidden">
+                        PRINCE2 Practitioner
+                      </div>
                     </li>
-                    <li class="">
+                    <li
+                      class="badge"
+                      tabindex="0"
+                      data-tooltip-position="top"
+                      aria-labelledby="gcparch-tooltip"
+                      data-tooltip-trigger
+                    >
                       <img
                         class="logo-small"
                         src="img/cloud-architect.png"
                         alt=""
                       />
-                      <p>Google Cloud Architect</p>
+                      <div role="tooltip" id="gcparch-tooltip" class="hidden">
+                        Google Cloud Architect
+                      </div>
                     </li>
-                    <li class="">
+                    <li
+                      class="badge"
+                      tabindex="0"
+                      data-tooltip-position="top"
+                      aria-labelledby="iso-tooltip"
+                      data-tooltip-trigger
+                    >
                       <img
                         class="logo-small"
                         src="img/iso_27001_02.png"
                         alt=""
                       />
-                      <p>ISO27001 Lead Auditor</p>
+                      <div role="tooltip" id="iso-tooltip" class="hidden">
+                        ISO27001 Lead Auditor
+                      </div>
                     </li>
-                    <li class="">
+                    <li
+                      class="badge"
+                      tabindex="0"
+                      data-tooltip-position="top"
+                      aria-labelledby="itil-tooltip"
+                      data-tooltip-trigger
+                    >
                       <img
                         class="logo-small"
                         src="img/ITIL-Logo.png"
                         alt=""
                       />
-                      <p>ITILv3 Foundation</p>
+                      <div role="tooltip" id="itil-tooltip" class="hidden">
+                        ITILv3 Foundation
+                      </div>
                     </li>
                   </ul>
                   <h4>Expired Certifications</h4>

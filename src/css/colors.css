@@ -4,23 +4,22 @@
  */
 
 :root {
-  --main-white: rgb(255, 255, 255);
+  --main-white: #fefefe;
   --main-black: #424242;
 
-  --main-surface: #fffbff;
-  --main-surface-dim: #f7f5ff;
+  --main-surface: #f7f5ff;
+  --main-surface-dim: #d3d3d9;
 
-  --main-light-99: #fffbff;
-  --main-light-98: #f7f5fd;
-  --main-light-95: #ecebf8;
-  --main-light-90: #e0ddf4;
-  --main-light-85: #cac5ec;
+  --main-container-lowest: #fffbff;
+  --main-container-: #f7f5fd;
+  --main-container-low: #ecebf8;
+  --main-container-high: #e0ddf4;
+  --main-container-highest: #cac5ec;
 
   --main-dark-5: #44434a;
   --main-dark-15: #66656f;
   --main-dark-30: #92909f;
   --main-dark-50: #a8a6b2;
-  --main-dark-65: #d3d3d9;
 
   --main-primary: rgb(112, 78, 230);
   --main-primary-dark: #542cdd;
@@ -46,49 +45,10 @@
   --main-comp-light: #ffe779;
   --main-comp-lightest: rgb(255, 246, 204);
 
-  --md-sys-typescale-display-large-family: Roboto;
-  --md-sys-typescale-display-large-weight: Regular;
-  --md-sys-typescale-display-medium-family: Roboto;
-  --md-sys-typescale-display-medium-weight: Regular;
-  --md-sys-typescale-display-small-family: Roboto;
-  --md-sys-typescale-display-small-weight: Regular;
-  --md-sys-typescale-headline-large-family: Roboto;
-  --md-sys-typescale-headline-large-weight: Regular;
-  --md-sys-typescale-headline-medium-family: Roboto;
-  --md-sys-typescale-headline-medium-weight: Regular;
-  --md-sys-typescale-headline-small-family: Roboto;
-  --md-sys-typescale-headline-small-weight: Regular;
-  --md-sys-typescale-body-large-family: Roboto;
-  --md-sys-typescale-body-large-weight: Regular;
-  --md-sys-typescale-body-medium-family: Roboto;
-  --md-sys-typescale-body-medium-weight: Regular;
-  --md-sys-typescale-body-small-family: Roboto;
-  --md-sys-typescale-body-small-weight: Regular;
-  --md-sys-typescale-label-large-family: Roboto;
-  --md-sys-typescale-label-large-weight: Medium;
-  --md-sys-typescale-label-medium-family: Roboto;
-  --md-sys-typescale-label-medium-weight: Medium;
-  --md-sys-typescale-label-small-family: Roboto;
-  --md-sys-typescale-label-small-weight: Medium;
-  --md-sys-typescale-title-large-family: Roboto;
-  --md-sys-typescale-title-large-weight: Regular;
-  --md-sys-typescale-title-medium-family: Roboto;
-  --md-sys-typescale-title-medium-weight: Medium;
-  --md-sys-typescale-title-small-family: Roboto;
-  --md-sys-typescale-title-small-weight: Medium;
-  --md-sys-typescale-display-large-size: 57rem;
-  --md-sys-typescale-display-medium-size: 45rem;
-  --md-sys-typescale-display-small-size: 36rem;
-  --md-sys-typescale-headline-large-size: 32rem;
-  --md-sys-typescale-headline-medium-size: 28rem;
-  --md-sys-typescale-headline-small-size: 24rem;
-  --md-sys-typescale-body-large-size: 16rem;
-  --md-sys-typescale-body-medium-size: 14rem;
-  --md-sys-typescale-body-small-size: 12rem;
-  --md-sys-typescale-label-large-size: 14rem;
-  --md-sys-typescale-label-medium-size: 12rem;
-  --md-sys-typescale-label-small-size: 11rem;
-  --md-sys-typescale-title-large-size: 22rem;
-  --md-sys-typescale-title-medium-size: 16rem;
-  --md-sys-typescale-title-small-size: 14rem;
+  --main-shadow-dark: 5px 5px 1px 1px rgb(102, 101, 111, 0.8);
+  --main-shadow-dark-hover: 2px 2px 1px 1px rgb(102, 101, 111, 0.8);
+  --main-shadow-button: 5px 5px 1px 1px var(--main-dark-30);
+  --main-shadow-button-hover: 5px 5px 1px 1px var(--main-dark-30);
+  --main-shadow-light: 5px 5px 1px 1px var(--main-dark-50);
+  --main-shadow-icon: 2px 2px 1px 1px var(--main-dark-50);
 }
