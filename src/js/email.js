@@ -5,4 +5,3 @@ form.setAttribute(
   "href",
   "mailto:".concat(atob(encodedEmail)).concat("?subject=Portfolio Query")
 );
-console.log(atob(encodedEmail));

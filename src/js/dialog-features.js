@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const dialogClosingEvent = new Event("closing");
 const dialogClosedEvent = new Event("closed");
 const dialogOpeningEvent = new Event("opening");
@@ -14,7 +15,6 @@ const animationsComplete = (element) =>
   Promise.allSettled(
     element.getAnimations().map((animation) => animation.finished)
   );
-
 const dialogClose = async ({ target: dialog }) => {
   dialog.setAttribute("inert", "");
   dialog.dispatchEvent(dialogClosingEvent);
@@ -22,7 +22,6 @@ const dialogClose = async ({ target: dialog }) => {
   await animationsComplete(dialog);
   dialog.dispatchEvent(dialogClosedEvent);
 };
-
 //  track opening
 const dialogAttrObserver = new MutationObserver((mutations, observer) => {
   mutations.forEach(async (mutation) => {
@@ -44,7 +43,6 @@ const dialogAttrObserver = new MutationObserver((mutations, observer) => {
     }
   });
 });
-
 //  track deleting
 const dialogDeleteObserver = new MutationObserver((mutations, observer) => {
   mutations.forEach((mutation) => {
@@ -57,11 +55,17 @@ const dialogDeleteObserver = new MutationObserver((mutations, observer) => {
     });
   });
 });
-
 // dialog setup on page load
-export default async function (dialog) {
+export default async function GuiDialog(dialog) {
   dialog.addEventListener("click", lightDismiss);
   dialog.addEventListener("close", dialogClose);
+  // Close all modals when press ESC
+  document.addEventListener("keydown", (event) => {
+    const { key } = event.key;
+    if (key === "Escape") {
+      dialogClose();
+    }
+  });
   dialogAttrObserver.observe(dialog, {
     attributes: true,
   });
