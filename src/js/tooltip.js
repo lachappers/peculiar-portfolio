@@ -72,12 +72,12 @@ class Tooltip {
 
   // Show or hide the tooltip
   showTooltip() {
-    this.container.classList.add("tooltip-visible");
+    // this.container.classList.add("tooltip-visible");
     this.tooltip.classList.remove("hidden");
   }
 
   hideTooltip() {
-    this.container.classList.remove("tooltip-visible");
+    // this.container.classList.remove("tooltip-visible");
     this.tooltip.classList.add("hidden");
   }
 
@@ -183,7 +183,7 @@ class Tooltip {
   }
 }
 
-Array.from(document.querySelectorAll(".icon, .badge")).forEach((element) => {
+Array.from(document.querySelectorAll(".tooltip")).forEach((element) => {
   // eslint-disable-next-line no-new
   new Tooltip(element);
   //   console.log(element);
