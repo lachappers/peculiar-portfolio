@@ -35,12 +35,12 @@ const closeButtons = document.querySelectorAll(".close-button");
 closeButtons.forEach((button) => {
   const goal = button.closest("dialog");
   button.addEventListener("click", (event) => {
+    event.stopImmediatePropagation();
     event.preventDefault();
 
-    console.log(goal);
+    // console.log(goal);
     goal.close();
     // console.log(event.target.closest("dialog"));
-    event.stopImmediatePropagation();
   });
 });
 
@@ -48,10 +48,10 @@ readButtons.forEach((button) => {
   const dialog = document.getElementById(button.dataset.modal);
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(dialog);
+    // console.log(dialog);
     dialog.showModal();
 
-    console.log(this);
+    // console.log(this);
     // closer.addEventListener("click", (event) => {
     //   event.preventDefault();
     //   dialog.close();
