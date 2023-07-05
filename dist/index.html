@@ -202,6 +202,8 @@
           </dl>
         </aside>
       </section>
+      
+
 
       <section class="about page" id="about" aria-labelledby="about-title" >
         <div class="about-text">
@@ -399,6 +401,7 @@
                   class="resume-modal"
                   id="entiaModal"
                   aria-label="My role at Entia"
+                  role="dialog"
                 >
                   <header>
                     <img
@@ -445,7 +448,7 @@
                   <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2021</time>
@@ -492,6 +495,7 @@
                   class="resume-modal"
                   id="amazonModal"
                   aria-label="My role at Amazon"
+                  role="dialog"
                 >
                   <header>
                     <button
@@ -537,7 +541,7 @@
                   </div>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2020-2021</time>
@@ -588,6 +592,7 @@
                   id="evaModal"
                   class="resume-modal"
                   aria-label="My role at Entia"
+                  role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
@@ -635,7 +640,7 @@
                   </div>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2019</time>
@@ -684,7 +689,7 @@
                 <dialog
                   id="googleModal"
                   class="resume-modal"
-                  aria-label="My role at Google"
+                  aria-label="My role at Google" role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
@@ -730,7 +735,7 @@
                   </div>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2017 - 2018</time>
@@ -765,7 +770,6 @@
                     </svg>
                   </button>
                 </div>
-
                 <a
                   href="https://www.wavestone.com/en/"
                   role="link"
@@ -778,8 +782,7 @@
                 <dialog
                   id="wavestoneModal"
                   class="resume-modal"
-                  aria-label="My role at Wavestone"
-                >
+                  aria-label="My role at Wavestone" role="dialog"                >
                   <!-- Modal header -->
                   <header>
                     <button
@@ -825,7 +828,7 @@
                   </div>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2012 - 2017</time>
@@ -875,6 +878,7 @@
                   id="kpmgModal"
                   class="resume-modal"
                   aria-label="My role at KPMG"
+                  role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
@@ -2266,7 +2270,7 @@
               </div>
             </article>
 
-            <article class="portfolio-card clickable-card" id="enterprise-case" aria-labelledby="enterprise-case-title">
+            <article class="portfolio-card clickable-card" id="enterprise-case" aria-labelledby="enterprise-case-title" aria-haspopup="dialog">
               <div class="card-text">
                 <header>
                   <h3 id="enterprise-case-title">
@@ -2317,6 +2321,7 @@
                     class="button-alt modal-btn"
                     type="button"
                     data-modal="enterpriseTechModal"
+                    
                   >
                     Read case studies
                     <svg
@@ -2347,6 +2352,8 @@
                 class="enterprise-tech-modal"
                 id="enterpriseTechModal"
                 aria-labelledby="enterprise-tech-modal-title"
+                role="dialog"
+                aria-modal="true"
               >
                 <header>
                   <!-- <img src="" alt="" style="width: 4rem; height: 4rem;"> -->

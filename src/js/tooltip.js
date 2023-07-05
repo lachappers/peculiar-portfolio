@@ -29,7 +29,9 @@ class Tooltip {
     // Open on mouse hover
     this.container.addEventListener("mouseenter", this.openTooltip.bind(this));
     // Open when a touch is detected
-    this.container.addEventListener("touchstart", this.openTooltip.bind(this));
+    this.container.addEventListener("touchstart", this.openTooltip.bind(this), {
+      passive: true,
+    });
     // Open when the trigger gets focus
     this.container.addEventListener("focus", this.openTooltip.bind(this));
 

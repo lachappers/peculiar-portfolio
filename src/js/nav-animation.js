@@ -6,7 +6,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
+        // console.log(entry.target);
         const index = Array.from(pages).indexOf(entry.target);
         tabs.forEach((tab) => {
           tab.classList.remove("rotate");

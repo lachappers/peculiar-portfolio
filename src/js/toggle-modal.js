@@ -1,36 +1,115 @@
-import GuiDialog from "./dialog-features";
+// import GuiDialog from "./dialog-features";
 
 const readButtons = document.querySelectorAll(".modal-btn");
 const closeButtons = document.querySelectorAll(".close-button");
 
-readButtons.forEach((button) => {
-  const dialog = document.getElementById(button.dataset.modal);
-  GuiDialog(dialog);
-  button.addEventListener("click", (event) => {
-    if (typeof dialog.showModal === "function") {
-      dialog.showModal();
-      // console.log("hurrah!");
-
-      dialog.addEventListener("click", ({ target: dialogTarget }) => {
-        if (dialogTarget.nodeName === "DIALOG") {
-          dialogTarget.close("dismiss");
-        }
-      });
-    } else {
-      console.log("The <dialog> AI is not supported by this browser");
-    }
-    event.stopImmediatePropagation();
-  });
-});
+// readButtons.forEach((button) => {
+//   const dialog = document.getElementById(button.dataset.modal);
+//   // GuiDialog(dialog);
+//   button.addEventListener("click", (event) => {
+//     if (typeof dialog.showModal === "function") {
+//       event.preventDefault();
+//       // dialog.show();
+//       dialog.showModal();
+//       console.log("hurrah!");
+//       console.log(dialog.querySelector(".close-button"));
+//       const closer = dialog.querySelector(".close-button");
+//       closer.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         dialog.close();
+//         e.stopImmediatePropagation();
+//       });
+//       // dialog.addEventListener("click", ({ target: dialogTarget }) => {
+//       //   if (dialogTarget.nodeName === "DIALOG") {
+//       //     dialogTarget.close("dismiss");
+//       //   }
+//       // });
+//     } else {
+//       // eslint-disable-next-line no-console
+//       console.log("The <dialog> AI is not supported by this browser");
+//     }
+//     event.stopImmediatePropagation();
+//   });
+// });
 
 closeButtons.forEach((button) => {
   const goal = button.closest("dialog");
   button.addEventListener("click", (event) => {
+    event.preventDefault();
+
     console.log(goal);
     goal.close();
+    // console.log(event.target.closest("dialog"));
     event.stopImmediatePropagation();
   });
 });
+
+readButtons.forEach((button) => {
+  const dialog = document.getElementById(button.dataset.modal);
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(dialog);
+    dialog.showModal();
+
+    console.log(this);
+    // closer.addEventListener("click", (event) => {
+    //   event.preventDefault();
+    //   dialog.close();
+    // });
+  });
+});
+
+// class Dialog {
+//   constructor(el) {
+//     // store the dialog element
+//     this.dialog = document.getElementById(el.dataset.modal);
+//     // console.log(this.dialog);
+//     // store the close button
+//     this.close = this.dialog.querySelector(".close-button");
+
+//     // store the open button
+//     // this.open = document.getElementById(el.dataset.opener);
+//     this.opener = el;
+//     // console.log(this.opener);
+//     // detect clicks on the open button
+//     this.opener.addEventListener("click", (e) => this.openModal(e));
+//     this.dialog.addEventListener("click", (event) => {
+//       // if (event.target.nodeName === "DIALOG") {
+//       //   this.dialog.close();
+//       // }
+//       if (event.target === this.dialog) {
+//         this.dialog.close("dismiss");
+//       }
+//     });
+//   }
+
+//   openModal(e) {
+//     // e.preventDefault();
+//     this.dialog.showModal();
+//     // this.close.addEventListener("click", (ev) => this.closeModal(ev));
+//   }
+
+//   closeModal(e) {
+//     if (e.target.nodeName === "DIALOG") {
+//       // e.preventDefault();
+//       this.dialog.close("dismiss");
+//     }
+//     // this.dialog.close();
+//   }
+// }
+
+// document.querySelectorAll(".modal-btn").forEach((el) => {
+//   // eslint-disable-next-line no-new
+//   new Dialog(el);
+//   // console.log(el);
+// });
+
+// closeButtons.forEach((button) => {
+//   const dialog = button.closest("dialog");
+//   button.addEventListener("click", (e) => {
+//     dialog.close();
+//   });
+// });
 
 // document.addEventListener("click", (e) => {
 //   console.log(e.target.nodeName);

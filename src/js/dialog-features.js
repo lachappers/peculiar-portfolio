@@ -59,13 +59,7 @@ const dialogDeleteObserver = new MutationObserver((mutations, observer) => {
 export default async function GuiDialog(dialog) {
   dialog.addEventListener("click", lightDismiss);
   dialog.addEventListener("close", dialogClose);
-  // Close all modals when press ESC
-  document.addEventListener("keydown", (event) => {
-    const { key } = event.key;
-    if (key === "Escape") {
-      dialogClose();
-    }
-  });
+
   dialogAttrObserver.observe(dialog, {
     attributes: true,
   });
