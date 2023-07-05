@@ -11,6 +11,7 @@
     "watch": "webpack --watch",
     "start": "npm run build && webpack serve --open && webpack --watch",
     "build": "webpack",
+    "build-prod": "webpack --config=webpack.config.prod.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

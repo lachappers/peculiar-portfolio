@@ -26,7 +26,7 @@ module.exports = {
   ],
   output: {
     // filename: "[name].[ext]",
-    filename: "[name].[contenthash].js",
+    filename: "bundle.js",
     // filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         // test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-        test: /\.(png|jpg|gif|svg|webp)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         type: "asset/resource",
         generator: {
           filename: "img/[name][ext][query]",

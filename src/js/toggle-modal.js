@@ -3,6 +3,35 @@
 const readButtons = document.querySelectorAll(".modal-btn");
 const closeButtons = document.querySelectorAll(".close-button");
 
+closeButtons.forEach((button) => {
+  const goal = button.closest("dialog");
+  button.addEventListener("click", (event) => {
+    event.stopImmediatePropagation();
+    event.preventDefault();
+
+    // console.log(goal);
+    goal.close();
+    // console.log(event.target.closest("dialog"));
+  });
+});
+
+readButtons.forEach((button) => {
+  const dialog = document.getElementById(button.dataset.modal);
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    // console.log(dialog);
+    dialog.showModal();
+    document.addEventListener("click", (ev) => {
+      // console.log(e.target.nodeName);
+      if (ev.target.nodeName === "DIALOG") {
+        // console.log(ev.target.nodeName);
+        // if (ev.target.classList.contains("resume-modal")) {
+        ev.target.close();
+      }
+    });
+  });
+});
+
 // readButtons.forEach((button) => {
 //   const dialog = document.getElementById(button.dataset.modal);
 //   // GuiDialog(dialog);
@@ -31,33 +60,6 @@ const closeButtons = document.querySelectorAll(".close-button");
 //     event.stopImmediatePropagation();
 //   });
 // });
-
-closeButtons.forEach((button) => {
-  const goal = button.closest("dialog");
-  button.addEventListener("click", (event) => {
-    event.stopImmediatePropagation();
-    event.preventDefault();
-
-    // console.log(goal);
-    goal.close();
-    // console.log(event.target.closest("dialog"));
-  });
-});
-
-readButtons.forEach((button) => {
-  const dialog = document.getElementById(button.dataset.modal);
-  button.addEventListener("click", (e) => {
-    e.preventDefault();
-    // console.log(dialog);
-    dialog.showModal();
-
-    // console.log(this);
-    // closer.addEventListener("click", (event) => {
-    //   event.preventDefault();
-    //   dialog.close();
-    // });
-  });
-});
 
 // class Dialog {
 //   constructor(el) {
@@ -109,19 +111,6 @@ readButtons.forEach((button) => {
 //   button.addEventListener("click", (e) => {
 //     dialog.close();
 //   });
-// });
-
-// document.addEventListener("click", (e) => {
-//   console.log(e.target.nodeName);
-//   if (e.target.nodeName == "DIALOG") {
-//     console.log(e.target.nodeName);
-//     if (e.target.classList.contains("resume-modal")) {
-//       e.target.close();
-//     }
-//     return;
-//   } else {
-//     return;
-//   }
 // });
 
 // dialogs.forEach((dialog) =>{
