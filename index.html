@@ -24,12 +24,12 @@
           <div class="icon-group">
             <a
               href="https://github.com/lachappers"
-              class="icon icon-small"
+              class="icon"
               role="link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-small">
                 <title>my github</title>
                 <path
                   d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
@@ -57,7 +57,7 @@
               rel="noopener noreferrer"
               target="_blank"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width = "50" height="50">
                 <title>email me</title>
                 <path
                   d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
@@ -87,7 +87,7 @@
           </li>
         </ol>
         <!-- Decorative images are identified by an empty alt to make screen readers recognise the image, but not attempt to describe the image -->
-        <img
+        <img loading="lazy"
           class="nav-pic"
           src="img/full highres foreground.png"
           alt=""
@@ -133,10 +133,10 @@
           </header>
 
           <div class="headshot" aria-hidden="true">
-            <img
+            <img loading="lazy"
               src="img/headshot-highres-foreground.png"
               alt=""
-              sizes="(max-width 600px) 50vw, 300x"
+              height="1000" width="1000"
             />
           </div>
           <div class="action-buttons">
@@ -171,27 +171,27 @@
               <!-- <dt>endorsed by global brands</dt> -->
               <dd>
                 <div class="stat-brands" aria-label="Brands I've worked with">
-                  <img
+                  <img loading="lazy"
                     class="logo-large"
                     src="img/Amazon_logo.svg"
                     alt="Amazon"
                   />
-                  <img
+                  <img loading="lazy"
                     class="logo-large"
                     src="img/Google_2015_logo.svg"
                     alt="Google"
                   />
-                  <img
+                  <img loading="lazy"
                     class="logo-large"
                     src="img/KPMG-logo.svg"
                     alt="KPMG"
                   />
-                  <img
+                  <img loading="lazy"
                     class="logo-large"
                     src="img/London_Business_School_logo.svg"
                     alt="London Business School"
                   />
-                  <img
+                  <img loading="lazy"
                     class="logo-large"
                     src="img/university-of-bristol-logo-svg-vector.svg"
                     alt="University of Bristol"
@@ -202,6 +202,8 @@
           </dl>
         </aside>
       </section>
+      
+
 
       <section class="about page" id="about" aria-labelledby="about-title" >
         <div class="about-text">
@@ -233,6 +235,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
+                width = "100" height="100"
               >
                 <title>my github</title>
                 <path
@@ -277,11 +280,11 @@
                 />
               </svg>
             </a>
-            <!-- <a href="" class="social-link"  role="link" role="link" target="_blank" rel="noopener noreferrer"><img src="/images/GitHub-Logo.png" alt=""></a> -->
+            <!-- <a href="" class="social-link"  role="link" role="link" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="/images/GitHub-Logo.png" alt=""></a> -->
           </div>
         </div>
         <div class="about-image" aria-hidden="true">
-          <img src="img/full highres foreground.png" alt="" />
+          <img loading="lazy" src="img/full highres foreground.png" alt="" />
         </div>
         <footer>
           <a href="#resume" class="next-btn" aria-label="jump to next section">
@@ -391,7 +394,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img
+                  ><img loading="lazy"
                     src="img/entia-logo-condensed.png"
                     alt="Entia Home"
                 /></a>
@@ -399,9 +402,10 @@
                   class="resume-modal"
                   id="entiaModal"
                   aria-label="My role at Entia"
+                  role="dialog"
                 >
                   <header>
-                    <img
+                    <img loading="lazy"
                       src="img/entia-logo-condensed.png"
                       alt=""
                       class="logo-large"
@@ -445,7 +449,7 @@
                   <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2021</time>
@@ -484,7 +488,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img src="img/Amazon_logo.svg" alt="Amazon Home"
+                  ><img loading="lazy" src="img/Amazon_logo.svg" alt="Amazon Home"
                 /></a>
 
                 <!-- Modal content -->
@@ -492,8 +496,15 @@
                   class="resume-modal"
                   id="amazonModal"
                   aria-label="My role at Amazon"
+                  role="dialog"
                 >
                   <header>
+                    <img loading="lazy"
+                      src="img/Amazon_logo.svg"
+                      alt="Amazon Ltd Logo"
+                      class="logo-large"
+                    />
+                    <h3 class="">Senior Program Manager</h3>
                     <button
                       type="button"
                       aria-label="close modal"
@@ -517,17 +528,11 @@
                   </header>
                   <!-- Modal body -->
                   <div class="modal-body">
-                    <img
-                      src="img/Amazon_logo.svg"
-                      alt="Amazon Ltd Logo"
-                      class="logo-large"
-                    />
-                    <h3 class="">Senior Program Manager</h3>
                     <time class="">2021</time>
                     <div role="doc-subtitle">
                       Amazon Diagnostics - Healthcare
                     </div>
-                    <p>Responsible for:</p>
+                    <h4>Responsible for:</h4>
                     <p>
                       Facilitating the EU-Global 2022 strategy and operational
                       planning process (OP1) to transition 400-person internal
@@ -535,9 +540,10 @@
                       development.
                     </p>
                   </div>
+                  <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2020-2021</time>
@@ -580,7 +586,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img src="img/eva.png" alt="Eva Home"
+                  ><img loading="lazy" src="img/eva.png" alt="Eva Home"
                 /></a>
 
                 <!-- Modal content -->
@@ -588,9 +594,16 @@
                   id="evaModal"
                   class="resume-modal"
                   aria-label="My role at Entia"
+                  role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
+                    <img loading="lazy"
+                    src="img/entia-logo-condensed.png"
+                    alt="Entia Ltd"
+                    class="logo-large"
+                  />
+                  <h3 class="">Head of Operations</h3>
                     <button
                       type="button"
                       aria-label="close modal"
@@ -614,18 +627,13 @@
                   </header>
                   <!-- Modal body -->
                   <div class="modal-body">
-                    <img
-                      src="img/entia-logo-condensed.png"
-                      alt="Entia Ltd"
-                      class="logo-large"
-                    />
-                    <h3 class="">Head of Operations</h3>
+
                     <time class="">2020-2021</time>
                     <div role="doc-subtitle">
                       Primary electronic health record technology in NHS and
                       Private Practice
                     </div>
-                    <p class="">Responsible for:</p>
+                    <h4 class="">Responsible for:</h4>
                     <p class="">
                       Responsible for the design and development of effective
                       and efficient internal operations functions including
@@ -633,9 +641,10 @@
                       VC-backed turnaround.
                     </p>
                   </div>
+                  <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2019</time>
@@ -677,60 +686,62 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img
+                  ><img loading="lazy"
                     src="img/Google_2015_logo.svg"
                     alt="Google Home"
                 /></a>
                 <dialog
                   id="googleModal"
                   class="resume-modal"
-                  aria-label="My role at Google"
+                  aria-label="My role at Google" role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
+                    <img loading="lazy"
+                    src="img/Google_2015_logo.svg"
+                    alt="Google Ltd"
+                    class="logo-large"
+                  />
+                  <h3 class="">Cloud Consultant, MBA</h3>
                     <button
-                      type="button"
-                      aria-label="close modal"
-                      class="close-button"
+                    type="button"
+                    aria-label="close modal"
+                    class="close-button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
-                      <svg
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <span class="sr-only">Close modal</span>
-                    </button>
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
                   </header>
                   <!-- Modal body -->
                   <div class="modal-body">
-                    <img
-                      src="img/Google_2015_logo.svg"
-                      alt="Google Ltd"
-                      class="logo-large"
-                    />
-                    <h3 class="">Cloud Consultant, MBA</h3>
+
                     <time class="">2019</time>
                     <div role="doc-subtitle">
                       Cloud Professional Services Org (PSO)
                     </div>
-                    <p class="">Responsible for:</p>
+                    <h4 class="">Responsible for:</h4>
                     <p class="">
                       Supporting early stage development of Google’s enterprise
                       migration services.
                     </p>
                     <p>Senior Individual Contributor</p>
                   </div>
+                  <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2017 - 2018</time>
@@ -765,23 +776,27 @@
                     </svg>
                   </button>
                 </div>
-
                 <a
                   href="https://www.wavestone.com/en/"
                   role="link"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img src="img/Wavestone.png" alt="Wavestone Home"
+                  ><img loading="lazy" src="img/Wavestone.png" alt="Wavestone Home"
                 /></a>
 
                 <dialog
                   id="wavestoneModal"
                   class="resume-modal"
-                  aria-label="My role at Wavestone"
-                >
+                  aria-label="My role at Wavestone" role="dialog"                >
                   <!-- Modal header -->
                   <header>
+                    <img loading="lazy"
+                    src="img/Wavestone.png"
+                    alt="Wavestone Home"
+                    class="logo-large"
+                  />
+                  <h3 class="">Managing Consultant</h3>
                     <button
                       type="button"
                       aria-label="close modal"
@@ -805,17 +820,12 @@
                   </header>
                   <!-- Modal body -->
                   <div class="modal-body">
-                    <img
-                      src="img/Wavestone.png"
-                      alt="Wavestone Home"
-                      class="logo-large"
-                    />
-                    <h3 class="">Managing Consultant</h3>
+
                     <time class="">2017 - 2018</time>
                     <div role="doc-subtitle">
                       Global Cybersecurity and Emerging Technology Consulting
                     </div>
-                    <p class="">Responsible for:</p>
+                    <h4 class="">Responsible for:</h4>
                     <p class="">
                       Client consulting, building operational processes and
                       Career Development Manager for team of 7 (staffing and
@@ -823,9 +833,10 @@
                     </p>
                     <p class="">Sat on Management Committee of Wavestone UK.</p>
                   </div>
+                  <footer></footer>
                 </dialog>
               </li>
-              <li class="timeline-card card">
+              <li class="timeline-card card" aria-haspopup="dialog">
                 <div class="timeline-style"></div>
                 <div class="card-text">
                   <time class="">2012 - 2017</time>
@@ -868,16 +879,23 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img src="img/KPMG-logo.svg" alt="KPMG Home"
+                  ><img loading="lazy" src="img/KPMG-logo.svg" alt="KPMG Home"
                 /></a>
 
                 <dialog
                   id="kpmgModal"
                   class="resume-modal"
                   aria-label="My role at KPMG"
+                  role="dialog"
                 >
                   <!-- Modal header -->
                   <header>
+                    <img loading="lazy"
+                    src="img/KPMG-logo.svg"
+                    alt="KPMG"
+                    class="logo-large"
+                  />
+                  <h3 class="">Manager, Advisory</h3>
                     <button
                       type="button"
                       aria-label="close modal"
@@ -901,18 +919,13 @@
                   </header>
                   <!-- Modal body -->
                   <div class="modal-body">
-                    <img
-                      src="img/KPMG-logo.svg"
-                      alt="KPMG"
-                      class="logo-large"
-                    />
-                    <h3 class="">Manager, Advisory</h3>
+
                     <time class="">2012 - 2017</time>
                     <div role="doc-subtitle">
                       Data Analytics, Culture Change, Cyber Security, Financial
                       Services Advisory
                     </div>
-                    <p class="">Responsible for:</p>
+                    <h4 class="">Responsible for:</h4>
                     <p class="">
                       End to end sales and delivery of advisory services,
                       product management and development, public speaking and
@@ -923,6 +936,7 @@
                       Fast-tracked through KPMGs Leadership Development path.
                     </p>
                   </div>
+                  <footer></footer>
                 </dialog>
               </li>
             </ol>
@@ -972,7 +986,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="card-img logo-xl"
-                    ><img
+                    ><img loading="lazy"
                       src="img/logo-full.svg"
                       alt="Peculiar Dynamics Home"
                       style="padding: 1rem"
@@ -995,14 +1009,14 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="card-img logo-xl"
-                    ><img
+                    ><img loading="lazy"
                       src="img/cocha-logo.png"
                       alt="CoCHA Home"
                       style="padding: 1rem"
                   /></a>
                 </li>
                 <!-- <li class="venture card">
-                    <a href="#"><img src="../src/images/logo-full.svg" alt=""></a>
+                    <a href="#"><img loading="lazy" src="../src/images/logo-full.svg" alt=""></a>
                     <h4></h4>
                     <div role="doc-subtitle"></div>
                     <p></p>
@@ -1034,7 +1048,7 @@
               <ul class="content education cards" role="list">
                 <li class="card">
                   <div class="card-img logo-xl">
-                    <img
+                    <img loading="lazy"
                       src="img/London_Business_School_logo.svg"
                       alt="London Business School"
                     />
@@ -1051,7 +1065,7 @@
                 </li>
                 <li class="card">
                   <div class="card-img logo-xl">
-                    <img
+                    <img loading="lazy"
                       src="img/university-of-bristol-logo.png"
                       alt="University of Bristol"
                       style="padding: 1rem"
@@ -1096,7 +1110,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-large"
                       src="img/odin.svg"
                       alt=""
@@ -1109,7 +1123,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-large"
                       src="img/cover_automate2_thumb.jpg"
                       alt=""
@@ -1122,9 +1136,9 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-large"
-                      src="e3db7e2b1a3359314702.webp"
+                      src="img/mhfa.webp"
                       alt="Mental Health First Aid Home"
                     />
                   </a>
@@ -1134,9 +1148,9 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-large"
-                      src="3b13290fb8fe94cf0416.webp"
+                      src="img/CIPD.webp"
                       alt="CIPD Home"
                     />
                   </a>
@@ -1146,7 +1160,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-large"
                       src="img/gmat.png"
                       alt="GMAT Home"
@@ -1162,7 +1176,7 @@
                       aria-labelledby="isc-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/(ISC)2_logo.png"
                         alt=""
@@ -1179,7 +1193,7 @@
                       aria-labelledby="prince-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/prince2-small-2.png"
                         alt=""
@@ -1195,7 +1209,7 @@
                       aria-labelledby="gcparch-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/cloud-architect.png"
                         alt=""
@@ -1211,7 +1225,7 @@
                       aria-labelledby="iso-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/iso_27001_02.png"
                         alt=""
@@ -1227,7 +1241,7 @@
                       aria-labelledby="itil-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/ITIL-Logo.png"
                         alt=""
@@ -1412,7 +1426,7 @@
                       aria-labelledby="html-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/HTML5_logo_and_wordmark.png"
                         alt=""
@@ -1428,11 +1442,11 @@
                       aria-labelledby="css-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/CSS3_logo_and_wordmark.png"
                       />
-                      <div role="tooltip" id="html-tooltip" class="hidden">
+                      <div role="tooltip" id="css-tooltip" class="hidden">
                         CSS
                       </div>
                     </li>
@@ -1444,7 +1458,7 @@
                       aria-labelledby="js-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/JavaScript-logo.png"
                         alt=""
@@ -1460,7 +1474,7 @@
                       aria-labelledby="react-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/logo-react-js.png"
                         alt=""
@@ -1481,7 +1495,7 @@
                       aria-labelledby="ruby-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/Ruby_logo.png"
                         alt=""
@@ -1497,7 +1511,7 @@
                       aria-labelledby="ruby-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/rails-logo.png"
                       />
@@ -1517,7 +1531,7 @@
                       aria-labelledby="post-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/postgresql.png"
                         alt=""
@@ -1538,7 +1552,7 @@
                       aria-labelledby="gcp-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <img loading="lazy"
                         class="logo-small"
                         src="img/google-cloud-logo.png"
                         alt=""
@@ -1554,11 +1568,11 @@
                       aria-labelledby="gh-tooltip"
                       data-tooltip-trigger
                     >
-                      <img
+                      <!-- <img loading="lazy"
                         class="logo-small"
-                        src="img/GitHub-Logo.png"
+                        src="../src/images/GitHub-Logo.png"
                         alt=""
-                      />
+                      /> -->
                       <div role="tooltip" id="gh-tooltip" class="hidden">
                         Github
                       </div>
@@ -1594,65 +1608,65 @@
                   <h4>Productivity</h4>
                   <ul class="badge-container" role="list">
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/figma.png"
                         alt="figma"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/atlassian.png"
                         alt="atlassian"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/slack.png"
                         alt="slack"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/google-workspace.svg"
                         alt="Google workspace"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/hubspot.png"
                         alt="hubspot"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/microsoft365.png"
                         alt="microsoft 365"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/Hootsuite-Logo.png"
                         alt="hootsuite"
                         class="logo-small"
                       />
                     </li>
                     <!-- <li class="badge">
-                      <img src="" alt="" class="logo-small" />
+                      <img loading="lazy" src="" alt="" class="logo-small" />
                     </li>
                     <li class="badge">
-                      <img src="" alt="" class="logo-small" />
+                      <img loading="lazy" src="" alt="" class="logo-small" />
                     </li>
                     <li class="badge">
-                      <img src="" alt="" class="logo-small" />
+                      <img loading="lazy" src="" alt="" class="logo-small" />
                     </li>
                     <li class="badge">
-                      <img src="" alt="" class="logo-small" />
+                      <img loading="lazy" src="" alt="" class="logo-small" />
                     </li> -->
                   </ul>
                 </div>
@@ -1660,70 +1674,70 @@
                   <h4>HR, People Ops & Finance</h4>
                   <ul class="badge-container" role="list">
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/xero.svg"
                         alt="xero"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/NetSuite-Logo.png"
                         alt="netsuite"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/sage.png"
                         alt="sage"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/pento.png"
                         alt="pento"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/bamboohr.png"
                         alt="bamboo hr"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/charlie.png"
                         alt="charlie hr"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
-                        src="275ca67b4823877d1984.webp"
+                      <img loading="lazy"
+                        src="img/teamtailor.webp"
                         alt="teamtailor"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/docusign.png"
                         alt="docusign"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/salesforce.png"
                         alt="salesforce"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/ben.png"
                         alt="thanksben"
                         class="logo-small"
@@ -1735,49 +1749,49 @@
                   <h4>Enterprise Tech</h4>
                   <ul class="badge-container" role="list">
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/lastpass.png"
                         alt="lastpass"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/jumpcloud.png"
                         alt="jumpcloud"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/1password.png"
                         alt="1password"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/wordpress.png"
                         alt="wordpress"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/wix.png"
                         alt="wix"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/zendesk.png"
                         alt="zendesk"
                         class="logo-small"
                       />
                     </li>
                     <li class="badge">
-                      <img
+                      <img loading="lazy"
                         src="img/google-analytics.png"
                         alt="google analytics"
                         class="logo-small"
@@ -1941,7 +1955,7 @@
                 <p>
                   This site demonstrates custom-built, accessible components
                   built using HTML, CSS and vanilla Javascript, bundled using
-                  webpack, deployed on XXX, with version control managed by
+                  Webpack, deployed on Hostinger, with version control managed by
                   Github.
                 </p>
                 <ul
@@ -1953,15 +1967,15 @@
                     class="badge tooltip"
                     tabindex="0"
                     data-tooltip-position="top"
-                    aria-labelledby="html-tooltip"
+                    aria-labelledby="html-tooltip2"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/HTML5_logo_and_wordmark.png"
                       alt=""
                     />
-                    <div role="tooltip" id="html-tooltip" class="hidden">
+                    <div role="tooltip" id="html-tooltip2" class="hidden">
                       HTML
                     </div>
                   </li>
@@ -1969,15 +1983,15 @@
                     class="badge tooltip"
                     tabindex="0"
                     data-tooltip-position="top"
-                    aria-labelledby="css-tooltip"
+                    aria-labelledby="css-tooltip2"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/CSS3_logo_and_wordmark.png"
                       alt=""
                     />
-                    <div role="tooltip" id="css-tooltip" class="hidden">
+                    <div role="tooltip" id="css-tooltip2" class="hidden">
                       CSS
                     </div>
                   </li>
@@ -1985,16 +1999,32 @@
                     class="badge tooltip"
                     tabindex="0"
                     data-tooltip-position="top"
-                    aria-labelledby="javascript-tooltip"
+                    aria-labelledby="javascript-tooltip2"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/JavaScript-logo.png"
                       alt=""
                     />
-                    <div role="tooltip" id="javascript-tooltip" class="hidden">
+                    <div role="tooltip" id="javascript-tooltip2" class="hidden">
                       Javascript
+                    </div>
+                  </li>
+                  <li
+                    class="badge tooltip"
+                    tabindex="0"
+                    data-tooltip-position="top"
+                    aria-labelledby="webpack-tooltip"
+                    data-tooltip-trigger
+                  >
+                    <img loading="lazy"
+                      class="logo-xs"
+                      src="img/webpack-icon.png"
+                      alt=""
+                    />
+                    <div role="tooltip" id="webpack-tooltip" class="hidden">
+                      Webpack
                     </div>
                   </li>
                 </ul>
@@ -2031,9 +2061,10 @@
                     rel="noopener noreferrer"
                   >
                     <svg
-                      class="icon-small"
+                      class="icon icon-small"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
+                      width = "10" height="10"
                     >
                       <path
                         d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
@@ -2044,7 +2075,7 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img src="img/this-site.png" alt="" />
+                <img loading="lazy" src="img/this-site.png" alt="" />
               </div>
               <!-- <dialog
                 class="portfolio-modal"
@@ -2164,7 +2195,7 @@
                     aria-labelledby="wordpress-tooltip"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/wordpress-icon.png"
                       alt=""
@@ -2180,7 +2211,7 @@
                     aria-labelledby="google-analytics-tooltip"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/google-analytics-icon.png"
                       alt=""
@@ -2200,7 +2231,7 @@
                     aria-labelledby="elementor-tooltip"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="img/elementor-icon.png"
                       alt=""
@@ -2262,11 +2293,11 @@
                 <!-- </div> -->
               </div>
               <div class="portfolio-card-img">
-                <img src="img/cocha-home.png" alt="" />
+                <img loading="lazy" src="img/cocha-home.png" alt=""  width="300" height="300"/>
               </div>
             </article>
 
-            <article class="portfolio-card clickable-card" id="enterprise-case" aria-labelledby="enterprise-case-title">
+            <article class="portfolio-card clickable-card" id="enterprise-case" aria-labelledby="enterprise-case-title" aria-haspopup="dialog">
               <div class="card-text">
                 <header>
                   <h3 id="enterprise-case-title">
@@ -2302,7 +2333,7 @@
                     aria-labelledby="html-tooltip"
                     data-tooltip-trigger
                   >
-                    <img
+                    <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/HTML5_logo_and_wordmark.png"
                       alt=""
@@ -2317,6 +2348,7 @@
                     class="button-alt modal-btn"
                     type="button"
                     data-modal="enterpriseTechModal"
+                    
                   >
                     Read case studies
                     <svg
@@ -2341,15 +2373,17 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img src="img/enterprise-tech.png" alt="" />
+                <img loading="lazy" src="img/enterprise-tech.png" alt="" />
               </div>
               <dialog
                 class="enterprise-tech-modal"
                 id="enterpriseTechModal"
                 aria-labelledby="enterprise-tech-modal-title"
+                role="dialog"
+                aria-modal="true"
               >
                 <header>
-                  <!-- <img src="" alt="" style="width: 4rem; height: 4rem;"> -->
+                  <!-- <img loading="lazy" src="" alt="" style="width: 4rem; height: 4rem;"> -->
                   <h1 id="enterprise-tech-modal-title">
                     Case Studies: Integrated Core Business Processes and Systems
                   </h1>
@@ -2380,12 +2414,12 @@
                       Undertook comprehensive system and data mapping to determine information flows, system interfaces and data integrity. Reviewed performance and gathered requirements to enable vendor comparison and selection. Delivered highly-automated and deeply integrated HR, Finance and IT systems, to ensure data accuracy and minimise cost error, whilst maintaining simple interfaces, improving team performance, employee satisfaction and compliance.
                     </p>
                     <ul class="badge-container">
-                      <li class="badge"><img src="img/bamboohr.png" alt="bamboo hr" class="logo-small"></li>
-                      <li class="badge"><img src="img/atlassian.png" alt="atlassian" class="logo-small"></li>
-                      <li class="badge"><img src="img/NetSuite-Logo.png" alt="netsuite" class="logo-small"></li>
-                      <li class="badge"><img src="img/ben.png" alt="thanksben" class="logo-small"></li>
-                      <li class="badge"><img src="img/pento.png" alt="pento" class="logo-small"></li>
-                      <li class="badge"><img src="img/jumpcloud.png" alt="jumpcloud" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/bamboohr.png" alt="bamboo hr" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/atlassian.png" alt="atlassian" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/NetSuite-Logo.png" alt="netsuite" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/ben.png" alt="thanksben" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/pento.png" alt="pento" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/jumpcloud.png" alt="jumpcloud" class="logo-small"></li>
                     </ul>
                   </article>
                   <article class="card">
@@ -2394,11 +2428,11 @@
                       on legacy techstack and reducing time spent on manual processes including time-tracking,
                       service desk queries and inventory management.</p>
                       <ul class="badge-container">
-                        <li class="badge"><img src="img/charlie.png" alt="charlie hr" class="logo-small"></li>
-                      <li class="badge"><img src="img/atlassian.png" alt="atlassian" class="logo-small"></li>
-                      <li class="badge"><img src="img/google-workspace.svg" alt="google workspace" class="logo-small"></li>
-                      <li class="badge"><img src="img/lastpass.png" alt="lastpass" class="logo-small"></li>
-                      <li class="badge"><img src="img/hubspot.png" alt="hubspot" class="logo-small"></li>
+                        <li class="badge"><img loading="lazy" src="img/charlie.png" alt="charlie hr" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/atlassian.png" alt="atlassian" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/google-workspace.svg" alt="google workspace" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/lastpass.png" alt="lastpass" class="logo-small"></li>
+                      <li class="badge"><img loading="lazy" src="img/hubspot.png" alt="hubspot" class="logo-small"></li>
                       </ul>
                   </article>
                 </div>
@@ -2489,10 +2523,11 @@
               target="_blank"
             >
               <svg
-                class="icon-large"
+                class="icon icon-large"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                width = "10" height="10"
               >
                 <title>at</title>
                 <path
@@ -2512,7 +2547,7 @@
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
+              <img loading="lazy"
                 class="icon-large"
                 src="img/logo-icon.svg"
                 alt=""
@@ -2604,5 +2639,5 @@
         Copyright © 2023 Lucy Chaplin. All rights reserved.
       </div>
     </footer>
-  <script defer src="bundle.js"></script></body>
+  <script defer src="main.5e78e35caaa5373c84db.js"></script></body>
 </html>
