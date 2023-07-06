@@ -8,6 +8,7 @@ module.exports = {
       title: "Lucy Chaplin",
       template: "./src/index.html",
       inject: "body",
+      favicon: "src/images/headshot-icon.png",
     }),
   ],
   output: {

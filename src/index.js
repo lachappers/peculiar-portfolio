@@ -6,7 +6,6 @@ import "./js/email";
 import "./js/scroll-to-top";
 
 require("./css/style.css");
-// import html from "./index.html";
 
 if (process.env.NODE_ENV !== "production") {
   // eslint-disable-next-line no-console

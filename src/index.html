@@ -7,9 +7,7 @@
     <!--Viewport Meta tag - sets initial page width to the size of screen it's viewed on, without any zoom (common in older browsers) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <title>Lucy Chaplin</title>
-    <link rel="icon" href="./images/headshot-highres-foreground.png" width="25" height="25">
   </head>
   <body>
     <!--Semantic tags describe their purpose and type of content -->
@@ -18,7 +16,6 @@
       <nav class="side-nav" role="navigation">
         <ul
         class="nav-content"
-        role="navigation"
         aria-label="navigate this site"
       >
         <li class="nav-item"><a href="#home" class="nav-text">Home</a></li>
@@ -79,7 +76,7 @@
               target="_blank"
               aria-label="Send me an email"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"class="icon-small" width = "1rem" height="1rem" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"class="icon-small" width = "2rem" height="2rem" aria-hidden="true">
                 <path
                   d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
                 />
@@ -89,9 +86,10 @@
         </aside>
 
         <!-- Decorative images are identified by an empty alt to make screen readers recognise the image, but not attempt to describe the image -->
-        <img loading="lazy"
+        <img 
           class="nav-pic"
           src="../src/images/full highres foreground.png"
+          width="200" height="200"
           alt=""
         />
       </nav>
@@ -135,7 +133,7 @@
           </header>
 
           <div class="headshot" aria-hidden="true">
-            <img loading="lazy"
+            <img 
               src="../src/images/headshot-highres-foreground.png"
               alt=""
               height="1000" width="1000"
@@ -173,30 +171,35 @@
               <!-- <dt>endorsed by global brands</dt> -->
               <dd>
                 <div class="stat-brands" aria-label="Brands I've worked with">
-                  <img loading="lazy"
+                  <img 
                     class="logo-large"
                     src="../src/images/Amazon_logo.svg"
                     alt="Amazon"
+                    width="100" height="100"
                   />
-                  <img loading="lazy"
+                  <img 
                     class="logo-large"
                     src="../src/images/Google_2015_logo.svg"
                     alt="Google"
+                    width="100" height="100"
                   />
-                  <img loading="lazy"
+                  <img 
                     class="logo-large"
                     src="../src/images/KPMG-logo.svg"
                     alt="KPMG"
+                    width="100" height="100"
                   />
-                  <img loading="lazy"
+                  <img 
                     class="logo-large"
                     src="../src/images/London_Business_School_logo.svg"
                     alt="London Business School"
+                    width="100" height="100"
                   />
-                  <img loading="lazy"
+                  <img
                     class="logo-large"
                     src="../src/images/university-of-bristol-logo-svg-vector.svg"
                     alt="University of Bristol"
+                    width="100" height="100"
                   />
                 </div>
               </dd>
@@ -289,7 +292,7 @@
           </div>
         </div>
         <div class="about-image" aria-hidden="true">
-          <img loading="lazy" src="../src/images/full highres foreground.png" alt="" />
+          <img loading="lazy" src="../src/images/full highres foreground.png" alt=""  width="50" height="50" />
         </div>
         <footer>
           <a href="#resume" class="next-btn" aria-label="jump to next section">
@@ -402,6 +405,7 @@
                   ><img loading="lazy"
                     src="../src/images/entia-logo-condensed.png"
                     alt="Entia Home"
+                    width="100" height="100"
                 /></a>
                 <dialog
                   class="resume-modal"
@@ -414,6 +418,7 @@
                       src="../src/images/entia-logo-condensed.png"
                       alt=""
                       class="logo-large"
+                      width="50" height="50"
                     />
                     <h3 class="">Head of People</h3>
                     <button
@@ -493,7 +498,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img loading="lazy" src="../src/images/Amazon_logo.svg" alt="Amazon Home"
+                  ><img loading="lazy" src="../src/images/Amazon_logo.svg" alt="Amazon Home"  width="500" height="500"
                 /></a>
 
                 <!-- Modal content -->
@@ -507,7 +512,7 @@
                     <img loading="lazy"
                       src="../src/images/Amazon_logo.svg"
                       alt="Amazon Ltd Logo"
-                      class="logo-large"
+                      class="logo-large"  width="50" height="50"
                     />
                     <h3 class="">Senior Program Manager</h3>
                     <button
@@ -520,7 +525,7 @@
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
+                        aria-hidden="true" 
                       >
                         <path
                           fill-rule="evenodd"
@@ -591,7 +596,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img loading="lazy" src="../src/images/eva.png" alt="Eva Home"
+                  ><img loading="lazy" src="../src/images/eva.png" alt="Eva Home"  width="500" height="500"
                 /></a>
 
                 <!-- Modal content -->
@@ -694,6 +699,7 @@
                   ><img loading="lazy"
                     src="../src/images/Google_2015_logo.svg"
                     alt="Google Home"
+                    width="500" height="500"
                 /></a>
                 <dialog
                   id="googleModal"
@@ -706,6 +712,7 @@
                     src="../src/images/Google_2015_logo.svg"
                     alt="Google Ltd"
                     class="logo-large"
+                    width="500" height="500"
                   />
                   <h3 class="">Cloud Consultant, MBA</h3>
                     <button
@@ -787,7 +794,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img loading="lazy" src="../src/images/Wavestone.png" alt="Wavestone Home"
+                  ><img loading="lazy" src="../src/images/Wavestone.png" alt="Wavestone Home" width="100" height="100"
                 /></a>
 
                 <dialog
@@ -799,7 +806,7 @@
                     <img loading="lazy"
                     src="../src/images/Wavestone.png"
                     alt="Wavestone Home"
-                    class="logo-large"
+                    class="logo-large" width="500" height="500"
                   />
                   <h3 class="">Managing Consultant</h3>
                     <button
@@ -884,7 +891,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="card-img logo-xl"
-                  ><img loading="lazy" src="../src/images/KPMG-logo.svg" alt="KPMG Home"
+                  ><img loading="lazy" src="../src/images/KPMG-logo.svg" alt="KPMG Home" width="500" height="500"
                 /></a>
 
                 <dialog
@@ -898,7 +905,7 @@
                     <img loading="lazy"
                     src="../src/images/KPMG-logo.svg"
                     alt="KPMG"
-                    class="logo-large"
+                    class="logo-large" width="500" height="500"
                   />
                   <h3 class="">Manager, Advisory</h3>
                     <button
@@ -994,7 +1001,7 @@
                     ><img loading="lazy"
                       src="../src/images/logo-full.svg"
                       alt="Peculiar Dynamics Home"
-                      style="padding: 1rem"
+                      style="padding: 1rem" width="500" height="500"
                   /></a>
                 </li>
                 <li class="card">
@@ -1017,7 +1024,7 @@
                     ><img loading="lazy"
                       src="../src/images/cocha-logo.png"
                       alt="CoCHA Home"
-                      style="padding: 1rem"
+                      style="padding: 1rem" width="500" height="500"
                   /></a>
                 </li>
                 <!-- <li class="venture card">
@@ -1056,6 +1063,7 @@
                     <img loading="lazy"
                       src="../src/images/London_Business_School_logo.svg"
                       alt="London Business School"
+                      width="100" height="100"
                     />
                   </div>
                   <div class="card-text">
@@ -1074,6 +1082,7 @@
                       src="../src/images/university-of-bristol-logo.png"
                       alt="University of Bristol"
                       style="padding: 1rem"
+                      width="500" height="500"
                     />
                   </div>
                   <div class="card-text">
@@ -1114,11 +1123,13 @@
                     role="link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="The Odin Project home"
                   >
                     <img loading="lazy"
                       class="logo-large"
                       src="../src/images/odin.svg"
                       alt=""
+                      width="50" height="50"
                     />
                   </a>
 
@@ -1127,11 +1138,13 @@
                     role="link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Automate the boring stuff with Python"
                   >
                     <img loading="lazy"
                       class="logo-large"
                       src="../src/images/cover_automate2_thumb.jpg"
                       alt=""
+                      width="50" height="50"
                     />
                   </a>
 
@@ -1140,11 +1153,13 @@
                     role="link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Mental Health First Aid Home"
                   >
                     <img loading="lazy"
                       class="logo-large"
                       src="../src/images/mhfa.webp"
-                      alt="Mental Health First Aid Home"
+                      alt=""
+                      width="50" height="50"
                     />
                   </a>
                   <a
@@ -1152,11 +1167,13 @@
                     role="link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="CIPD Home"
                   >
                     <img loading="lazy"
                       class="logo-large"
                       src="../src/images/CIPD.webp"
-                      alt="CIPD Home"
+                      alt=""
+                      width="50" height="50"
                     />
                   </a>
                   <a
@@ -1164,11 +1181,13 @@
                     role="link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="GMAT home"
                   >
                     <img loading="lazy"
                       class="logo-large"
                       src="../src/images/gmat.png"
-                      alt="GMAT Home"
+                      alt=""
+                      width="50" height="50"
                     />
                   </a>
                 </div>
@@ -1185,6 +1204,7 @@
                         class="logo-small"
                         src="../src/images/(ISC)2_logo.png"
                         alt="ISC2 logo"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="isc-tooltip" class="hidden">
                         CISSP (As.)
@@ -1202,6 +1222,7 @@
                         class="logo-small"
                         src="../src/images/prince2-small-2.png"
                         alt="Prince2 logo"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="prince-tooltip" class="hidden">
                         PRINCE2 Practitioner
@@ -1218,6 +1239,7 @@
                         class="logo-small"
                         src="../src/images/cloud-architect.png"
                         alt="Google Cloud Architect Badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="gcparch-tooltip" class="hidden">
                         Google Cloud Architect
@@ -1234,6 +1256,7 @@
                         class="logo-small"
                         src="../src/images/iso_27001_02.png"
                         alt="ISO27001 Lead Auditor badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="iso-tooltip" class="hidden">
                         ISO27001 Lead Auditor
@@ -1250,6 +1273,7 @@
                         class="logo-small"
                         src="../src/images/ITIL-Logo.png"
                         alt="ITILv3 Foundation badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="itil-tooltip" class="hidden">
                         ITILv3 Foundation
@@ -1435,6 +1459,7 @@
                         class="logo-small"
                         src="../src/images/HTML5_logo_and_wordmark.png"
                         alt="HTML5 badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="html-tooltip" class="hidden">
                         HTML
@@ -1451,6 +1476,7 @@
                         class="logo-small"
                         src="../src/images/CSS3_logo_and_wordmark.png"
                         alt="CS3 badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="css-tooltip" class="hidden">
                         CSS
@@ -1468,6 +1494,7 @@
                         class="logo-small"
                         src="../src/images/JavaScript-logo.png"
                         alt="Javascript badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="js-tooltip" class="hidden">
                         Javascript
@@ -1484,6 +1511,7 @@
                         class="logo-small"
                         src="../src/images/logo-react-js.png"
                         alt="React badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="react-tooltip" class="hidden">
                         React
@@ -1505,6 +1533,7 @@
                         class="logo-small"
                         src="../src/images/Ruby_logo.png"
                         alt="Ruby Badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="ruby-tooltip" class="hidden">
                         Ruby
@@ -1521,6 +1550,7 @@
                         class="logo-small"
                         src="../src/images/rails-logo.png"
                         alt="Rails Badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="rails-tooltip" class="hidden">
                         Rails
@@ -1542,6 +1572,7 @@
                         class="logo-small"
                         src="../src/images/postgresql.png"
                         alt="PostgreSQL Badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="post-tooltip" class="hidden">
                         PostgreSQL
@@ -1563,6 +1594,7 @@
                         class="logo-small"
                         src="../src/images/google-cloud-logo.png"
                         alt="Google Cloud Badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="gcp-tooltip" class="hidden">
                         Google Cloud
@@ -1579,6 +1611,7 @@
                         class="logo-small"
                         src="../src/images/GitHub-Logo.png"
                         alt="Github badge"
+                        width="50" height="50"
                       />
                       <div role="tooltip" aria-hidden="true"  id="gh-tooltip" class="hidden">
                         Github
@@ -1619,6 +1652,7 @@
                         src="./images/figma.png"
                         alt="figma"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1626,6 +1660,7 @@
                         src="./images/atlassian.png"
                         alt="atlassian"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1633,6 +1668,7 @@
                         src="./images/slack.png"
                         alt="slack"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1640,6 +1676,7 @@
                         src="./images/google-workspace.svg"
                         alt="Google workspace"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1647,6 +1684,7 @@
                         src="./images/hubspot.png"
                         alt="hubspot"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1654,13 +1692,14 @@
                         src="./images/microsoft365.png"
                         alt="microsoft 365"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
                       <img loading="lazy"
                         src="./images/Hootsuite-Logo.png"
                         alt="hootsuite"
-                        class="logo-small"
+                        class="logo-small" width="50" height="50"
                       />
                     </li>
                     <!-- <li class="badge">
@@ -1685,6 +1724,7 @@
                         src="./images/xero.svg"
                         alt="xero"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1692,6 +1732,7 @@
                         src="./images/NetSuite-Logo.png"
                         alt="netsuite"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1699,6 +1740,7 @@
                         src="./images/sage.png"
                         alt="sage"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1706,6 +1748,7 @@
                         src="./images/pento.png"
                         alt="pento"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1713,12 +1756,14 @@
                         src="./images/bamboohr.png"
                         alt="bamboo hr"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
                       <img loading="lazy"
                         src="./images/charlie.png"
                         alt="charlie hr"
+                        width="50" height="50"
                         class="logo-small"
                       />
                     </li>
@@ -1726,7 +1771,7 @@
                       <img loading="lazy"
                         src="./images/teamtailor.webp"
                         alt="teamtailor"
-                        class="logo-small"
+                        class="logo-small" width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1734,6 +1779,7 @@
                         src="./images/docusign.png"
                         alt="docusign"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1741,6 +1787,7 @@
                         src="./images/salesforce.png"
                         alt="salesforce"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1748,6 +1795,7 @@
                         src="./images/ben.png"
                         alt="thanksben"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                   </ul>
@@ -1760,6 +1808,7 @@
                         src="./images/lastpass.png"
                         alt="lastpass"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1767,6 +1816,7 @@
                         src="./images/jumpcloud.png"
                         alt="jumpcloud"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1774,6 +1824,7 @@
                         src="./images/1password.png"
                         alt="1password"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1781,6 +1832,7 @@
                         src="./images/wordpress.png"
                         alt="wordpress"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1788,6 +1840,7 @@
                         src="./images/wix.png"
                         alt="wix"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1795,6 +1848,7 @@
                         src="./images/zendesk.png"
                         alt="zendesk"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                     <li class="badge">
@@ -1802,6 +1856,7 @@
                         src="./images/google-analytics.png"
                         alt="google analytics"
                         class="logo-small"
+                        width="50" height="50"
                       />
                     </li>
                   </ul>
@@ -1844,9 +1899,10 @@
         <div
           style="
             width: 100%;
-            background-color: salmon;
+            background-color: var(--main-tertiary-dark);
             color: white;
             text-align: center;
+
           "
         >
           This section is a work in progress!
@@ -1920,7 +1976,7 @@
               </select>
             </div>
           </div> -->
-          <div class="portfolio-container" role="list" aria-label="list of portfolio projects">
+          <div class="portfolio-container" aria-label="list of portfolio projects">
             <article
               class="portfolio-card clickable-card"
               id="custom-portfolio" aria-labelledby="portfolio-site-title"
@@ -1981,6 +2037,7 @@
                       class="logo-xs"
                       src="../src/images/HTML5_logo_and_wordmark.png"
                       alt="HTML5 badge"
+                      width="50" height="50"
                     />
                     <div role="tooltip" aria-hidden="true"  id="html-tooltip2" class="hidden">
                       HTML
@@ -1997,6 +2054,7 @@
                       class="logo-xs"
                       src="../src/images/CSS3_logo_and_wordmark.png"
                       alt="CSS3 badge"
+                      width="50" height="50"
                     />
                     <div role="tooltip" aria-hidden="true"  id="css-tooltip2" class="hidden">
                       CSS
@@ -2013,6 +2071,7 @@
                       class="logo-xs"
                       src="../src/images/JavaScript-logo.png"
                       alt="Javascript badge"
+                      width="50" height="50"
                     />
                     <div role="tooltip" aria-hidden="true"  id="javascript-tooltip2" class="hidden">
                       Javascript
@@ -2082,7 +2141,7 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img loading="lazy" src="../src/images/this-site.png" alt="" />
+                <img loading="lazy" src="../src/images/this-site.png" alt=""  width="50" height="50" />
               </div>
               <!-- <dialog
                 class="portfolio-modal"
@@ -2206,6 +2265,7 @@
                       class="logo-xs"
                       src="../src/images/wordpress-icon.png"
                       alt="Wordpress badge"
+                      width="50" height="50"
                     />
                     <div role="tooltip" aria-hidden="true"  id="wordpress-tooltip" class="hidden">
                       Wordpress
@@ -2222,6 +2282,7 @@
                       class="logo-xs"
                       src="../src/images/google-analytics-icon.png"
                       alt="Google Analytics badge"
+                      width="50" height="50"
                     />
                     <div
                       role="tooltip" aria-hidden="true" 
@@ -2242,6 +2303,7 @@
                       class="logo-xs"
                       src="../src/images/elementor-icon.png"
                       alt="Elementor badge"
+                      width="50" height="50"
                     />
                     <div role="tooltip" aria-hidden="true"  id="elementor-tooltip" class="hidden">
                       Elementor
@@ -2379,7 +2441,7 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img loading="lazy" src="../src/images/enterprise-tech.png" alt="" />
+                <img loading="lazy" src="../src/images/enterprise-tech.png" alt=""  width="50" height="50" />
               </div>
               <dialog
                 class="enterprise-tech-modal"
@@ -2557,6 +2619,7 @@
                 class="icon-large"
                 src="../src/images/logo-icon.svg"
                 alt=""
+                width="50" height="50"
               />
               <h3>Hire Me</h3>
               <p>https://peculiardynamics.co.uk</p>
