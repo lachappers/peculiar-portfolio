@@ -1,17 +1,17 @@
 {
   "name": "peculiar-portfolio",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "repository": {
     "url": "git+https://github.com/lachappers/peculiar-portfolio.git"
   },
-  "description": "This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, custom CSS and vanilla JS. <br><br>",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ",
     "watch": "webpack --watch",
-    "start": "npm run build && webpack serve --open && webpack --watch",
-    "build": "webpack",
-    "build-prod": "webpack --config=webpack.config.prod.js",
+    "start": "npm run build && webpack serve --open && webpack --watch ",
+    "build-prod": "webpack --config=webpack.prod.js",
     "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d dist"
   },
@@ -28,15 +28,19 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-webpack-plugin": "^4.0.1",
+    "file-loader": "^6.2.0",
     "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.1",
+    "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "webpack": "^5.82.1",
+    "webpack-merge": "^5.9.0",
+    "webpack-dev-server": "^4.15.0"
   }
 }
