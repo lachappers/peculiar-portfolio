@@ -9,10 +9,11 @@
   "private": true,
   "scripts": {
     "build": "webpack ",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
-    "start": "npm run build && webpack serve --open && webpack --watch ",
-    "build-prod": "webpack --config=webpack.prod.js",
-    "predeploy": "npm run build-prod",
+    "start": "npm run build:dev && webpack serve --config webpack.dev.js --open && webpack --watch --config webpack.dev.js",
+    "predeploy": "npm run build:prod",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
