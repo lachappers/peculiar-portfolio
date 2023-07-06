@@ -913,7 +913,6 @@ dialog .modal-body {
   grid-column: 1/-1;
   max-width: 100%;
   padding: 1.5rem;
-  /* padding-top: 0; */
   text-align: center;
   font-size: 1.25rem;
 
@@ -922,8 +921,6 @@ dialog .modal-body {
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-
-  /* max-height: 40vh; */
   overflow-y: auto;
 }
 
