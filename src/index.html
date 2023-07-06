@@ -16,6 +16,26 @@
     <!-- <header> defines the header of a document or section of a document -->
     <header>
       <nav class="side-nav" role="navigation">
+        <ul
+        class="nav-content"
+        role="navigation"
+        aria-label="navigate this site"
+      >
+        <li class="nav-item"><a href="#home" class="nav-text">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-text">About</a></li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-text">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#expertise" class="nav-text">Expertise</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-text">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-text">Contact</a>
+        </li>
+      </ul>
         <aside class="nav-about" role="complementary">
           <a class="site-logo" href="#" title="Return to top"
             >Lucy<br />Chaplin
@@ -29,9 +49,9 @@
               role="link"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="my github portfolio"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-small">
-                <title>my github</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-small" width = "2rem" height="2rem" aria-hidden="true">
                 <path
                   d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
                 />
@@ -44,22 +64,22 @@
               role="link"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="My LinkedIn page"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <title>my linkedin</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-small" width = "2rem" height="2rem" aria-hidden="true">
                 <path
                   d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
                 />
               </svg>
             </a>
             <a
-              class="icon icon-small"
-              href="mailto:lucy@peculiardynamics.co.uk"
+              class="icon icon-small email-link"
+              href=""
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="Send me an email"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width = "1rem" height="1rem">
-                <title>email me</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"class="icon-small" width = "1rem" height="1rem" aria-hidden="true">
                 <path
                   d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
                 />
@@ -67,26 +87,7 @@
             </a>
           </div>
         </aside>
-        <ol
-          class="nav-content"
-          role="navigation"
-          aria-label="navigate this site"
-        >
-          <li class="nav-item"><a href="#home" class="nav-text">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-text">About</a></li>
-          <li class="nav-item">
-            <a href="#resume" class="nav-text">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a href="#expertise" class="nav-text">Expertise</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-text">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-text">Contact</a>
-          </li>
-        </ol>
+
         <!-- Decorative images are identified by an empty alt to make screen readers recognise the image, but not attempt to describe the image -->
         <img loading="lazy"
           class="nav-pic"
@@ -231,6 +232,7 @@
               role="link"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="my github portfolio"
             >
               <svg
                 fill="currentColor"
@@ -239,7 +241,6 @@
                 width = "2rem" height="2rem"
                 aria-hidden="true"
               >
-                <title>my github</title>
                 <path
                   d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
                 />
@@ -251,6 +252,7 @@
               role="link"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="my linkedin page"
             >
               <svg
                 fill="currentColor"
@@ -259,17 +261,17 @@
                 aria-hidden="true"
                 width = "2rem" height="2rem"
               >
-                <title>my linkedin</title>
                 <path
                   d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
                 />
               </svg>
             </a>
             <a
-              class="icon icon-large"
-              href="mailto:lucy@peculiardynamics.co.uk"
+              class="icon icon-large email-link"
+              href=""
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="send me an email"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +280,6 @@
                 aria-hidden="true"
                 width = "2rem" height="2rem"
               >
-                <title>email me</title>
                 <path
                   d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
                 />
@@ -437,7 +438,7 @@
                     </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0" tabindex="0">
                     <time class="">2021 - 2023</time>
                     <div role="doc-subtitle">
                       Remote patient monitoring medical device development in
@@ -531,7 +532,7 @@
                     </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0">
                     <time class="">2021</time>
                     <div role="doc-subtitle">
                       Amazon Diagnostics - Healthcare
@@ -630,7 +631,7 @@
                     </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0">
 
                     <time class="">2020-2021</time>
                     <div role="doc-subtitle">
@@ -729,7 +730,7 @@
                   </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0">
 
                     <time class="">2019</time>
                     <div role="doc-subtitle">
@@ -823,7 +824,7 @@
                     </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0">
 
                     <time class="">2017 - 2018</time>
                     <div role="doc-subtitle">
@@ -922,7 +923,7 @@
                     </button>
                   </header>
                   <!-- Modal body -->
-                  <div class="modal-body">
+                  <div class="modal-body" tabindex="0">
 
                     <time class="">2012 - 2017</time>
                     <div role="doc-subtitle">
@@ -1183,9 +1184,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/(ISC)2_logo.png"
-                        alt=""
+                        alt="ISC2 logo"
                       />
-                      <div role="tooltip" id="isc-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="isc-tooltip" class="hidden">
                         CISSP (As.)
                       </div>
                     </li>
@@ -1200,9 +1201,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/prince2-small-2.png"
-                        alt=""
+                        alt="Prince2 logo"
                       />
-                      <div role="tooltip" id="prince-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="prince-tooltip" class="hidden">
                         PRINCE2 Practitioner
                       </div>
                     </li>
@@ -1216,9 +1217,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/cloud-architect.png"
-                        alt=""
+                        alt="Google Cloud Architect Badge"
                       />
-                      <div role="tooltip" id="gcparch-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="gcparch-tooltip" class="hidden">
                         Google Cloud Architect
                       </div>
                     </li>
@@ -1232,9 +1233,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/iso_27001_02.png"
-                        alt=""
+                        alt="ISO27001 Lead Auditor badge"
                       />
-                      <div role="tooltip" id="iso-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="iso-tooltip" class="hidden">
                         ISO27001 Lead Auditor
                       </div>
                     </li>
@@ -1248,9 +1249,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/ITIL-Logo.png"
-                        alt=""
+                        alt="ITILv3 Foundation badge"
                       />
-                      <div role="tooltip" id="itil-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="itil-tooltip" class="hidden">
                         ITILv3 Foundation
                       </div>
                     </li>
@@ -1433,9 +1434,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/HTML5_logo_and_wordmark.png"
-                        alt=""
+                        alt="HTML5 badge"
                       />
-                      <div role="tooltip" id="html-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="html-tooltip" class="hidden">
                         HTML
                       </div>
                     </li>
@@ -1449,8 +1450,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/CSS3_logo_and_wordmark.png"
+                        alt="CS3 badge"
                       />
-                      <div role="tooltip" id="css-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="css-tooltip" class="hidden">
                         CSS
                       </div>
                     </li>
@@ -1465,9 +1467,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/JavaScript-logo.png"
-                        alt=""
+                        alt="Javascript badge"
                       />
-                      <div role="tooltip" id="js-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="js-tooltip" class="hidden">
                         Javascript
                       </div>
                     </li>
@@ -1481,9 +1483,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/logo-react-js.png"
-                        alt=""
+                        alt="React badge"
                       />
-                      <div role="tooltip" id="react-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="react-tooltip" class="hidden">
                         React
                       </div>
                     </li>
@@ -1502,9 +1504,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/Ruby_logo.png"
-                        alt=""
+                        alt="Ruby Badge"
                       />
-                      <div role="tooltip" id="ruby-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="ruby-tooltip" class="hidden">
                         Ruby
                       </div>
                     </li>
@@ -1518,8 +1520,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/rails-logo.png"
+                        alt="Rails Badge"
                       />
-                      <div role="tooltip" id="rails-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="rails-tooltip" class="hidden">
                         Rails
                       </div>
                     </li>
@@ -1538,9 +1541,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/postgresql.png"
-                        alt=""
+                        alt="PostgreSQL Badge"
                       />
-                      <div role="tooltip" id="post-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="post-tooltip" class="hidden">
                         PostgreSQL
                       </div>
                     </li>
@@ -1559,9 +1562,9 @@
                       <img loading="lazy"
                         class="logo-small"
                         src="../src/images/google-cloud-logo.png"
-                        alt=""
+                        alt="Google Cloud Badge"
                       />
-                      <div role="tooltip" id="gcp-tooltip" class="hidden">
+                      <div role="tooltip" aria-hidden="true"  id="gcp-tooltip" class="hidden">
                         Google Cloud
                       </div>
                     </li>
@@ -1572,12 +1575,12 @@
                       aria-labelledby="gh-tooltip"
                       data-tooltip-trigger
                     >
-                      <!-- <img loading="lazy"
+                      <img loading="lazy"
                         class="logo-small"
                         src="../src/images/GitHub-Logo.png"
-                        alt=""
-                      /> -->
-                      <div role="tooltip" id="gh-tooltip" class="hidden">
+                        alt="Github badge"
+                      />
+                      <div role="tooltip" aria-hidden="true"  id="gh-tooltip" class="hidden">
                         Github
                       </div>
                     </li>
@@ -1917,7 +1920,7 @@
               </select>
             </div>
           </div> -->
-          <ul class="portfolio-container" role="list" aria-label="list of portfolio projects">
+          <div class="portfolio-container" role="list" aria-label="list of portfolio projects">
             <article
               class="portfolio-card clickable-card"
               id="custom-portfolio" aria-labelledby="portfolio-site-title"
@@ -1930,8 +1933,8 @@
                     <!-- </a> -->
                   </h3>
                   <div role="doc-subtitle">
-                    <a href="www.lucy.chaplin.tech"
-                      >www.lucy.chaplin.tech
+                    <a href="https://chaplin.tech"
+                      >https://chaplin.tech
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -1977,9 +1980,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/HTML5_logo_and_wordmark.png"
-                      alt=""
+                      alt="HTML5 badge"
                     />
-                    <div role="tooltip" id="html-tooltip2" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="html-tooltip2" class="hidden">
                       HTML
                     </div>
                   </li>
@@ -1993,9 +1996,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/CSS3_logo_and_wordmark.png"
-                      alt=""
+                      alt="CSS3 badge"
                     />
-                    <div role="tooltip" id="css-tooltip2" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="css-tooltip2" class="hidden">
                       CSS
                     </div>
                   </li>
@@ -2009,9 +2012,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/JavaScript-logo.png"
-                      alt=""
+                      alt="Javascript badge"
                     />
-                    <div role="tooltip" id="javascript-tooltip2" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="javascript-tooltip2" class="hidden">
                       Javascript
                     </div>
                   </li>
@@ -2025,9 +2028,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/webpack-icon.png"
-                      alt=""
+                      alt="Webpack badge"
                     />
-                    <div role="tooltip" id="webpack-tooltip" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="webpack-tooltip" class="hidden">
                       Webpack
                     </div>
                   </li>
@@ -2108,7 +2111,7 @@
                   </button>
                 </header>
 
-                <div class="modal-body">
+                <div class="modal-body" tabindex="0">
                   
                   <h3 class=""></h3>
                   <time class="">2021 - 2023</time>
@@ -2202,9 +2205,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/wordpress-icon.png"
-                      alt=""
+                      alt="Wordpress badge"
                     />
-                    <div role="tooltip" id="wordpress-tooltip" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="wordpress-tooltip" class="hidden">
                       Wordpress
                     </div>
                   </li>
@@ -2218,10 +2221,10 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/google-analytics-icon.png"
-                      alt=""
+                      alt="Google Analytics badge"
                     />
                     <div
-                      role="tooltip"
+                      role="tooltip" aria-hidden="true" 
                       id="google-analytics-tooltip"
                       class="hidden"
                     >
@@ -2238,9 +2241,9 @@
                     <img loading="lazy"
                       class="logo-xs"
                       src="../src/images/elementor-icon.png"
-                      alt=""
+                      alt="Elementor badge"
                     />
-                    <div role="tooltip" id="elementor-tooltip" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="elementor-tooltip" class="hidden">
                       Elementor
                     </div>
                   </li>
@@ -2341,7 +2344,7 @@
                       src="../src/images/HTML5_logo_and_wordmark.png"
                       alt=""
                     />
-                    <div role="tooltip" id="html-tooltip" class="hidden">
+                    <div role="tooltip" aria-hidden="true"  id="html-tooltip" class="hidden">
                       HTML
                     </div>
                   </li> -->
@@ -2410,7 +2413,7 @@
                     <span class="sr-only">Close modal</span>
                   </button>
                 </header>
-                <div class="modal-body">
+                <div class="modal-body" tabindex="0">
                   <article class="card">
                     <h2>HealthTech Start-up</h2>
                     <p>
@@ -2445,7 +2448,7 @@
 
             <!-- peculiar site -->
             <!-- gh apps -->
-          </ul>
+          </div>
 
           <!-- <ol class="pagination" role="list">
             <li>
@@ -2519,11 +2522,12 @@
               to say hi, I’ll try my best to get back to you!
             </p>
             <a
-              id="email-link"
+              class="email-link"
               href=""
               role="link"
               rel="noopener noreferrer"
               target="_blank"
+              aria-labelledby="contact-email-title"
             >
               <svg
                 class="icon icon-large"
@@ -2532,12 +2536,11 @@
                 aria-hidden="true"
                 width = "10" height="10"
               >
-                <title>at</title>
                 <path
                   d="M12,15C12.81,15 13.5,14.7 14.11,14.11C14.7,13.5 15,12.81 15,12C15,11.19 14.7,10.5 14.11,9.89C13.5,9.3 12.81,9 12,9C11.19,9 10.5,9.3 9.89,9.89C9.3,10.5 9,11.19 9,12C9,12.81 9.3,13.5 9.89,14.11C10.5,14.7 11.19,15 12,15M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12V13.45C22,14.45 21.65,15.3 21,16C20.3,16.67 19.5,17 18.5,17C17.3,17 16.31,16.5 15.56,15.5C14.56,16.5 13.38,17 12,17C10.63,17 9.45,16.5 8.46,15.54C7.5,14.55 7,13.38 7,12C7,10.63 7.5,9.45 8.46,8.46C9.45,7.5 10.63,7 12,7C13.38,7 14.55,7.5 15.54,8.46C16.5,9.45 17,10.63 17,12V13.45C17,13.86 17.16,14.22 17.46,14.53C17.76,14.84 18.11,15 18.5,15C18.92,15 19.27,14.84 19.57,14.53C19.87,14.22 20,13.86 20,13.45V12C20,9.81 19.23,7.93 17.65,6.35C16.07,4.77 14.19,4 12,4C9.81,4 7.93,4.77 6.35,6.35C4.77,7.93 4,9.81 4,12C4,14.19 4.77,16.07 6.35,17.65C7.93,19.23 9.81,20 12,20H17V22H12C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z"
                 />
               </svg>
-              <h3>Drop me an email</h3>
+              <h3 id="contact-email-title">Drop me an email at</h3>
               <p>
                 <span class="blockspam">ANTISPAM</span
                 >info@<!-- antispam-->peculiardynamics.co.uk

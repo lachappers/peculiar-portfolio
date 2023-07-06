@@ -323,7 +323,8 @@ a:hover,
 a:focus {
   transform: scale(1.2);
   background-color: var(--main-secondary-light);
-  padding: 0 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   position: relative;
   z-index: 10;
   opacity: 0.9;
@@ -335,6 +336,7 @@ a:focus {
 .icon-group .icon:focus {
   color: var(--main-primary);
   box-shadow: 0 0 0 0.125rem var(--main-comp);
+  padding: 0;
 }
 
 button:active,
@@ -370,9 +372,9 @@ time {
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-bottom: 0.25rem;
-  color: #9ca3af;
+  color: var(--main-dark-15);
   line-height: 1;
-  font-weight: 400;
+  font-weight: 600;
 }
 .sr-only {
   position: absolute;
@@ -387,9 +389,9 @@ time {
 }
 
 [role="doc-subtitle"] {
-  color: var(--main-dark-30);
+  color: var(--main-dark-15);
   font-style: italic;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 0.875rem;
   /* padding-bottom: 0.5rem; */
   max-width: 60ch;
@@ -424,11 +426,17 @@ time {
   align-items: center;
   gap: 1rem;
 }
+.icon-group a {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
 
 .icon {
   border-radius: 0.325rem;
   position: relative;
-  /* height: 1.5rem; */
   height: auto;
   width: 1.5rem;
   fill: currentColor;
@@ -1044,6 +1052,7 @@ button {
 
   padding: 0 1rem;
   font-size: 0.875rem;
+  order: 1;
 }
 
 .site-logo {
@@ -1073,6 +1082,7 @@ button {
   justify-content: center;
   position: relative;
   background-color: var(--main-container-low);
+  order: 2;
 }
 
 .nav-item {
@@ -1117,6 +1127,7 @@ button {
 .nav-pic {
   flex: 0 2 auto;
   background-color: var(--main-container-low);
+  order: 3;
 }
 
 /* INTRO */
@@ -1227,7 +1238,7 @@ button {
 }
 
 .stat dt {
-  color: var(--main-dark-30);
+  color: var(--main-dark-15);
   text-transform: uppercase;
   order: 1;
   font-size: 2cqmax;
@@ -1862,7 +1873,7 @@ details .options {
   color: var(--main-secondary-darkest);
 }
 .green {
-  background-color: var(--main-secondary);
+  background-color: var(--main-secondary-dark);
   color: var(--main-white);
 }
 
