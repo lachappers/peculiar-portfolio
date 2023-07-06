@@ -219,6 +219,7 @@ a {
   /* vertical-align: bottom; */
   /* vertical-align: middle; */
   border: 1px solid transparent;
+  border-radius: 0.375rem;
 }
 
 main a {
@@ -284,6 +285,12 @@ a.next-btn {
   padding: 1rem 0.125rem;
 }
 
+.modal-btn {
+  flex: auto;
+
+  padding: 1rem 0.125rem;
+}
+
 .button {
   background-color: var(--main-primary);
   color: var(--main-surface);
@@ -314,14 +321,13 @@ button:hover,
 button:focus,
 a:hover,
 a:focus {
-  /* color: var(--main-primary); */
-  /* box-shadow: 0 0 0 0.125rem var(--main-comp);
-  background-color: var(--main-light-90);
-  opacity: 1;
-
-  z-index: 15; */
-
-  transform: scale(0.9);
+  transform: scale(1.2);
+  background-color: var(--main-secondary-light);
+  padding: 0 0.5rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+  /* box-shadow: var(--main-shadow-link-hover); */
   /* box-shadow: var(--main-shadow-button-hover); */
 }
 
@@ -333,11 +339,8 @@ a:focus {
 
 button:active,
 a:active {
-  /* color: #000000;
-  background-color: #a60000; */
   padding: 0.25rem 0.5rem;
-  border-radius: 0.375rem;
-  /* box-shadow: 0 0 0 0.0625rem #e5e7eb; */
+  transform: translateY(4px);
 }
 
 p {
@@ -619,15 +622,12 @@ time {
 .page > footer {
   align-self: flex-end;
   padding: 0;
-  /* flex: auto; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   position: absolute;
   top: 80vh;
   bottom: 0.25rem;
   right: 1.25rem;
-  /* z-index: 1; */
 }
 
 /* CARDS */
@@ -693,6 +693,8 @@ time {
   align-items: center;
 
   border-radius: 0.325rem;
+  position: relative;
+  z-index: ;
 }
 
 .card-img img {
@@ -708,28 +710,18 @@ time {
   min-width: 14rem;
   /* width: 20rem; */
   order: 1;
-}
-.card-text > * + * {
-  /* border: 1px solid darkcyan; */
-  /* margin: 0.75rem 0 0 0;
-  padding: 0; */
-}
-.card-text > * {
-  /* padding: 0; */
+  position: relative;
 }
 
 .card-text > :last-child {
   margin-top: auto;
-  /* border: 1px solid violet; */
 }
 
 .card-text > :nth-last-child(2) {
   margin-bottom: 0.75rem;
-  /* border: 1px solid greenyellow; */
 }
 
 .card p {
-  /* margin-bottom: 0.5rem; */
   font-size: 0.875rem;
 }
 
@@ -757,7 +749,6 @@ time {
 /* Details */
 
 details {
-  /* border: 1px solid seagreen; */
   border-radius: 0.325rem;
   width: 100%;
 }
@@ -770,7 +761,6 @@ summary {
   cursor: pointer;
   margin-bottom: 0.5rem;
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 2rem;
   /* justify-items: center; */
@@ -784,6 +774,9 @@ summary {
 
 summary h3 {
   max-width: 40ch;
+}
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 details summary > * {
@@ -832,32 +825,6 @@ details .content {
 }
 
 /* MODALS */
-.modal-container {
-  /* position: fixed;
-  display: none;
-  z-index: 50;
-  inset: 0px;
-  background: rgb(17, 24, 39, 0.6);
-  overflow-y: auto;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-  transition: all 0.5s; */
-}
-
-.modal {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-  border-radius: 0.375rem;
-  background: white;
-  width: min(90%, 40rem); */
-  /* max-width: 28rem; */
-  /* transition: all 0.4s; */
-}
 
 dialog {
   margin: auto;
@@ -866,7 +833,6 @@ dialog {
   width: min(90%, 40rem);
   max-height: 80%;
   padding: 0;
-  /* z-index: 10; */
 
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1189,8 +1155,6 @@ button {
 
   z-index: 2;
 
-  /* background-color: var(--main-surface); */
-  /* background-color: #fefefe; */
   border-radius: 0.375rem;
 }
 
@@ -1207,9 +1171,10 @@ button {
   flex-wrap: wrap;
   gap: 0.5rem;
   text-transform: uppercase;
-  font-size: small;
+  /* font-size: small; */
   font-weight: 500;
   color: var(--main-primary-dark);
+  text-shadow: 1px 1px 0px var(--main-comp), 2px 2px 0px var(--main-secondary);
 }
 
 .action-buttons {
@@ -1655,6 +1620,10 @@ details .options {
 
 .portfolio-card header {
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card header a {
 }
 
 .portfolio-card-img {
@@ -1674,6 +1643,8 @@ details .options {
 }
 .card-text h3 a {
   text-align: start;
+  /* position: absolute; */
+  /* flex: none; */
 }
 
 .portfolio-card .tag-container {
@@ -1755,9 +1726,6 @@ details .options {
 /*  CONTACT */
 
 .contact {
-}
-
-.contact-main {
 }
 
 .contact-details {

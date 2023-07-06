@@ -3,7 +3,7 @@
 This project showcases the inputs necessary to achieve an accessible and responsive personal portfolio web page, created using HTML, custom CSS and vanilla JS.
 <br><br>
 
-> Live demo [_here_](link)
+> Live demo [_here_](https://chaplin.tech)
 
 <br>
 
@@ -101,25 +101,31 @@ To ensure optimal site performance, the following should also be considered when
 - compressing images
 - using JS techniques such as lazy-loading to prevent images using resources until required
 
-### Media queries
+### Responsive Design - Minimal Media queries
+
+This site uses responsive design to ensure compatability with multiple screen sizes. This is supported by a media query used to restructure the styling to make the site suitable for small screens.
 
 Media queries are used to support restyle of content and structure of an entire site or page depending on screen size, rather than customising individual elements.
 
-This site supports 3 screen sizes:
+This site supports 2 screen sizes:
 
-- **Desktop**: wider than 1200px
-- **Tablet**: 600-1200px
+- **Default**: wider than 600px
 - **Mobile**: 320-600px
 
 This is achieved by using a media query that offers a mobile version of the site layout when width < 600px.
 
 Further responsive design elements includes; using the Viewport Meta Tag to establish resolution, avoiding fixed width and height (where possible) and using Flex and Grid to structure content.
 
-<!-- The website is built using HTML, CSS, and JavaScript. The HTML and CSS files are organised using the BEM methodology and are structured in a way that is easy to read and maintain. The website is also responsive and adapts to different screen sizes using CSS media queries.
+### Custom Javascript
 
-The website uses several CSS techniques to create a visually appealing design, including custom fonts, colours, and animations. The website also uses JavaScript to add interactivity to the contact form and to create a smooth scrolling effect. -->
+Javascript was used to add:
 
-<br><br>
+- A rotating side navigation
+- Accessible modal `<dialog>` elements
+- Smooth opening and closing on `<details>` elements
+- An accessible 'Return to top' button
+- Obfuscation of email address to minimise spam from web scraping
+  <br><br>
 
 ## Installation
 

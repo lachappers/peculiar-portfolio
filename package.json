@@ -12,7 +12,7 @@
     "start": "npm run build && webpack serve --open && webpack --watch",
     "build": "webpack",
     "build-prod": "webpack --config=webpack.config.prod.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],

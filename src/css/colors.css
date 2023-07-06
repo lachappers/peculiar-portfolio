@@ -50,5 +50,6 @@
   --main-shadow-button: 5px 5px 1px 1px var(--main-dark-30);
   --main-shadow-button-hover: 5px 5px 1px 1px var(--main-dark-30);
   --main-shadow-light: 5px 5px 1px 1px var(--main-dark-50);
+  --main-shadow-link-hover: 5px 5px 1px 5px var(--main-dark-50);
   --main-shadow-icon: 2px 2px 1px 1px var(--main-dark-50);
 }
