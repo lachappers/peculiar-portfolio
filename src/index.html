@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--Viewport Meta tag - sets initial page width to the size of screen it's viewed on, without any zoom (common in older browsers) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHEKJFJ8RS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-MHEKJFJ8RS');
+    </script>
     <title>Lucy Chaplin</title>
   </head>
   <body>
@@ -88,7 +96,7 @@
         <!-- Decorative images are identified by an empty alt to make screen readers recognise the image, but not attempt to describe the image -->
         <img 
           class="nav-pic"
-          src="../src/images/full highres foreground.png"
+          src="../src/images/full highres foreground.webp"
           width="200" height="200"
           alt=""
         />
@@ -134,7 +142,7 @@
 
           <div class="headshot" aria-hidden="true">
             <img 
-              src="../src/images/headshot-highres-foreground.png"
+              src="../src/images/headshot-highres-foreground.webp"
               alt=""
               height="1000" width="1000"
             />
@@ -292,7 +300,7 @@
           </div>
         </div>
         <div class="about-image" aria-hidden="true">
-          <img loading="lazy" src="../src/images/full highres foreground.png" alt=""  width="50" height="50" />
+          <img loading="lazy" src="../src/images/full highres foreground.webp" alt=""  width="50" height="50" />
         </div>
         <footer>
           <a href="#resume" class="next-btn" aria-label="jump to next section">
@@ -2141,7 +2149,7 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img loading="lazy" src="../src/images/this-site.png" alt=""  width="50" height="50" />
+                <img loading="lazy" src="../src/images/this-site.jpg" alt=""  width="50" height="50" />
               </div>
               <!-- <dialog
                 class="portfolio-modal"
@@ -2362,7 +2370,7 @@
                 <!-- </div> -->
               </div>
               <div class="portfolio-card-img">
-                <img loading="lazy" src="../src/images/cocha-home.png" alt=""  width="300" height="300"/>
+                <img loading="lazy" src="../src/images/cocha-home.jpg" alt=""  width="300" height="300"/>
               </div>
             </article>
 
@@ -2441,7 +2449,7 @@
                 </div>
               </div>
               <div class="portfolio-card-img">
-                <img loading="lazy" src="../src/images/enterprise-tech.png" alt=""  width="50" height="50" />
+                <img loading="lazy" src="../src/images/enterprise-tech.jpg" alt=""  width="50" height="50" />
               </div>
               <dialog
                 class="enterprise-tech-modal"
@@ -2626,6 +2634,7 @@
             </a>
             <!-- <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
           </div>
+
           <!-- <form
             id="form-say-hi"
             name="form-say-hi"

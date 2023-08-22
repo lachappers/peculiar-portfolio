@@ -19,13 +19,7 @@ module.exports = merge(common, {
 
   module: {
     rules: [
-      {
-        test: /\.(woff|woff2|ttf|eot)/,
-        type: "asset/resource",
-        generator: {
-          filename: "./fonts/[name][ext]",
-        },
-      },
+
     ],
   },
 });

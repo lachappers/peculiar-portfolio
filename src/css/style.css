@@ -13,6 +13,7 @@
 }
 html {
   box-sizing: border-box;
+  font-display: swap;
 }
 
 *,
@@ -42,6 +43,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
+
   /* Line height to match WCAG guidelines */
   line-height: 1.5;
   width: fit-content;
